@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>方法与方法之间不需要用逗号隔开</title>
+</head>
+<body>
+    <script>
+        function Point(x,y){
+            this.x=x;
+            this.y=y;
+
+        }
+        Point.prototype.fun=function(){
+            return "("+this.x+","+this.y+")";
+        }
+        var point=new Point(7877,999);
+        console.log(point.fun());
+
+        class DiyPoint{
+              constructor(x,y){this.x=x;this.y=y}
+                  fun(){
+                      return "("+this.x+","+this.y+")";
+                  }
+              
+        }
+        var diy=new DiyPoint(20,30);
+        console.log(diy.fun());
+    </script>
+</body>
+</html>

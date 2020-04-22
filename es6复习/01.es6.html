@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>let有局限性，只能在循环体内使用  对象{}可以在script内书写</title>
+    <title>let有局限性，只能在循环体内使用  对象{}可以在script内书写  ``是为了让${}使用，${}是为了让json的内容可用</title>
     <style>
         li{
             list-style:none;
@@ -28,6 +28,7 @@
             name:"小明",
             age:90
         }
+        console.log(a1.name);
         var a2=` <li>
         <p>${a1.name}</p>
         <p>${a1.age}</p>

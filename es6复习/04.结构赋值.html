@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>只有结构赋值才能自动改变格式吗</title>
+</head>
+<body>
+    <script>
+        // var {a,b}={a:"啊啊啊",b:"杀杀杀"}
+        // console.log(a,b);
+        // function fun(){
+        //     return {name:"懂点到"}
+        // }
+        // // console.log(fun().name);
+        // var {name}=fun();
+        // console.log(name);
+        var [name,age]=["来了",15];
+        console.log(name,age);
+        var [a,b,c,d]=["shagn","xia","zuo","you"];
+        console.log(a,b,c,d);
+        console.log([a,b,c,d]);
+        console.log({a,b,c,d});
+    </script>
+</body>
+</html>
