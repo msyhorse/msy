@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>假期复习f8</title>
+		<style type="text/css">
+			*{
+				padding:0;
+				margin:0;
+			}
+			ul{
+				width:1000px;
+				height:120px;
+				border:3px red solid;
+				margin:50px auto;
+				position:relative;
+				
+			}
+			li{
+				width:107px;
+				height:107px;
+				border:1px red solid;
+				margin:6.5px;
+				list-style:none;
+			}
+			#b{
+				width:107px;
+				height:107px;
+				background-image:url(img/a_1.png);
+				background-repeat:no-repeat;
+				transition:all 1s;
+			}
+			li:hover #b{
+				background-image:url(img/a_1_h1.png);
+				transform:rotate(360deg)
+			}
+			#c{
+				position:absolute;
+				/*margin:-94px 0 0 16px;*/
+				top:8px;
+				left:8px;
+				text-align:center;
+			}
+			#c p{
+				color:white;
+				font-size:18px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="a">
+			<ul>
+				<li>
+					<div id="b"></div>
+					<div id="c">
+						<img src="img/tb_1.png">
+						<p>我要陪练</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>

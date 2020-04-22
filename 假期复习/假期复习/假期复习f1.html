@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>假期复习f1</title>
+		<style type="text/css">
+			*{
+				padding:0;
+				margin:0;
+			}
+			[red="box"]{
+				width:100px;
+				height:100px;
+				background-color:red;
+			}
+			[red^="a"]{
+				width:100px;
+				height:100px;
+				background-color:bisque;
+			}
+			[red$="a"]{
+				width:100px;
+				height:100px;
+				background-color:blueviolet;
+			}
+			[red~="o1"]{
+				width:100px;
+				height:100px;
+				background-color:aquamarine;
+			}
+			[red|="0"]{
+				width:100px;
+				height:100px;
+				background-color:blue;
+			}
+			[red*="p"]{
+				width:100px;
+				height:100px;
+				background-color:black;
+			}[title="a"]{
+				width:100px;
+				height:100px;
+				background-color:aquamarine;
+			}
+			[src="img/tu.png"]{
+				width:100px;
+				height:100px;
+				/*background-color:black;*/
+			}
+		</style>
+	</head>
+	<body>
+		<div red="box">1</div>
+		<div red="abox">2</div>
+		<div red="boxa">3</div>
+		<div red="b o1 x">4</div>
+		<div red="0-box">5</div>
+		<div red="boxp">6</div>
+		<div title="a">7</div>
+		<img src="img/tu.png">
+	</body>
+</html>

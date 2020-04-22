@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			#a1{
+				width:500px;
+				height:500px;
+				border:10px red solid;
+				margin:20px auto;
+				position:relative;
+			}
+			#a2{
+				width:300px;
+				height:300px;
+				border:10px red solid;
+				margin:20px auto;
+				position:relative;
+			}
+			#a3{
+				width:100px;
+				height:100px;
+				border:10px red solid;
+				margin:20px auto;
+				position:relative;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="a1">
+			<div id="a2">
+				<div id="a3">
+					
+				</div>
+				
+			</div>
+			
+		</div>
+	</body>
+	<script type="text/javascript">
+		var a1=document.getElementById("a1");
+		var a2=document.getElementById("a2");
+		var a3=document.getElementById("a3");
+		function b1(a){
+			var c1=a.offsetTop;
+			var b2=a;
+			while(b2=b2.offsetParent){
+				c1+=b2.offsetTop;
+			}
+			return c1
+		}
+		alert(b1(a1));
+		alert(b1(a2));
+		alert(b1(a3));
+	</script>
+</html>

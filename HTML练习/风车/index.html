@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			#wai{
+				height: 604px;
+				width: 604px;
+				margin:auto;
+				float: left;
+			}
+			#red{
+				width: 300px;
+				height: 150px;
+				border: 1px solid red;
+				background-color: red;
+				float: left;
+				border-top-left-radius: 150px;
+				border-top-right-radius: 150px;
+				margin-top: 150px;
+			}
+			#green{
+				width: 150px;
+				height: 300px;
+				border: 1px solid red;
+				background-color: green;
+				float: left;
+				border-top-right-radius: 150px;
+				border-bottom-right-radius: 150px;
+			}
+			#blue{
+				width: 150px;
+				height: 300px;
+				border: 1px solid red;
+				background-color: blue;
+				float: left;
+				border-top-left-radius: 150px;
+				border-bottom-left-radius: 150px;
+				margin-left: 150px;
+			}
+			#yellow{
+				width: 300px;
+				height: 150px;
+				border: 1px solid red;
+				background-color: yellow;
+				float: right;
+				border-bottom-left-radius: 150px;
+				border-bottom-right-radius: 150px;
+			}
+			#wai{
+				animation: zhuan 0.02s infinite linear;
+			}
+			@keyframes zhuan{
+				from{ transform: rotate(0deg);}
+				to{transform: rotate(360deg);}
+			}
+			#g{
+				width: 10px;
+				height: 500px;
+				background-color: black;
+				float: left;
+				position: absolute;
+				margin-top: 303px;
+				margin-left: 299px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="wai">
+			<div id="red"></div>
+			<div id="green"></div>
+			<div id="blue"></div>
+			<div id="yellow"></div>
+		</div>
+		<div id="g"></div>
+	</body>
+</html>

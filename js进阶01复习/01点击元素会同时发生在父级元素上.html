@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			*{
+				padding:0;
+				margin:0;
+			}
+			#box{
+				width:400px;
+				height:400px;
+				background-color:red;
+				margin:100px auto;
+			}
+			p{
+				width:200px;
+				height:200px;
+				background-color:blue;
+			}
+			ul{
+				list-style:none;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box">
+			<ul>
+				<li>
+					<ul>
+				        <li>
+					       <p>123123</p>
+				        </li>
+			        </ul>
+				</li>
+			</ul>
+		</div>
+	</body>
+	<script type="text/javascript">
+		document.getElementById("box").onclick=function(){
+			alert("box");
+		}
+		document.getElementsByTagName("body")[0].onclick=function(){
+			alert("body");
+		}
+	</script>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>为什么\t没有转译也可以匹配</title>
+	</head>
+	<body>
+	</body>
+	<script type="text/javascript">
+		/*var a="a  d    c";
+		console.log(a.split(""));
+		console.log(a.split(/\s+/));
+		var b="aabbbbaannnammmaauuuuuuaatttttaarrrrrraaggggggg";
+		console.log(b.split(/a+/));*/
+		
+		/*var c="aaaasdsdaaasdkkksdooosdlllll";
+		console.log(c.indexOf('sd'));
+		console.log(c.search("sd"));
+		console.log(c.search(/sd/));*/
+		
+		/*var d="aaaasdsdaaasdkkksdooosdlllll";
+		console.log(d.match("sd"));
+		console.log(d.match(/sd+/g));*/
+		
+		/*var e="zhangsan";
+		console.log(e.replace(/san/,'si'));
+		console.log(e.replace(/san/,function(){return 'mazi'}));*/
+		
+		
+		/*var f=/abc/g;
+		var g=new RegExp('abc','g');
+		var aa="fdjklsajklabckfoewqjadc";
+		console.log(f.exec(aa));
+		console.log(g.exec(aa));
+		var h=/ds/;
+		console.log(h.test("fjdisoafgejiowads"));
+		var i=prompt('不要输入空格');
+		var j=/\s+/;
+		alert(j.test(i));*/
+		
+		/*var k=/\a/;
+		var l="dsf\afd"
+		console.log(k.test(l));*/
+		/*var m=/^d/;
+		var n="djkljoij";
+		console.log(m.test(n));*/
+		/*var o='a		b';
+		var p=/\t/;
+		console.log(p.test(o));*/
+		/*var q=`a\nb`;
+		var i=/\n/;
+		console.log(q);
+		console.log(i.test(q));*/
+		
+		
+		/*var j="asdfdfsafdsa";
+		var a1=/[s123123]/;
+		console.log(a1.test(j));*/
+		/*var b1="fdsa";
+		console.log(/[A-Z]/.test(b1));*/
+		/*var c1="6";
+		var d1=/[^6]/;
+		console.log(d1.test(c1));
+		var e1=/[a-z0-9A-Z]/;
+		var f1="fdjskaljkljlkfdjkfl";
+		console.log(e1.test(f1));*/
+		
+		
+		/*var g1="13325878973";
+		var g12="25133878739";
+		var h1=/^133/;
+		console.log(h1.test(g1));
+		console.log(h1.test(g12));
+		var i1=/73$/;
+		console.log(i1.test(g1));
+		console.log(h1.test(g12));*/
+		/*var j1="why do you d";
+		var o1=/\b[a-z]+\b/g;
+		console.log(j1.match(o1));*/
+		
+		
+		/*var a2=/^1[234689]\d{9}/;
+		var b2=prompt("请输入你的手机号");
+		if(a2.test(b2)){
+			alert("成功");
+			
+		}else{
+		alert("失败");}*/
+		/*var c2=/^[\u4e00-\u9fa5]+/;
+		console.log(c2.test("马鲁源"));*/
+		console.log(/a|b/.test("c"));
+		console.log(/a|b/.test("a"));
+	</script>
+</html>

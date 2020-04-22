@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>innerHTML和文本节点的关系</title>
+	</head>
+	<body>
+		<img src="img/baby.png" id="a1">
+		<h1 >1111111111111</h1>
+		<h1 >1111111111111</h1>
+		<h1 >1111111111111</h1>
+		<h1 >1111111111111</h1>
+		<h1 >1111111111111</h1>
+		<h1 >1111111111111</h1>
+		<h1 >1111111111111</h1>
+		<h1 >1111111111111</h1>
+	</body>
+	<script type="text/javascript">
+		var a1=document.getElementById("a1");
+		a1.src="img/xiaoming.png";
+		var a2=document.getElementsByTagName("h1");
+		a2[3].innerHTML="123123123123123"
+	</script>
+</html>

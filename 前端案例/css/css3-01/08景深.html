@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			.box{
+				width: 260px;
+				height: 300px;
+				border: 2px solid black;
+				margin: 30px auto;
+				perspective: 500px;
+			}
+			.box img{
+				/*transform: rotateY(60deg);*/
+				transition: all 2s;
+				backface-visibility: hidden;/*背面隐藏*/
+			}
+			.box:hover img{
+				transform: rotateY(180deg);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<img src="img/baby.png" width="260px" height="300px"/>
+		</div>
+	</body>
+</html>

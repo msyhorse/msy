@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			p{
+				width:50px;
+				height:50px;
+				background-color:sandybrown;
+				float:left;
+				border-radius:50%;
+				margin:30px;
+			}
+			.a1{
+				background-color:red;
+			}
+		</style>
+	</head>
+	<body>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+	</body>
+	<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$("p").mouseenter(function(){
+			$(this).addClass("a1").siblings().removeClass("a1")
+		})
+	</script>
+</html>

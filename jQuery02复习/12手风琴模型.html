@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				padding:0;
+				margin:0;
+			}
+			#a1{
+				width:300px;
+				margin:200px auto;
+				border:1px black solid;
+			}
+			ul{
+				list-style:none;
+			}
+			div ul li.cur h3{
+				background-color:orangered;
+			}
+			h3{
+				background-color:blue;
+				color:white;
+				line-height:60px;
+			}
+			.a2{
+				display:none;
+			}
+		    #a3{
+		    	display:block;
+		    }
+		</style>
+	</head>
+	<body>
+		<div id="a1">
+			<ul>
+				<li class="cur">
+					<h3>123123</h3>
+					<div class="a2" id="a3">
+						<p>123123123123456456</p>
+					</div>
+				</li>
+				<li>
+					<h3>123123</h3>
+					<div class="a2">
+						<p>123123123123456456</p>
+					</div>
+				</li>
+				<li>
+					<h3>123123</h3>
+					<div class="a2">
+						<p>123123123123456456</p>
+					</div>
+				</li>
+				<li>
+					<h3>123123</h3>
+					<div class="a2">
+						<p>123123123123456456</p>
+					</div>
+				</li>
+				<li>
+					<h3>123123</h3>
+					<div class="a2">
+						<p>123123123123456456</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</body>
+	<script src="js/jquery-1.12.3.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$("h3").click(function(){
+			$(".a2").slideUp();
+			$(".cur").removeClass("cur");
+			if($(this).siblings("div").is(":visible")){
+				$(this).parent().removeClass("cur");
+
+				$(this).siblings(".a2").stop(true).slideUp();
+			}
+			else{
+				$(this).parent().addClass("cur");
+				$(this).siblings(".a2").stop(true).slideDown();
+			}
+		});
+	</script>
+</html>

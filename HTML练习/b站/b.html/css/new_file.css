@@ -1,0 +1,1925 @@
+
+*{
+	padding:0;
+	margin:0;
+}#toubiao{
+	background-image:url(../img/头标.png);
+	width:1583px;
+	height:155px;
+	background-position:-38px 0px;
+	background-repeat: no-repeat;
+	margin:auto;
+	background-size: 105% 100%
+}
+#daohanglan{
+	background-color:;
+	width:1198px;
+	height:68px;
+	margin:auto;
+	padding:20px 0px;
+}
+#tuijian{
+	background-color:;
+	width:1198px;
+	height:242px;
+	margin:0px auto 40px;
+}
+#tuiguang{
+	background-color:;
+	width:1198px;
+	height:242px;
+	margin:0px auto 40px;
+}
+#zhiboguanggao{
+	background-color:;
+	width:1198px;
+	height:601.14px;
+	margin:0px auto 40px;
+}
+#donghua{
+	background-color:;
+	width:1198px;
+	height:457px;
+	margin:0px auto 40px;
+}
+#rongyaoguanggao{
+	
+	width:1198px;
+	height:99.14px;
+	margin:0px auto 47px;
+}
+#rongyaoguanggao{
+		width:1198px;
+	height:99.14px;
+	background-image:url(../img/广告2.png);
+	margin-bottom:46px;
+	margin-left:0px;
+	background-position:0px 0px;
+	background-repeat: no-repeat;
+	margin:0px 0px 60px 193px;
+	
+	background-size:100% 100%;
+	}
+#fanju{
+	background-color:;
+	width:1198px;
+	height:428px;
+	margin:0px auto 40px;
+}
+#fanjudongtai{
+	background-color:;
+	width:1198px;
+	height:428px;
+	margin:0px auto 40px;
+}
+#tebietuijian{
+	background-color:;
+	width:1198px;
+	height:252px;
+	margin:0px auto 40px;
+}
+#weisheng{
+	background-color:;
+	width:1583px;
+	height:345.89px;
+	margin: auto;
+	padding:20px 0px;
+}
+/*111111111111111111111111111111111111111111111111111111111111111111*/
+/*11111111111111111111111111头标11111111111111111111111111111111111*/
+
+#shadow{
+	
+	width:1583px;
+	height:80px;
+	margin: auto;
+	float:left;
+}#shadow1{
+	background-color:#f6f9fa;
+	width:1583px;
+	height:18px;
+	box-shadow:0px 10px 45px black;
+	
+	float:left;
+	top:0;
+	left:0;
+	background-color:rgba(0,0,0,0.3)
+}
+#toubiao1{
+	width:1583px;
+	height:56px;
+	padding:10px 0px;
+	position:absolute;
+	top:0;
+	left:0;
+}
+#toubiao1 ul li{
+	float:left;
+	list-style-type:none;
+	    font-size: 14px;
+	    text-shadow: 0 1px 1px rgba(0,0,0,.3);
+	    color: #fff;
+}
+.tzhuzhan{
+	width:52px;
+	height:30px;
+	margin-left:34px;
+	margin-top:8px;
+	text-align:center;
+}
+.tfanju{
+	width:28px;
+	height:30px;
+	margin-left:10px;
+	text-align:center;
+	margin-top:8px;
+	cursor:pointer;
+}
+.tyouxi{
+	width:56px;
+	height:30px;
+	margin-left:10px;
+	text-align:center;
+	margin-top:8px;
+	cursor:pointer;
+}
+.tzhibo{
+	width:28px;
+	height:30px;
+	margin-left:10px;
+	text-align:center;
+	margin-top:8px;
+	cursor:pointer;
+}
+.thuiyuan{
+	width:42px;
+	height:30px;
+	margin-left:10px;
+	text-align:center;
+	margin-top:8px;
+	cursor:pointer;
+}
+.tmanhua{
+	width:28px;
+	height:30px;
+	margin-left:10px;
+	text-align:center;
+	margin-top:8px;
+	cursor:pointer;
+}
+.tsaishi{
+	width:28px;
+	height:30px;
+	margin-left:10px;
+	text-align:center;
+	margin-top:8px;
+	cursor:pointer;
+}
+.tbw{
+	width:22.56px;
+	height:30px;
+	margin-left:10px;
+	text-align:center;
+	margin-top:8px;
+	cursor:pointer;
+}
+.tapp{
+	width:76.02px;
+	height:30px;
+	margin-left:10px;
+	text-align:center;
+	margin-top:8px;
+	cursor:pointer;
+}
+#baibai{
+	background-image:url(../img/xbt.png);
+	width:18px;
+	height:18px;
+	background-position:-854px -86px;
+	float:left;
+}
+#fu{
+	float:left;
+	display:block;
+	cursor:pointer;
+}
+#baibai2{
+	background-image:url(../img/xbt.png);
+	width:20px;
+	height:22px;
+	background-position:-2968px -527px;
+	float:left;
+}
+#sousuokuang{
+	width:478px;
+	height:36px;
+	padding:0px 1px 0px 16px;
+	background-color:#ffffff;
+	margin-left:643px;
+	border-radius:3px;
+	position:absolute;
+}
+#sousuokuang input{
+	width:300px;
+	height:36px;
+	outline: none;
+				border: none;
+				text-indent: 5px;
+	float:left;
+	border-radius:3px;
+}
+#baibai3{
+	background-color:#e7e7e7;
+	width:48px;
+	height:36px;
+	position:relative;
+	left:430px;
+	text-align:center;
+	line-height:36px;
+	cursor:pointer;
+}
+#baibai4{
+	background-color:#e7e7e7;
+	width:22px;
+	height:21px;
+	background-image:url(../img/xbt.png);
+	background-position:-790px -728px;
+	position:absolute;
+	right:13px;
+	top:10px;
+	cursor:pointer;
+}
+#tougao{
+	
+	width:100px;
+	height:36px;
+	color:#ffffff;
+	background-color:#fb7299;
+	margin-right:25px;
+	outline: none;
+				border: none;
+				border-radius:3px;
+				float:right;
+				cursor:pointer;
+}
+#zhuce{
+	width:52px;
+	height:30px;
+	margin-right:10px;
+	margin-top:8px;
+	text-align:center;
+	float:right;
+	 font-size: 14px;
+	    text-shadow: 0 1px 1px rgba(0,0,0,.3);
+	    color: #fff;
+}
+#zhuce1{
+	
+	
+
+	text-decoration:none;
+	 font-size: 14px;
+	    text-shadow: 0 1px 1px rgba(0,0,0,.3);
+	    color: #fff;
+}
+#denglu{
+	width:28px;
+	height:30px;
+	margin-right:5px;
+	text-align:center;
+	margin-top:8px;
+	float:right;
+	
+	    font-size: 14px;
+	    text-shadow: 0 1px 1px rgba(0,0,0,.3);
+	    color: #fff;
+}
+#denglu1{
+	
+	
+	
+	text-decoration:none;
+	float:right;
+	
+	    font-size: 14px;
+	    text-shadow: 0 1px 1px rgba(0,0,0,.3);
+	    color: #fff;
+}
+#akl{
+		background-image:url(../img/阿卡林.jpg);
+	width:32px;
+	height:32px;
+	/*background-position:-854px -86px;*/
+	float:right;
+	margin-right:5px;
+	background-size: 100% 100%;
+	border-radius:50px;
+	cursor:pointer;
+}
+#bilbildong{
+	background-image:url(../img/bilbil冬.png);
+	width:162.38px;
+	height:77.5px;
+	background-size: 100% 100%;
+	margin:-91px 191px;
+	float:left;
+	cursor:pointer;
+}
+/*11111111111111111111111111头标11111111111111111111111111111111111*/
+/*22222222222222222222222222222导航条22222222222222222222222222222222222*/
+#shouye{
+	width:50px;
+	height:68px;
+	background:white;
+	float:left;
+	text-align:center;
+	cursor:pointer;
+}
+#dongtai{
+	width:50px;
+	height:68px;
+	background:white;
+	float:left;
+	text-align:center;
+	cursor:pointer;
+}
+#paihangbang{
+	width:50px;
+	height:68px;
+	background:white;
+	float:left;
+	text-align:center;
+	cursor:pointer;
+}
+#shouye1{
+	width:36px;
+	height:36px;
+	background:#ff507c;
+	margin:0px 6px 4px;
+	border-radius:50px;
+	overflow:hidden;
+	/*position:relative;*/
+}
+#dongtai1{
+	width:36px;
+	height:36px;
+	background:#fcba2a;
+	margin:0px 6px 4px;
+	border-radius:50px;
+	overflow:hidden;
+}
+#paihangbang1{
+	width:36px;
+	height:36px;
+	background:#00a1d6;
+	margin:0px 6px 4px;
+	border-radius:50px;
+	overflow:hidden;
+}
+#shouye2{
+	width:24px;
+	height:25px;
+	background-image:url(../img/小红房.png);
+	margin:5px 6px 4px;
+	background-position:0px 1px;
+	text-align:center;
+}
+#dongtai2{
+	width:24px;
+	height:25px;
+	background-image:url(../img/风车.png);
+	margin:5px 6px 4px;
+	background-position:0px 1px;
+	
+}
+#paihangbang2{
+	width:24px;
+	height:25px;
+	background-image:url(../img/小表.png);
+	margin:5px 6px 4px;
+	background-position:0px 1px;
+	
+}	
+#shouye3{
+	color:black;
+	font-size:14px;
+	
+}
+#shouye31{
+	color:black;
+	font-size:14px;
+	text-decoration:none;
+}
+.dangtiao{
+	width:1px;
+	height:46px;
+	margin:9px 15px;
+	border-left:1px solid #e7e7e7;
+	float:left;
+}
+.bailankuang2{
+	width:72.8px;
+	height:34px;
+	background:;
+	float:left;
+	
+	
+}
+.bailankuang3{
+	width:86.8px;
+	height:34px;
+	background:;
+	float:left;
+	
+	
+}
+.bailankuang4{
+	width:100.8px;
+	height:34px;
+	background:;
+	float:left;
+	
+	
+}
+.qingchu{
+	clear:both;
+}
+.bailankuang60{
+	width:232px;
+	height:68px;
+	background:;
+	float:right;
+	
+}
+.bailan{
+	width:61px;
+	height:19px;
+	background:;
+	float:left;
+	margin-top:7.5px;
+	font-size:14px;
+	cursor:pointer;
+}
+.bailan3{
+	width:75px;
+	height:19px;
+	background:;
+	float:left;
+	margin-top:7.5px;
+	font-size:14px;
+}
+.bailan4{
+	width:89px;
+	height:19px;
+	background:;
+	float:left;
+	margin-top:7.5px;
+	font-size:14px;
+}
+.lanshu{
+	width:31.2px;
+	height:15.9px;
+	font-size:12px;
+	color:#ffffff;
+	background-color:#73c9e5;
+	margin:2px 0px 0px 1px;
+	border-radius:3px;
+	display:block;
+	float:right;
+	text-align:center;
+}
+.dangtiao1{
+	width:1px;
+	height:46px;
+	margin:9px 10px 0px 0px;
+	border-left:1px solid #e7e7e7;
+	float:left;
+}
+.wukuang1{
+	width:68.66px;
+	height:34px;
+	background:;
+	float:left;
+	font-size:14px;
+	line-height:34px;
+	
+	
+}
+.wukuang3{
+	width:82.66px;
+	height:34px;
+	background:;
+	float:left;
+	font-size:14px;
+	line-height:34px;
+	
+}
+#zhuanti{
+	background-image:url(../img/专栏.png);
+	width:28px;
+	height:25px;
+	background-position:0px 0px;
+	background-repeat: no-repeat;
+	float:left;
+	margin-top:4px;
+}
+#zhuanti2{
+	background-image:url(../img/小黑屋.png);
+	width:28px;
+	height:25px;
+	background-position:0px 0px;
+	background-repeat: no-repeat;
+	float:left;
+	margin-top:4px;
+}
+#zhuanti3{
+	background-image:url(../img/活动.png);
+	width:34px;
+	height:25px;
+	background-position:0px 0px;
+	background-repeat: no-repeat;
+	float:left;
+	margin-top:4px;
+}
+#zhuanti4{
+	background-image:url(../img/直播.png);
+	width:28px;
+	height:25px;
+	background-position:0px 0px;
+	background-repeat: no-repeat;
+	float:left;
+	margin-top:4px;
+}
+#zhuanti5{
+	background-image:url(../img/专题.png);
+	width:28px;
+	height:25px;
+	background-position:0px 0px;
+	background-repeat: no-repeat;
+	float:left;
+	margin-top:4px;
+}
+#zhuanti6{
+	background-image:url(../img/赛事.png);
+	width:34px;
+	height:25px;
+	background-position:0px 0px;
+	background-repeat: no-repeat;
+	float:left;
+	margin-top:4px;
+}
+/*3333333333333333333333333333333推荐33333333333333333333333333333333333*/
+#luxun{
+	background-image:url(../img/鲁迅1.png);
+	width:550px;
+	height:241.99px;
+	background-position:0px 0px;
+	background-repeat: no-repeat;
+	float:left;
+	margin-right:10px;
+	background-size:100% 100%;
+}#luxun:hover{
+	background-image:url(../img/鲁迅2.png);
+	width:550px;
+	height:241.99px;
+	background-position:-3px -3px;
+	background-repeat: no-repeat;
+	float:left;
+	margin-right:10px;
+	background-size:102% 102%;
+}
+#luxunzuo{
+	width:638px;
+	height:241.99px;
+	background:;
+	float:left;
+}
+#haoke{
+	width:205.99px;
+	height:115.99px;
+	background-image:url(../img/浩克1.png);
+	
+	background-position:0px 0px;
+	background-repeat: no-repeat;
+	float:left;
+	
+	background-size:100% 100%;
+}
+#qikong{
+	width:205.99px;
+	height:115.99px;
+	background-image:url(../img/祈空1.png);
+	margin-top:10px;
+	margin-left:10px;
+	background-position:0px 0px;
+	background-repeat: no-repeat;
+	float:left;
+	
+	background-size:100% 100%;
+}
+#hupo{
+	width:205.99px;
+	height:115.99px;
+	background-image:url(../img/琥珀1.png);
+	margin-left:10px;
+	background-position:0px 0px;
+	background-repeat: no-repeat;
+	float:left;
+	margin-left:10px;
+	background-size:100% 100%;
+}
+#xiaohuo{
+	width:205.99px;
+	height:115.99px;
+	background-image:url(../img/小伙1.png);
+	
+	margin-left:10px;
+	background-position:0px 0px;
+	background-repeat: no-repeat;
+	float:left;
+	
+	background-size:100% 100%;
+}
+#huoguo{
+	width:205.99px;
+	height:115.99px;
+	background-image:url(../img/火锅1.png);
+	margin-top:10px;
+	
+	background-position:0px 0px;
+	background-repeat: no-repeat;
+	float:left;
+	
+	background-size:100% 100%;
+}
+#youxi{
+	width:205.99px;
+	height:115.99px;
+	background-image:url(../img/游戏1.png);
+	margin-top:10px;
+	margin-left:10px;
+	background-position:0px 0px;
+	background-repeat: no-repeat;
+	float:left;
+	
+	background-size:100% 100%;
+}
+#haoke:hover{
+	width:205.99px;
+	height:115.99px;
+	background-image:url(../img/浩克2.png);
+	
+	background-position:0px 0px;
+	background-repeat: no-repeat;
+	float:left;
+	
+	background-size:100% 100%;
+}
+#qikong:hover{
+	width:205.99px;
+	height:115.99px;
+	background-image:url(../img/祈空2.png);
+	margin-top:10px;
+	margin-left:10px;
+	background-position:0px 0px;
+	background-repeat: no-repeat;
+	float:left;
+	
+	background-size:100% 100%;
+}
+#hupo:hover{
+	width:205.99px;
+	height:115.99px;
+	background-image:url(../img/琥珀2.png);
+	margin-left:10px;
+	background-position:0px 0px;
+	background-repeat: no-repeat;
+	float:left;
+	margin-left:10px;
+	background-size:100% 100%;
+}
+#xiaohuo:hover{
+	width:205.99px;
+	height:115.99px;
+	background-image:url(../img/小伙2.png);
+	
+	margin-left:10px;
+	background-position:0px 0px;
+	background-repeat: no-repeat;
+	float:left;
+	
+	background-size:100% 100%;
+}
+#huoguo:hover{
+	width:205.99px;
+	height:115.99px;
+	background-image:url(../img/火锅2.png);
+	margin-top:10px;
+	
+	background-position:0px 0px;
+	background-repeat: no-repeat;
+	float:left;
+	
+	background-size:100% 100%;
+}
+#youxi:hover{
+	width:205.99px;
+	height:115.99px;
+	background-image:url(../img/游戏2.png);
+	margin-top:10px;
+	margin-left:10px;
+	background-position:0px 0px;
+	background-repeat: no-repeat;
+	float:left;
+	
+	background-size:100% 100%;
+	}
+	/*4444444444444444444444444444推广44444444444444444444444444444*/
+	/*55555555555555555555555555555直播广告55555555555555555555555555*/
+	#guanggao5g{
+		width:1198px;
+	height:99.14px;
+	background-image:url(../img/5g广告.jpg);
+	margin-bottom:46px;
+	margin-left:0px;
+	background-position:0px 0px;
+	background-repeat: no-repeat;
+	
+	
+	background-size:100% 100%;
+	}
+	#zhibpkuang{
+	width:1198px;
+	height:456px;	
+	background:;
+	}
+.zuokuang{
+	width:854px;
+	height:456px;	
+	background:;
+}
+.biaotikuang{
+	width:854px;
+	height:36px;	
+	background:;
+	margin:0px 24px 0px 0px;
+}
+.biaotikuang1{
+	width:452.41px;
+	height:38px;	
+	background:;
+	margin:0px 24px 0px 0px;
+}
+.biaotikuang2{
+	width:36px;
+	height:36px;	
+	background-image:url(../img/xbt.png);
+	background-position:-78px -205px;
+	background-repeat: no-repeat;
+	margin:0px 6px 0px 0px;
+	float:left;
+}
+.zhibobiaoti{
+	width:80px;
+	height:36px;	
+	background:;
+	margin:0px 20px 0px 0px;
+	font-size:20px;
+	float:left;
+	line-height:38px
+}
+.biaotikuang3{
+	width:310.41px;
+	height:36px;	
+	background:white;
+	line-height:36px;
+	float:left;
+}
+#xiaozi{
+	width:148.03px;
+	height:14px;
+	font-size:10px;
+	float:left;
+	display:block;
+}
+.zhibo1{
+	width:206px;
+	height:190px;
+	background:;
+	margin:2px 0px 0px 0px;
+	float:left;
+}
+.zhibo2{
+	width:206px;
+	height:190px;
+	background:;
+	margin:2px 0px 0px 10px;
+	float:left;
+}
+.zhibo3{
+	width:206px;
+	height:190px;
+	background:;
+	margin:2px 0px 0px 10px;
+	float:left;
+}
+.zhibo4{
+	width:206px;
+	height:190px;
+	background:;
+	margin:2px 0px 0px 10px;
+	float:left;
+}
+.zhibo5{
+	width:206px;
+	height:190px;
+	background:;
+	margin:10px 0px 0px 0px;
+	float:left;
+}
+.zhibo6{
+	width:206px;
+	height:190px;
+	background:;
+	margin:10px 0px 0px 10px;
+	float:left;
+}
+.zhibo7{
+	width:206px;
+	height:190px;
+	background:;
+	margin:10px 0px 0px 10px;
+	float:left;
+}
+.zhibo8{
+	width:206px;
+	height:190px;
+	background:;
+	margin:10px 0px 0px 10px;
+	float:left;
+}
+.zuokuang0{
+	width:854px;
+	height:456px;	
+	background:white;
+}
+.biaotikuang0{
+	width:854px;
+	height:36px;	
+	background:;
+	margin:0px 24px 0px 0px;
+}
+.biaotikuang10{
+	width:452.41px;
+	height:38px;	
+	background:;
+	margin:0px 24px 0px 0px;
+}
+.biaotikuang20{
+	width:36px;
+	height:36px;	
+	background-image:url(../img/xbt.png);
+	background-position:-78px -139px;
+	background-repeat: no-repeat;
+	margin:0px 6px 0px 0px;
+	float:left;
+}
+.zhibobiaoti0{
+	width:80px;
+	height:36px;	
+	background:;
+	margin:0px 20px 0px 0px;
+	font-size:20px;
+	float:left;
+	line-height:38px
+}
+.biaotikuang30{
+	width:310.41px;
+	height:36px;	
+	background:white;
+	line-height:36px;
+	float:left;
+}
+#xiaozi0{
+	width:148.03px;
+	height:14px;
+	font-size:10px;
+	float:left;
+	display:block;
+}
+.donghua1{
+	width:206px;
+	height:190px;
+	background:;
+	margin:2px 0px 0px 0px;
+	float:left;
+}
+.donghua2{
+	width:206px;
+	height:190px;
+	background:;
+	margin:2px 0px 0px 10px;
+	float:left;
+}
+.donghua3{
+	width:206px;
+	height:190px;
+	background:;
+	margin:2px 0px 0px 10px;
+	float:left;
+}
+.donghua4{
+	width:206px;
+	height:190px;
+	background:;
+	margin:2px 0px 0px 10px;
+	float:left;
+}
+.donghua5{
+	width:206px;
+	height:190px;
+	background:;
+	margin:10px 0px 0px 0px;
+	float:left;
+}
+.donghua6{
+	width:206px;
+	height:190px;
+	background:;
+	margin:10px 0px 0px 10px;
+	float:left;
+}
+.donghua7{
+	width:206px;
+	height:190px;
+	background:;
+	margin:10px 0px 0px 10px;
+	float:left;
+}
+.donghua8{
+	width:206px;
+	height:190px;
+	background:;
+	margin:10px 0px 0px 10px;
+	float:left;
+}
+.zuokuang8{
+	width:854px;
+	height:456px;	
+	background:white;
+}
+.biaotikuang8{
+	width:854px;
+	height:36px;	
+	background:;
+	margin:0px 24px 0px 0px;
+}
+.biaotikuang18{
+	width:452.41px;
+	height:38px;	
+	background:;
+	margin:0px 24px 0px 0px;
+}
+.biaotikuang28{
+	width:36px;
+	height:36px;	
+	background-image:url(../img/xbt.png);
+	background-position:-78px -267px;
+	background-repeat: no-repeat;
+	margin:0px 6px 0px 0px;
+	float:left;
+}
+.zhibobiaoti8{
+	width:80px;
+	height:36px;	
+	background:;
+	margin:0px 20px 0px 0px;
+	font-size:20px;
+	float:left;
+	line-height:38px
+}
+.biaotikuang38{
+	width:310.41px;
+	height:36px;	
+	background:white;
+	line-height:36px;
+	float:left;
+}
+#xiaozi8{
+	width:148.03px;
+	height:14px;
+	font-size:10px;
+	float:left;
+	display:block;
+}
+.zhibo18{
+	width:206px;
+	height:190px;
+	background:;
+	margin:2px 0px 0px 0px;
+	float:left;
+}
+.zhibo28{
+	width:206px;
+	height:190px;
+	background:;
+	margin:2px 0px 0px 10px;
+	float:left;
+}
+.zhibo38{
+	width:206px;
+	height:190px;
+	background:;
+	margin:2px 0px 0px 10px;
+	float:left;
+}
+.zhibo48{
+	width:206px;
+	height:190px;
+	background:;
+	margin:2px 0px 0px 10px;
+	float:left;
+}
+.zhibo58{
+	width:206px;
+	height:190px;
+	background:;
+	margin:10px 0px 0px 0px;
+	float:left;
+}
+.zhibo68{
+	width:206px;
+	height:190px;
+	background:;
+	margin:10px 0px 0px 10px;
+	float:left;
+}
+.zhibo78{
+	width:206px;
+	height:190px;
+	background:;
+	margin:10px 0px 0px 10px;
+	float:left;
+}
+.zhibo88{
+	width:206px;
+	height:190px;
+	background:;
+	margin:10px 0px 0px 10px;
+	float:left;
+}
+/*9999999999999999999999999999999999999tu99999999999999999999999*/
+.donghuatu1{
+	width:206px;
+	height:116px;
+	background-image:url(../img/动画1.png);
+	
+	
+	background-position:0px 0px;
+	background-repeat: no-repeat;
+	float:left;
+	
+	background-size:100% 100%;
+}
+.donghuatu2{
+	width:206px;
+	height:116px;
+	background-image:url(../img/动画2.png);
+	
+	
+	background-position:0px 0px;
+	background-repeat: no-repeat;
+	float:left;
+	
+	background-size:100% 100%;
+}
+.donghuatu3{
+	width:206px;
+	height:116px;
+	background-image:url(../img/动画3.png);
+	
+	
+	background-position:0px 0px;
+	background-repeat: no-repeat;
+	float:left;
+	
+	background-size:100% 100%;
+}
+.donghuatu4{
+	width:206px;
+	height:116px;
+	background-image:url(../img/动画4.png);
+	
+	
+	background-position:0px 0px;
+	background-repeat: no-repeat;
+	float:left;
+	
+	background-size:100% 100%;
+}
+.donghuatu5{
+	width:206px;
+	height:116px;
+	background-image:url(../img/动画5.png);
+	
+	
+	background-position:0px 0px;
+	background-repeat: no-repeat;
+	float:left;
+	
+	background-size:100% 100%;
+}
+.donghuatu6{
+	width:206px;
+	height:116px;
+	background-image:url(../img/动画6.png);
+	
+	
+	background-position:0px 0px;
+	background-repeat: no-repeat;
+	float:left;
+	
+	background-size:100% 100%;
+}
+.donghuatu7{
+	width:206px;
+	height:116px;
+	background-image:url(../img/动画7.png);
+	
+	
+	background-position:0px 0px;
+	background-repeat: no-repeat;
+	float:left;
+	
+	background-size:100% 100%;
+}
+.donghuatu8{
+	width:206px;
+	height:116px;
+	background-image:url(../img/动画8.png);
+	
+	
+	background-position:0px 0px;
+	background-repeat: no-repeat;
+	float:left;
+	
+	background-size:100% 100%;
+}
+.donghuatu1:hover{
+	width:206px;
+	height:116px;
+	background-image:url(../img/动画11.png);
+	
+	
+	background-position:0px 0px;
+	background-repeat: no-repeat;
+	float:left;
+	
+	background-size:100% 100%;
+}
+.donghuatu2:hover{
+	width:206px;
+	height:116px;
+	background-image:url(../img/动画21.png);
+	
+	
+	background-position:0px 0px;
+	background-repeat: no-repeat;
+	float:left;
+	
+	background-size:100% 100%;
+}
+.donghuatu3:hover{
+	width:206px;
+	height:116px;
+	background-image:url(../img/动画31.png);
+	
+	
+	background-position:0px 0px;
+	background-repeat: no-repeat;
+	float:left;
+	
+	background-size:100% 100%;
+}
+.donghuatu4:hover{
+	width:206px;
+	height:116px;
+	background-image:url(../img/动画41.png);
+	
+	
+	background-position:0px 0px;
+	background-repeat: no-repeat;
+	float:left;
+	
+	background-size:100% 100%;
+}
+.donghuatu5:hover{
+	width:206px;
+	height:116px;
+	background-image:url(../img/动画51.png);
+	
+	
+	background-position:0px 0px;
+	background-repeat: no-repeat;
+	float:left;
+	
+	background-size:100% 100%;
+}
+.donghuatu6:hover{
+	width:206px;
+	height:116px;
+	background-image:url(../img/动画61.png);
+	
+	
+	background-position:0px 0px;
+	background-repeat: no-repeat;
+	float:left;
+	
+	background-size:100% 100%;
+}
+.donghuatu7:hover{
+	width:206px;
+	height:116px;
+	background-image:url(../img/动画71.png);
+	
+	
+	background-position:0px 0px;
+	background-repeat: no-repeat;
+	float:left;
+	
+	background-size:100% 100%;
+}
+.donghuatu8:hover{
+	width:206px;
+	height:116px;
+	background-image:url(../img/动画81.png);
+	
+	
+	background-position:0px 0px;
+	background-repeat: no-repeat;
+	float:left;
+	
+	background-size:100% 100%;
+}
+/*999999999999999999999999999999999999999999999999999999999999999*/
+.zhibotu1{
+	width:206px;
+	height:116px;
+	background-image:url(../img/直播1.png);
+	
+	
+	background-position:0px 0px;
+	background-repeat: no-repeat;
+	float:left;
+	
+	background-size:100% 100%;
+}
+.zhibotu2{
+	width:206px;
+	height:116px;
+	background-image:url(../img/直播2.png);
+	
+	
+	background-position:0px 0px;
+	background-repeat: no-repeat;
+	float:left;
+	
+	background-size:100% 100%;
+}
+.zhibotu3{
+	width:206px;
+	height:116px;
+	background-image:url(../img/直播3.png);
+	
+	
+	background-position:0px 0px;
+	background-repeat: no-repeat;
+	float:left;
+	
+	background-size:100% 100%;
+}
+.zhibotu4{
+	width:206px;
+	height:116px;
+	background-image:url(../img/直播4.png);
+	
+	
+	background-position:0px 0px;
+	background-repeat: no-repeat;
+	float:left;
+	
+	background-size:100% 100%;
+}
+.zhibotu5{
+	width:206px;
+	height:116px;
+	background-image:url(../img/直播5.png);
+	
+	
+	background-position:0px 0px;
+	background-repeat: no-repeat;
+	float:left;
+	
+	background-size:100% 100%;
+}
+.zhibotu6{
+	width:206px;
+	height:116px;
+	background-image:url(../img/直播6.png);
+	
+	
+	background-position:0px 0px;
+	background-repeat: no-repeat;
+	float:left;
+	
+	background-size:100% 100%;
+}
+.zhibotu7{
+	width:206px;
+	height:116px;
+	background-image:url(../img/直播7.png);
+	
+	
+	background-position:0px 0px;
+	background-repeat: no-repeat;
+	float:left;
+	
+	background-size:100% 100%;
+}
+.zhibotu8{
+	width:206px;
+	height:116px;
+	background-image:url(../img/直播8.png);
+	
+	
+	background-position:0px 0px;
+	background-repeat: no-repeat;
+	float:left;
+	
+	background-size:100% 100%;
+}
+.zhibotu1:hover{
+	width:206px;
+	height:116px;
+	background-image:url(../img/直播11.png);
+	
+	
+	background-position:0px 0px;
+	background-repeat: no-repeat;
+	float:left;
+	
+	background-size:100% 100%;
+}
+.zhibotu2:hover{
+	width:206px;
+	height:116px;
+	background-image:url(../img/直播21.png);
+	
+	
+	background-position:0px 0px;
+	background-repeat: no-repeat;
+	float:left;
+	
+	background-size:100% 100%;
+}
+.zhibotu3:hover{
+	width:206px;
+	height:116px;
+	background-image:url(../img/直播31.png);
+	
+	
+	background-position:0px 0px;
+	background-repeat: no-repeat;
+	float:left;
+	
+	background-size:100% 100%;
+}
+.zhibotu4:hover{
+	width:206px;
+	height:116px;
+	background-image:url(../img/直播41.png);
+	
+	
+	background-position:0px 0px;
+	background-repeat: no-repeat;
+	float:left;
+	
+	background-size:100% 100%;
+}
+.zhibotu5:hover{
+	width:206px;
+	height:116px;
+	background-image:url(../img/直播51.png);
+	
+	
+	background-position:0px 0px;
+	background-repeat: no-repeat;
+	float:left;
+	
+	background-size:100% 100%;
+}
+.zhibotu6:hover{
+	width:206px;
+	height:116px;
+	background-image:url(../img/直播61.png);
+	
+	
+	background-position:0px 0px;
+	background-repeat: no-repeat;
+	float:left;
+	
+	background-size:100% 100%;
+}
+.zhibotu7:hover{
+	width:206px;
+	height:116px;
+	background-image:url(../img/直播71.png);
+	
+	
+	background-position:0px 0px;
+	background-repeat: no-repeat;
+	float:left;
+	
+	background-size:100% 100%;
+}
+.zhibotu8:hover{
+	width:206px;
+	height:116px;
+	background-image:url(../img/直播81.png);
+	
+	
+	background-position:0px 0px;
+	background-repeat: no-repeat;
+	float:left;
+	
+	background-size:100% 100%;
+}
+/*99999999999999999999999999999999999999999999999999999999999999999*/
+.fanjvtu1{
+	width:206px;
+	height:116px;
+	background-image:url(../img/番剧1.png);
+	
+	
+	background-position:0px 0px;
+	background-repeat: no-repeat;
+	float:left;
+	
+	background-size:100% 100%;
+}
+.fanjvtu2{
+	width:206px;
+	height:116px;
+	background-image:url(../img/番剧2.png);
+	
+	
+	background-position:0px 0px;
+	background-repeat: no-repeat;
+	float:left;
+	
+	background-size:100% 100%;
+}
+.fanjvtu3{
+	width:206px;
+	height:116px;
+	background-image:url(../img/番剧3.png);
+	
+	
+	background-position:0px 0px;
+	background-repeat: no-repeat;
+	float:left;
+	
+	background-size:100% 100%;
+}
+.fanjvtu4{
+	width:206px;
+	height:116px;
+	background-image:url(../img/番剧4.png);
+	
+	
+	background-position:0px 0px;
+	background-repeat: no-repeat;
+	float:left;
+	
+	background-size:100% 100%;
+}
+.fanjvtu5{
+	width:206px;
+	height:116px;
+	background-image:url(../img/番剧5.png);
+	
+	
+	background-position:0px 0px;
+	background-repeat: no-repeat;
+	float:left;
+	
+	background-size:100% 100%;
+}
+.fanjvtu6{
+	width:206px;
+	height:116px;
+	background-image:url(../img/番剧6.png);
+	
+	
+	background-position:0px 0px;
+	background-repeat: no-repeat;
+	float:left;
+	
+	background-size:100% 100%;
+}
+.fanjvtu7{
+	width:206px;
+	height:116px;
+	background-image:url(../img/番剧7.png);
+	
+	
+	background-position:0px 0px;
+	background-repeat: no-repeat;
+	float:left;
+	
+	background-size:100% 100%;
+}
+.fanjvtu8{
+	width:206px;
+	height:116px;
+	background-image:url(../img/番剧8.png);
+	
+	
+	background-position:0px 0px;
+	background-repeat: no-repeat;
+	float:left;
+	
+	background-size:100% 100%;
+}
+.fanjvtu1:hover{
+	width:206px;
+	height:116px;
+	background-image:url(../img/番剧11.png);
+	
+	
+	background-position:0px 0px;
+	background-repeat: no-repeat;
+	float:left;
+	
+	background-size:100% 100%;
+}
+.fanjvtu2:hover{
+	width:206px;
+	height:116px;
+	background-image:url(../img/番剧21.png);
+	
+	
+	background-position:0px 0px;
+	background-repeat: no-repeat;
+	float:left;
+	
+	background-size:100% 100%;
+}
+.fanjvtu3:hover{
+	width:206px;
+	height:116px;
+	background-image:url(../img/番剧31.png);
+	
+	
+	background-position:0px 0px;
+	background-repeat: no-repeat;
+	float:left;
+	
+	background-size:100% 100%;
+}
+.fanjvtu4:hover{
+	width:206px;
+	height:116px;
+	background-image:url(../img/番剧41.png);
+	
+	
+	background-position:0px 0px;
+	background-repeat: no-repeat;
+	float:left;
+	
+	background-size:100% 100%;
+}
+.fanjvtu5:hover{
+	width:206px;
+	height:116px;
+	background-image:url(../img/番剧51.png);
+	
+	
+	background-position:0px 0px;
+	background-repeat: no-repeat;
+	float:left;
+	
+	background-size:100% 100%;
+}
+.fanjvtu6:hover{
+	width:206px;
+	height:116px;
+	background-image:url(../img/番剧61.png);
+	
+	
+	background-position:0px 0px;
+	background-repeat: no-repeat;
+	float:left;
+	
+	background-size:100% 100%;
+}
+.fanjvtu7:hover{
+	width:206px;
+	height:116px;
+	background-image:url(../img/番剧71.png);
+	
+	
+	background-position:0px 0px;
+	background-repeat: no-repeat;
+	float:left;
+	
+	background-size:100% 100%;
+}
+.fanjvtu8:hover{
+	width:206px;
+	height:116px;
+	background-image:url(../img/番剧81.png);
+	
+	
+	background-position:0px 0px;
+	background-repeat: no-repeat;
+	float:left;
+	
+	background-size:100% 100%;
+}
+/*88888888888888888888888888888888888888888888888888888888888888888*/
+.diyihang{
+	width:206px;
+	height:40px;
+	font-size:15px;
+	text-align:center;
+	float:left;
+	cursor:pointer;
+}
+#dongtaitai{
+	
+	font-size:15px;
+	color:black;
+	text-decoration:none;
+	cursor:pointer;
+}
+.diyihang2{
+	width:206px;
+	height:20px;
+	font-size:5px;
+	text-align:center;
+	float:left;
+	margin-top:10px;
+	color:#C1C1C1;
+	cursor:pointer;
+}
+.diyihang:hover{
+	color:#2E84FF;
+	cursor:pointer;
+}
+#zhiboyou2{
+	width:329px;
+	height:394px;
+	background-image:url(../img/动画右.png);
+	float:right;
+	
+	background-position:0px 0px;
+	background-repeat: no-repeat;
+	margin:-463px 0px 0px 0px
+	
+	/*background-size:100% 100%;*/
+}
+#zhiboyou{
+	width:329px;
+	height:394px;
+	background-image:url(../img/直播右.png);
+	float:right;
+	
+	background-position:0px 0px;
+	background-repeat: no-repeat;
+	margin:-458px 0px 0px 0px
+	
+	/*background-size:100% 100%;*/
+}
+#zhiboyou3{
+	width:329px;
+	height:394px;
+	background-image:url(../img/番剧右.png);
+	float:right;
+	
+	background-position:0px 0px;
+	background-repeat: no-repeat;
+	margin:-458px 0px 0px 0px
+	
+	/*background-size:100% 100%;*/
+}
+#kefu{
+	width:28px;
+	height:80px;
+	border:1px solid #5B6070;
+	margin-top:312px;
+	position:fixed;
+	font-size:15px;
+	text-align:center;
+}
+#tiaozhuan{
+	width:57px;
+	height:86px;
+	border:1px solid #5B6070;
+	margin-top:312px;
+	margin-left:1462px;
+	position:fixed;
+	font-size:15px;
+	text-align:center;
+}
+.ziyanse{
+	font-size:15px;
+	color:black;
+	text-decoration:none;
+	cursor:pointer;
+}
+/*000000000000000000000000000000000000000000000000000000*/
+.di{
+	height:336px;
+	margin-top: 40px;
+	background-color: #F6F9FA;
+}
+.di_1{
+	height: 112px;
+	margin-top: 40px;
+}
+.di_2{
+	width: 1162px;
+	height: 112px;
+	margin: 0px auto;
+}
+.di_l{
+	width: 400px;
+	height: 112px;
+	border-right: 1px solid #e5e9ef;
+	float: left;
+	margin-top: 20px;
+}
+.di_t{
+	width: 360px;
+	height: 14px;
+	margin-bottom: 22px;
+	color: #99a2aa;
+	font-size:14px ;
+}
+.di_d{
+	width: 70px;
+	height: 14px;
+	float: left;
+	color: #222;
+	font-size:14px ;
+	margin-bottom: 16px;
+	margin-right: 50px;
+}
+.di_d1{
+	width: 120px;
+	height: 14px;
+	float: left;
+	color: #222;
+	font-size:14px ;
+	margin-bottom: 16px;
+}
+.di_d1:hover{
+	cursor: pointer;
+	color: #00a1d6;
+}
+.di_d:hover{
+	cursor: pointer;
+	color: #00a1d6;
+}
+.di_r{
+	width: 440px;
+	height: 112px;
+	border-right: 1px solid #e5e9ef;
+	float: left;
+}
+.di_r1{
+	width: 360px;
+	height: 112px;
+	margin: 0px 40px;
+	margin-top: 20px;
+}
+.di_n{
+	width: 120px;
+	height: 14px;
+	margin: 0px 0px 16px;
+	float: left;
+	font-size: 14px;
+	color: #222;
+}
+.di_n:hover{
+	cursor: pointer;
+	color: #00a1d6;
+}
+.khd{
+	width: 286px;
+	height: 112px;
+	float: left;
+	margin-left: 32px;
+}
+.xbt{
+	width: 60px;
+	height:60px;
+	background-image: url(../img/xbt.png);
+	background-repeat: no-repeat;
+	background-position:-1090px -194px;
+	float: left;
+	margin-left: 11px;
+}
+.xbt:hover{
+	cursor:pointer;
+	background-image: url(../img/xbt.png);
+	background-repeat: no-repeat;
+	background-position:-1024px -194px;
+}
+.xbt1{
+	width: 60px;
+	height:60px;
+	background-image: url(../img/xbt.png);
+	background-repeat: no-repeat;
+	background-position:-1090px -322px;
+	float: left;
+	margin-left: 20px;
+}
+.xbt1:hover{
+	cursor:pointer;
+	background-image: url(../img/xbt.png);
+	background-repeat: no-repeat;
+	background-position:-1024px -322px;
+}
+.xbt2{
+	width: 60px;
+	height:60px;
+	background-image: url(../img/xbt.png);
+	background-repeat: no-repeat;
+	background-position:-1090px -66px;
+	float: left;
+	margin-left: 20px;
+}
+.xbt2:hover{
+	cursor:pointer;
+	background-image: url(../img/xbt.png);
+	background-repeat: no-repeat;
+	background-position:-1024px -66px;
+}
+.zi1{
+	width: 82px;
+	height: 14px;
+	float: left;
+	line-height: 14px;
+	color: #222;
+	font-size: 12px;
+	text-align: center;
+}
+.zi1:hover{
+	cursor: pointer;
+	color: #00a1d6;;
+}
+.di3{
+	width: 1162px;
+	height: 163px;
+	margin: 0px auto;
+	margin-top: 50px;
+	border: 1px solid transparent;
+}
+.hz{
+	width: 100px;
+	height: 75px;
+	background-image:url(../img/鍚堜綔鏈烘瀯.png);
+	background-repeat: no-repeat;
+	float: left;
+	border: 1px solid transparent;
+}
+.jc{
+	width: 100px;
+	height: 40px;
+	background-image: url(../img/962110.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	margin-top: 75px;
+	border: 1px solid transparent;
+}
+.wj{
+	width: 100px;
+	height: 40px;
+	background-image:url(../img/1.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	border: 1px solid transparent;
+}
+.n_1{
+	width: 880px;
+	height: 163px;
+	float: left;
+}
+.n_1 p{
+	font-size:12px ;
+	color: #99a2aa;
+	margin-bottom: 10px;
+}
+

@@ -1,0 +1,155 @@
+*{
+	padding:0;
+	margin:0;
+}
+#wai{
+	width:1000px;
+	height:142px;
+	background-image:url(../img/背景.jpg);
+	margin:50px auto;
+	overflow:hidden;
+}
+ul{
+	width:1000px;
+	height:142px;
+}
+li{
+	width:107px;
+	height:107px;
+	margin-right:86px;
+	margin-top:13px;
+	float:left;
+	list-style:none;
+	position:relative;
+}
+#a{
+	margin-left:57px;
+}
+#e{
+	margin-right:10px;
+}
+.a1{
+	background-image:url(../img/a_1.png);
+	width:107px;
+	height:107px;
+	transition:all 0.8s;
+}
+li:hover .a1{
+	transform:rotate(360deg);
+	background-image:url(../img/我要陪练开始.png);
+	cursor: pointer;
+}
+.a11{
+	width:93px;
+	height:92px;
+	color:white;
+	font-size:16px;
+	position:absolute;
+	z-index:2px;
+	top:19px;
+	left:23px;
+}
+.a11:hover{
+	cursor: pointer;
+}
+#a1{
+	margin-left: 6px;
+}
+.a2{
+	background-image:url(../img/a_2.png);
+	width:107px;
+	height:107px;
+	transition:all 0.8s;
+}
+li:hover .a2{
+	transform:rotate(360deg);
+	background-image:url(../img/a_2_h1.png);
+}
+.a22{
+	width:93px;
+	height:92px;
+	color:white;
+	font-size:16px;
+	position:absolute;
+	z-index:2px;
+	top:19px;
+	margin-left:23px;
+}
+.a22:hover{
+	cursor: pointer;
+}
+#a2{
+	margin-left: 10px;
+}
+.a3{
+	background-image:url(../img/a_3.png);
+	width:107px;
+	height:107px;
+	transition:all 0.8s;
+}
+li:hover .a3{
+	transform:rotate(360deg);
+	background-image:url(../img/a_3_h1.png);
+}
+.a33{
+	width:93px;
+	height:92px;
+	color:white;
+	font-size:16px;
+	position:absolute;
+	z-index:2px;
+	top:19px;
+	left:23px;
+}
+.a33:hover{
+	cursor: 	pointer;
+}
+#a3{
+	margin-left: 12px;
+}
+.a4{
+	background-image:url(../img/a_4.png);
+	width:107px;
+	height:107px;
+	transition:all 0.8s;
+}
+li:hover .a4{
+	transform:rotate(360deg);
+	background-image:url(../img/a_4_h1.png);
+}
+.a44{
+	width:93px;
+	height:92px;
+	color:white;
+	font-size:16px;
+	position:absolute;
+	z-index:2px;
+	top:19px;
+	left:23px;
+}
+.a44:hover{
+	cursor: pointer;
+}
+.a5{
+	background-image:url(../img/a_5.png);
+	width:107px;
+	height:107px;
+	transition:all 0.8s;
+}
+li:hover .a5{
+	transform:rotate(360deg);
+	background-image:url(../img/a_5_h1.png);
+}
+.a55{
+	width:93px;
+	height:92px;
+	color:white;
+	font-size:16px;
+	position:absolute;
+	z-index:2px;
+	top:19px;
+	left:23px;
+}
+.a55{
+	cursor: pointer;
+}

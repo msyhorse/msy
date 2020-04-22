@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>假期复习b3</title>
+		<style type="text/css">
+			*{
+				padding:0;
+				margin:0;
+			}
+			form{
+				width:500px;
+				height:500px;
+				border:1px red solid;
+				padding:20px;
+				margin:20px auto;
+				
+			}
+			legend{
+				text-align:center;
+			}
+		</style>
+	</head>
+	<body>
+		<form>
+			<fieldset>
+				<legend>选择性控件</legend>
+				<p>
+				<label>复选框</label>
+				<input type="checkbox" name="1" value="a" >篮球
+				<input type="checkbox" name="1" value="b" >听歌
+				<input type="checkbox" name="1" value="c" >画画
+				<input type="checkbox" name="1" value="d" >打游戏
+				<input type="checkbox" name="1" value="e" >听歌
+				<input type="checkbox" name="1" value="f" id="a">
+				<label for="a">听广播剧</label>
+			</p>
+			<p>
+				<label>颜色</label>
+				<input type="color" name="2">
+			</p>
+			<p><label>日期</label>
+				<input type="date" name="3">
+				<input type="datetime-local" name="4">
+				<input type="month" name="5">
+				<input type="time" name="6">
+				<input type="week" name="7">
+			</p>
+			<p>
+				<label>性别</label>
+				<input type="radio" name="sex">男
+				<input type="radio" name="sex">女
+			</p>
+			<p>
+				<label>范围</label>
+				<input type="range" name="8" value="60" max="60" min="10">
+			</p>
+			<p>
+				<label>区域</label>
+				<select>
+					<option>陕西省</option>
+					<option>安徽省</option>
+				</select>
+			</p>
+			</fieldset>
+			<p><input type="submit"  value="提交按钮"></p>
+			
+		</form>
+	</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+		
+//			for (var i=1;i<10;i++) {
+//				if (i==5) {
+//					break;
+//				}
+//				console.log(i);
+//				
+//			}
+//			console.log(i);
+			
+//			只结束里层for循环，外侧的for循环没有影响
+//			for (var i=1;i<=10;i++) {
+//				for (var j=1;j<=10;j++) {
+//					console.log(i,j);
+//					if (j==5) {
+//						break;
+//					}
+//				}
+//				
+//			}
+			//最外层的for循环加label，可以终止整个循环
+			waiceng: for (var i=1;i<=10;i++) {
+					for (var j=1;j<=10;j++) {
+					console.log(i,j);
+					if (j==5) {
+						break ;
+					}
+				}
+				}
+			
+		</script>
+	</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+		/*
+			Math.pow(a,b)
+			Math.sqrt(a)
+			Math.random()*100 [0,100)
+			Math.random()*100+1
+			parseInt(Math.random() * (b - a + 1)) + a;[a,b];
+			parseInt(Math.random() * 286) + 15;
+			*/
+			var dilei=parseInt(Math.random()*100+1);
+//			console.log(dilei);
+			var shangxian=100;
+			var xiaxian=1;
+			while(true){
+				var a=parseInt(prompt("请输入数字范围在"+xiaxian+"到"+shangxian+"之间"));
+				if(a>xiaxian&&a<shangxian){
+					if(a>dilei){ 
+						
+						shangxian=a;
+					}else if(a<dilei){
+						xiaxian=a;
+					}else if(a==dilei){
+						alert("恭喜你中奖了。你可以去买彩票了");
+						break;
+					}
+				}else{
+					alert("输入错误，请重新输入");
+				}
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.a1{
+				width:600px;
+				height:100px;
+				border:1px black solid;
+			}
+			ul{
+				list-style:none;
+			}
+			.a2{
+				background-color:yellow;
+				float:left;
+				width:100px;
+				height:80px;
+				margin:10px;
+			}
+			.a3{
+				width:100px;
+				height:150px;
+				position:absolute;
+				top:150px;
+				background-color:red;
+				display:none;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="a1">
+			<ul>
+				<li class="a2">
+					<a>123</a>
+					<div class="a3">
+						<ul>
+							
+							<li>123</li>
+							<li>123</li>
+							<li>123</li>
+						</ul>
+					</div>
+				</li>
+				<li class="a2">123</li>
+				<li class="a2">123</li>
+			</ul>
+		</div>
+		<script type="text/javascript" src="js/jquery-1.12.3.js"></script>
+		<script type="text/javascript">
+			$("li").mouseenter(function(){
+				$(this).children(".a3").slideDown();
+			})
+			$("li").mouseleave(function(){
+				$(this).children(".a3").slideUp();
+			})
+		</script>
+	</body>
+</html>

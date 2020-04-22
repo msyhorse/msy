@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var max=1
+			var maxb=1
+			var min=100
+			var minb=1
+			var chengji=[91,92,93,94,95,96,97,98,99,100];
+			for (var i=0;i<chengji.length;i++) {
+				if(max<=chengji[i]){max=chengji[i] }
+				if(min>=chengji[i]){min=chengji[i]}
+				
+			}
+			
+			console.log(max,chengji.indexOf(max))
+			console.log(min,chengji.indexOf(min))
+		</script>
+	</body>
+</html>

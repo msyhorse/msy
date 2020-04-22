@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			table{
+				margin: auto;
+			}
+			.nav li{
+				width: 100px;
+				height: 50px;
+				background-color: green;
+				color: #ffffff;
+				float: left;
+				list-style: none;
+				margin-left: 10px;
+				line-height: 50px;
+				border-radius: 5px;
+				cursor: pointer;
+			}
+			.nav li:hover{
+				background-color: red;
+			}
+			.listdata{
+				/*text-align: center;/*行内元素居中*/
+			}
+			.listdata h3{
+				line-height: 50px;
+			}
+			.textword{
+				font-size: 12px;
+				height: 40px;
+				color: #666;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<!--脱离文本流：float、绝对定位、固定定位-->
+		<table border="0" cellspacing="0">
+			<tr>
+				<th align="left">
+					<img src="img/cat.jpg" width="100px" height="100px"/>
+				</th>
+				<th colspan="3">
+					<ul class="nav">
+						<li>导航一</li>
+						<li>导航二</li>
+						<li>导航三</li>
+						<li>导航四</li>
+						<li>导航五</li>
+					</ul>
+				</th>
+			</tr>
+			<tr>
+				<td colspan="4">
+					<img src="img/tu.png" width="100%"/>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div class="listdata">
+						<img src="img/mao.jpg" width="200px"/>
+						<h3>一直猫咪</h3>
+					</div>
+				</td>
+				<td>
+					<div class="listdata">
+						<img src="img/mao.jpg" width="200px"/>
+						<h3>一直猫咪</h3>
+					</div>
+				</td>
+				<td>
+					<div class="listdata">
+						<img src="img/mao.jpg" width="200px"/>
+						<h3>一直猫咪</h3>
+					</div>
+				</td>
+				<td>
+					<div class="listdata">
+						<img src="img/mao.jpg" width="200px"/>
+						<h3>一直猫咪</h3>
+					</div> 	
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div class="listdata">
+						<img src="img/mao.jpg" width="200px"/>
+						<h3>一直猫咪</h3>
+					</div>
+				</td>
+				<td>
+					<div class="listdata">
+						<img src="img/mao.jpg" width="200px"/>
+						<h3>一直猫咪</h3>
+					</div>
+				</td>
+				<td>
+					<div class="listdata">
+						<img src="img/mao.jpg" width="200px"/>
+						<h3>一直猫咪</h3>
+					</div>
+				</td>
+				<td>
+					<div class="listdata">
+						<img src="img/mao.jpg" width="200px"/>
+						<h3>一直猫咪</h3>
+					</div> 	
+				</td>
+			</tr>
+			<tr>
+				<td colspan="4" class="textword">
+					违法和不良信息举报电话：185-0130-1238 知识产权侵权投诉 本网站所列数据，除特殊说明，所有数据均出自我司实验室测试
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

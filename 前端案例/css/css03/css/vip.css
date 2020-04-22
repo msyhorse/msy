@@ -1,0 +1,233 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+.viptop {
+	width: 1000px;
+	height: 100px;
+	/*border: 1px solid red;*/
+	margin: auto;
+}
+
+.viptop_left {
+	width: 135px;
+	height: 70px;
+	/*border: 1px solid black;*/
+	background-image: url(../img/xbt.png);
+	background-repeat: no-repeat;
+	background-position: -302px -73px;
+	margin-top: 15px;
+	float: left;
+}
+
+.viptop_right {
+	width: 300px;
+	height: 40px;
+	/*border: 1px solid darkred;*/
+	float: right;
+	margin-top: 30px;
+	background-image: url(../img/xbt.png);
+	background-repeat: no-repeat;
+	background-position-y: -30px;
+}
+
+.vipcontent {
+	width: 100%;
+	height: 650px;
+	background-image: url(../img/bg.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	/*position: relative;*/
+}
+
+.formbox {
+	width: 360px;
+	height: 440px;
+	background-color: #ffffff;
+	float: right;
+	margin-top: 50px;
+	margin-right: 210px;
+	/*position: absolute;
+	right: 210px;
+	top: 50px;*/
+}
+
+.formbox_top {
+	width: 100%;
+	height: 50px;
+	border-bottom: 1px solid #DDDDDD;
+}
+
+.formbox_top p:nth-child(1) {
+	width: 179px;
+	border-right: 1px solid #ddd;
+	color: #666666;
+}
+
+.formbox_top p:nth-child(2) {
+	width: 180px;
+	color: #E3017E;
+}
+
+.formbox_top p:hover {
+	color: #E3017E;
+}
+
+.formbox_top p {
+	height: 24px;
+	float: left;
+	margin-top: 13px;
+	text-align: center;
+	line-height: 24px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.formbox_content {
+	width: 300px;
+	/*height: 300px;*/
+	overflow: hidden;
+	margin: 10px auto;
+}
+
+.Oinput {
+	width: 99%;
+	height: 45px;
+	border: 1px solid #DDDDDD;
+	margin-top: 30px;
+}
+
+.Oinput::before {
+	content: '';
+	display: block;
+	width: 25px;
+	height: 25px;
+	background-image: url(../img/xbt.png);
+	background-repeat: no-repeat;
+	background-position: -573px -116px;
+	float: left;
+	margin-top: 6px;
+}
+
+.Oinput input {
+	width: 260px;
+	height: 30px;
+	text-indent: 1em;
+	outline: none;
+	border: none;
+	margin-top: 8px;
+}
+
+.twoOp::before {
+	background-position: -513px -157px;
+}
+
+.vipform_text {
+	width: 100%;
+	height: 45px;
+	line-height: 45px;
+	font-size: 14px;
+}
+
+.vipform_text span {
+	cursor: pointer;
+}
+
+.vipform_text span:hover {
+	color: #E3017E;
+}
+
+.dx {
+	display: block;
+	float: left;
+}
+
+.pass {
+	display: block;
+	float: right;
+}
+
+.btn {
+	width: 100%;
+	height: 45px;
+	margin-top: 20px;
+}
+
+.btn input {
+	width: 100%;
+	height: 45px;
+	border: none;
+	outline: none;
+	background-color: #E3017E;
+	color: white;
+	font-size: 18px;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+.btn input:hover {
+	opacity: 0.9;
+}
+
+fieldset {
+	border: none;
+	height: 45px;
+	border-top: 1px solid #DDDDDD;
+}
+
+.Avater {
+	width: 45px;
+	height: 45px;
+	background-image: url(../img/xbt.png);
+	background-repeat: no-repeat;
+	background-position: -398px -161px;
+	/*margin-top: 10px;*/
+	margin: 10px 10px 0px;
+}
+
+.form_bottom {
+	width: 100%;
+	margin-top: 13px;
+}
+
+.form_bottom li {
+	list-style: none;
+	float: left;
+	font-size: 12px;
+	cursor: pointer;
+	color: #999999;
+}
+
+.form_bottom li:nth-child(2) {
+	color: #666666;
+	padding: 0 8px;
+	margin: 0 8px;
+	height: 15px;
+	border-left: 1px solid #DDDDDD;
+	border-right: 1px solid #DDDDDD;
+}
+
+.form_bottom li:nth-child(3) {
+	color: #666666;
+}
+
+.form_bottom li:nth-child(4) {
+	margin: 0 30px;
+}
+
+.form_bottom li:nth-child(5) {
+	float: right;
+	font-size: 14px;
+	color: #666666;
+}
+
+.form_bottom li:hover {
+	color: #E3017E;
+}
+.vip_end{
+	color: #666666;
+	font-size: 12px;
+	text-align: center;
+	line-height: 80px;
+}

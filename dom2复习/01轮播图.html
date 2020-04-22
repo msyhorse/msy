@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			*{
+				padding:0;
+				margin:0;
+			}
+			#a1{
+				width:560px;
+				height:300px;
+				border:1px black solid;
+				margin:100px auto;
+				position:relative;
+			}
+			#a1 ul{
+				list-style:none;
+			}
+			.a5 ul li{
+				display:none;
+				
+			}
+			.a5 ul li.b1{
+				display:block;
+			}
+			p{
+				width:33px;
+				height:28px;
+				background-color:black;
+				color:white;
+				position:absolute;
+				cursor:pointer;
+			}
+			.a2{
+				top: 130px;
+				left:28px;
+			}
+			.a3{
+				top: 130px;
+				right:28px;
+			}
+			.a4 li{
+				width:30px;
+				height:30px;
+				border-radius:50%;
+				background-color:black;
+				position:absolute;
+				cursor:pointer;
+			}
+			#b2{
+				top:240px;
+				left:180px;
+			}
+			#b3{
+				top:240px;
+				left:253px;
+			}
+			#b4{
+				top:240px;
+				left:325px;
+			}
+			.a4 .c1{
+				background-color:white;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="a1"><div class="a5">
+			<ul >
+				<li class="b1"><img src="img/0.jpg"/></li>
+			
+				<li><img src="img/1.jpg"/></li>
+			
+				<li><img src="img/2.jpg"/></li>
+			</ul></div>
+			<p class="a2">向左</p>
+			<p class="a3">向右</p>
+			<ul class="a4">
+				<li class="c1" id="b2"></li>
+				<li  id="b3"></li>
+				<li  id="b4"></li>
+			</ul>
+		</div>
+	</body>
+	<script type="text/javascript">
+		var left=document.getElementsByClassName("a2")[0];
+		var right=document.getElementsByClassName("a3")[0];
+		var img=document.getElementsByClassName("a5")[0].getElementsByTagName("li");
+		var r1=document.getElementsByClassName("a4")[0].getElementsByTagName("li");
+		var num=0;
+		left.onclick=function(){
+			num--;
+			if(num<0){
+				num=2;
+			}
+			
+			d1();
+		};
+		right.onclick=function(){
+			num++;
+			if(num>2){
+				num=0;
+			}
+//			console.log(num);
+			d1();
+		};
+		for(var i=0;i<img.length;i++){
+			(function(m){
+			r1[m].onmouseover=function(){
+				num=m;
+				d1();
+			}
+		})(i)}
+		function d1(){
+			for(var i=0;i<img.length;i++){
+				img[i].className="";
+			}
+			img[num].className="b1";
+			for(var j=0;j<img.length;j++){
+				r1[j].className="";
+			}
+			
+			r1[num].className="c1";
+			console.log(r1[0]);
+		}
+		
+	</script>
+</html>

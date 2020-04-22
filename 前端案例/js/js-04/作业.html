@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			/*function repeat(char,n){
+				var str='';
+				for (var i=0;i<n;i++) {
+					str+=char;
+				}
+				return str;
+			}
+			console.log(repeat("★",6))*/
+			/*function star(n){
+				for (var i=1;i<=n;i++) {
+					var str='';
+					//循环空格
+					for (var j=1;j<=n-i;j++) {
+						str+=' ';
+					}
+					//循环星号
+					for (var k=1;k<=2*i-1;k++) {
+						str+="*";
+					}
+					console.log(str);
+				}
+			}
+			star(4); */
+			/*function rev(a){
+				var str='';
+				for(var i=a.length-1;i>=0;i--){
+					str+=a.charAt(i);
+				}
+				console.log(str);
+			}
+			rev("spring");*/
+			/*var zfc="spring";
+			var arr=zfc.split("");
+			console.log(arr.reverse().join());*/
+			/*var str = 'i come from beijing';
+			var arr=str.split(' ');
+			arr.reverse();
+			console.log(arr.join());*/
+			/*//编写函数rightchange(char,n) 实现字符串char循环右移n位。
+            //比如rightchange("abcdefg",2) 返回"fgabcde"
+            function rightchange(char,n){
+            	var arr=char.split('');// 把字符串转成数组
+                // 把n转一下，看n相对于char的length来说实际移动几位
+                n=n%char.length;
+                for (var i=0;i<n;i++) {
+                	arr.unshift(arr.pop());
+                }
+                return arr.join('');
+            }
+           console.log(rightchange("lcomefromchina",2));//nalcomefromchi*/
+          //编写函数maxr(char) 
+          //返回字符串char中最长的连续重复字母 mmmiijjjjkkkkkkssptr 
+          function maxr(char){
+          	var a=0;//下标
+          	var b=1;//计数
+          	var maxlength=0;
+          	var maxletter="";
+          	while(a != char.length - 1){
+					if(char.charAt(b)==char.charAt(a)){
+						b++;
+					}else{
+						if(b-a>=maxlength){
+							maxlength=b-a;
+							maxletter=char.charAt(a);
+						}
+						a++;
+						b=a+1;
+					}
+				}
+          	return maxletter
+          }
+          console.log(maxr('mmmiijjjjkkkkkkssptr'));
+		</script>
+	</body>
+</html>

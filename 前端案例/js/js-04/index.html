@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			/*function aa(){
+				var a=11;//局部变量
+				console.log(a);//11
+			}
+			aa();
+			console.log("我是函数外面的"+a);*/
+			/*var a=11;//全局变量
+			function aa(){
+				console.log(a);//11
+			}
+			aa();
+			console.log("我是"+a);//11*/
+//			如果在函数里面没有写var定义变量,默认变量是全局变量
+			/*function aa(){
+				a = 11;
+				console.log(a);//11
+			}
+			aa()
+//			console.log("我是函数外面的"+a);//11
+			console.log("我是函数外面的"+a);//11*/
+			/*function outer(){
+				var a=1;
+				var b=2;
+				inner();
+				function inner(){
+					var a=11;
+					var b=22;
+					console.log(a);//11
+					console.log(b);//12
+				}
+				console.log(a);//1
+				console.log(b);//2
+			}
+			outer()*/
+			function pingfanghe(a,b){
+				return pingfang(a)+pingfang(b);
+				function pingfang(m){
+					return Math.pow(m,2);
+				}
+			}
+			console.log(pingfanghe(2,4));//20
+		</script>
+	</body>
+</html>

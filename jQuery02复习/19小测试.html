@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.a1{
+				width:300px;
+				height:400px;
+				border:1px black solid;
+				float:left;
+			}
+			.a2{
+				
+				float:left;
+			}
+			.a3{
+				width:300px;
+				height:400px;
+				border:1px black solid;
+				float:left;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="a1">
+			<ul>
+				<li><input type="checkbox" name="" id="" value="" />111</li>
+				<li><input type="checkbox" name="" id="" value="" />222</li>
+				<li><input type="checkbox" name="" id="" value="" />333</li>
+				<li><input type="checkbox" name="" id="" value="" />444</li>
+				<li><input type="checkbox" name="" id="" value="" />555</li>
+			</ul>
+			
+		</div>
+		<div class="a2">
+			<p>
+				<input type="button" name="" id="c1" value=">>>" />
+			</p>
+			<p>
+				<input type="button" name="" id="c2" value="<<<" />
+			</p>
+		</div>
+		<div class="a3">
+			<ul>
+				
+			</ul>
+			
+		</div>
+	</body>
+	<script src="js/jquery-1.12.3.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$("#c1").click(function(){
+			$(".a1 input:checked").parent().remove().appendTo($(".a3 ul"))
+			$("input").attr("checked",false)
+//			$("input").attr("checked",false)
+		})
+		$("#c2").click(function(){
+			$(".a3 input:checked").parent().remove().appendTo($(".a1 ul"))
+			$("input").attr("checked",false)
+//			$("input").attr("checked",false)
+		})
+	</script>
+</html>

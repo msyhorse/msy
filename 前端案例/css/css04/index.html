@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>腾讯大学导航条</title>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			ul{
+				width: 800px;
+				height: 78px;
+				margin: 20px auto;
+			}
+			ul li{
+				height: 78px;
+				float: left;
+				list-style: none;
+				background-image: url(img/nav.png);
+				background-repeat: no-repeat;
+				/*border: 1px solid red;*/
+				cursor: pointer;
+				/*cursor: no-drop;鼠标移入出现禁止图标*/
+			}
+			ul li.nav1{
+				width: 100px;
+			}
+			ul li.nav2{
+				width: 124px;
+				background-position-x: -100px;
+			}
+			ul li.nav3{
+				width: 146px;
+				background-position-x: -224px;
+			}
+			ul li.nav4{
+				width: 124px;
+				background-position-x: -488px;
+			}
+			ul li.nav5{
+				width: 122px;
+				background-position-x: -609px;
+			}
+			ul li:hover{
+				background-image: url(img/nav-on.png);
+			}
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li class="nav1"></li>
+			<li class="nav2"></li>
+			<li class="nav3"></li>
+			<li class="nav4"></li>
+			<li class="nav5"></li>
+		</ul>
+	</body>
+</html>

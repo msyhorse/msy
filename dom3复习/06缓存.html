@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				padding:0;
+				margin:0;
+			}
+			#a1{
+				width:200px;
+				height:200px;
+				position:absolute;
+				top:100px;
+				left:100px;
+				background-color:red;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="a1">
+			
+		</div>
+	</body>
+	<script type="text/javascript">
+		var a4=document.getElementById("a1");
+		var a2=function (a,b,c,d){
+			return a*b/c+d;
+		};
+		var a3=0;
+		var b3=setInterval(function(){
+			
+			a3++;
+			if(a3==150){
+				
+				clearInterval(b3);
+			}
+			console.log(a2(a3,900,150,100));
+			a4.style.left=a2(a3,900,150,100)+"px";
+		},20);
+	</script>
+</html>

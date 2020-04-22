@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+				char1="abcdefghasdijklmn"
+				char2="mndefghasdlm"
+				var char3=char1.split("")
+				var char4=char2.split("")
+				console.log(char3)
+				console.log(char4)
+				var sum=1
+				var sum1=1
+				var char5
+				for(var i=0;i<char3.length;i++){
+					for(var j=0;j<char4.length;j++){
+					flb(i,j)
+					
+						function flb(a,b){
+				if(char3[a]+char3[a-1]!=char4[b]+char4[b-1]){
+					sum=1;
+				}else{
+					sum++
+					console.log(sum,char3[a])
+					if(sum1<=sum){sum1=sum,char5=a}
+				
+					return flb (a+1,b+1)
+				}
+			}
+					
+					
+				}
+				}
+				console.log(sum1,char5)
+			
+			console.log("字符串：", char1.substr(char5-sum1+1,sum1));
+			
+				
+
+		</script>
+	</body>
+</html>

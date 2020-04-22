@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<input type="button" name="" id="" value="点击" />
+	</body>
+	<script type="text/javascript">
+		var a1=document.getElementsByTagName("input")[0];
+		var b1=true;
+		a1.onclick=function(){
+			
+			if(!b1) return;
+			console.log("啦啦啦");
+			
+			b1=false;
+			setTimeout(function(){
+				b1=true},1000
+			);
+		}
+	</script>
+</html>

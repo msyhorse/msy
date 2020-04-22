@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			#a1{
+				width:300px;
+				height:300px;
+				background-color:red;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="a1">
+			
+		</div>
+	</body>
+	<script type="text/javascript">
+		var a1=document.getElementById("a1");
+		a1.attachEvent("onclick",function(){
+			alert(1);
+		});
+		a1.attachEvent("onclick",function(){
+			alert(2);
+		});
+		a1.attachEvent("onclick",function(){
+			alert(3);
+		});
+	</script>
+</html>

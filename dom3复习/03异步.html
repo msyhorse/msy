@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+	</body>
+	<script type="text/javascript">
+		/*console.log(1);
+		console.log(2);
+		console.log(3);
+		for(var i=0;i<100;i++){
+			console.log(4);
+		};
+		console.log(5);*/
+		
+		/*console.log(1);
+		console.log(2);
+		console.log(3);
+		setInterval(
+			function(){
+				console.log(4);
+			},1000
+		);
+		console.log(5);*/
+		
+		var a1=0;
+	    var b1=setInterval(
+	    	function(){
+	    		console.log("*");
+	    		a1++;
+	    		if(a1==300){
+	    			clearInterval(b1);
+	    			b2();
+	    		}
+	    	},20
+	    );
+	    var b2=function(){
+	    	alert("循环结束");
+	    }
+	</script>
+</html>

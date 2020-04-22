@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			/*function fun(a,b){
+				return a+b;
+			}
+			function fun(a,b,c){
+				return a+b+c;
+			}
+			console.log(fun(11,12))//NaN
+			console.log(fun(11,12,23))//46*/
+			/*
+			function aa(a,b){
+				console.log(arguments[4]);//u
+			}
+			aa(11,22,33,44);
+			*/
+			/*function aa(a,b){
+				switch(arguments.length){
+					case 1:
+						return ++a;
+						break;
+					case 2:
+						return a+b;
+						break;
+				}
+			}
+//			alert(aa(22));
+			alert(aa(22,33));*/
+			/*function canshu(){
+				var sum=0;
+				for(var i=0;i<arguments.length;i++) {
+					sum+=arguments[i];
+				}
+				return sum;
+			}
+			console.log(canshu(12));
+			console.log(canshu(12,2,34,54,6,87,9))
+			console.log(canshu(12,23,34,211))
+			console.log(canshu(12,23));*/
+			console.log(pd(12)) //true
+			console.log(pd(12,23)) //false
+			function pd(){
+				switch (arguments.length){
+					case 1:
+						return arguments[0]%2==0 ? true : false;
+						break;
+					case 2:
+						return (arguments[0]+arguments[1])%2==0 ? true : false;
+					default:
+						throw new Error("输入错误")//抛出异常
+						//break;
+				}
+			}
+		</script>
+	</body>
+</html>

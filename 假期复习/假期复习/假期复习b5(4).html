@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>假期复习b5</title>
+		<style type="text/css">
+			*{
+			padding:0;
+			margin:0;
+		}
+		form{
+			width:400px;
+			border:1px red solid;
+			margin:20px auto;
+			
+		}
+		.a{
+			width:200px;
+			height:30px;
+			outline:none;
+			border-radius:7px;
+			border:2px red solid;
+			text-indent:1em;
+		}
+		#ziwo{
+			resize: none;
+		}
+		.msy{
+			width:150px;
+			height:50px;
+			border:0px;
+			outline:none;
+			color:white;
+			border-radius:5px;
+			background-color:red;
+			cursor:pointer;
+			
+		}
+		/*.msy1{
+			
+			cursor:pointer;
+			
+		}*/
+		</style>
+		
+	</head>
+	<body>
+		<form action="" method="">
+			<label>用户名：</label><input type="text" class="a" required size="30" maxlength="5" disabled value="111"><br>
+			<label>密码：</label><input type="password" class="a" required   readonly value="111"><br>
+			<label>性别：</label><input type="radio" name="b" value="nan" checked>男
+			<input type="radio" name="b" value="nv">女<br>
+			<label>年龄：</label><input type="number" name="c" value="" ><br><br>
+			&nbsp;&nbsp;&nbsp;<label>喜欢的颜色：</label><input type="color" name="d" value="" ><br><br>
+			&nbsp;&nbsp;&nbsp;<label>身高：</label><input type="range" name="e" value="70" min="20" max="80"><br><br>
+			&nbsp;&nbsp;&nbsp;<label>爱好：</label><input type="checkbox" name="f" value="1" checked>
+			<label>摄影</label><input type="checkbox" name="f" value="2" id="a">
+			<label for="a">看电视</label><input type="checkbox" name="f" value="3" >
+			<label>睡觉</label><input type="checkbox" name="f" value="4">
+			<label>吃</label><input type="checkbox" name="f" value="5">
+			<label>打游戏</label><input type="checkbox" name="f" value="6"><label>唱<br>&nbsp;&nbsp;&nbsp;歌</label>
+			<input type="checkbox" name="f" value="7">动漫<br><br>
+			&nbsp;&nbsp;&nbsp;出生年月<input type="datetime-local"></input><br><br>
+			&nbsp;&nbsp;&nbsp;邮箱： &nbsp;<input type="email"><br><br>
+			&nbsp;&nbsp;&nbsp;网址： &nbsp;<input type="url"><br><br>
+			&nbsp;&nbsp;&nbsp;自我评价： &nbsp;<textarea rows="5" cols="25" id="ziwo"></textarea><br><br>
+			&nbsp;&nbsp;&nbsp;<p><input type="submit" class="msy" value="提交按钮"></input>
+				<input type="reset" class="msy" value="重置按钮"></input>
+				
+			</p>
+			&nbsp;&nbsp;&nbsp;<p><input type="button" class="msy"  value="普通按钮"></input>
+				<input type="image"  class="msy1" src="img/tu.png" width="100px" height="100px"></input>
+				
+			</p>
+		</form>
+	</body>
+</html>

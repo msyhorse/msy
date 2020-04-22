@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>msy购买页面</title>
+		<link rel="icon" type="images/x-icon" href="img/15865151327615.png" />
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+		<script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+		<script src="js/animate-2.0.0.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			* {
+				padding: 0;
+				margin: 0;
+			}
+			.smallPic{
+				width: 350px;
+				height: 350px;
+				border: 1px solid #ccc;
+				position: relative;
+				margin: 100px;
+			}
+			.zoom{
+				position: absolute;
+				top:100px;
+				left: 100px;
+				width: 175px;
+				height: 157px;
+				background-color: #3A83FE;
+				display: none;
+				opacity: 0.5;
+			}
+			.bigPic{
+				width: 400px;
+				height: 350px;
+				background: url(img/da.jpg) no-repeat;
+				position: absolute;
+				top:261px;
+				left: 916px;
+				border: 1px solid #000;
+				display: none;
+			}
+			
+			.ssimg{
+				width:86px;
+				height:86px;
+				/*border:1px solid black;*/
+				position:absolute;
+				display:inline-block;
+			}
+			.sssimg{
+				width:80px;
+				height:80px;
+				/*border:1px solid black;*/
+				margin:0px 0 0 0px;
+				display:inline-block;
+				/*background:red;*/
+				cursor: pointer;
+				margin-right:5px;
+			}
+			.ssimg img{
+				width:100%;
+				height:100%;
+				
+			}
+			.aaa1{
+				border:3px red solid;
+				
+				top:0px;
+				left:0px;
+			}
+			.aaa2{
+				border:3px white solid;
+				
+				top:0px;
+				left:100px;
+			}
+			.aaa3{
+				border:3px white solid;
+				
+				top:0px;
+				left:200px;
+			}
+			.aaa4{
+				border:3px white solid;
+				
+				top:0px;
+				left:300px;
+			}
+			#aa11{
+				width:384px;
+				height:84px;
+				/*border:1px solid black;*/
+				position:relative;
+				top:-75px;
+				left:96px;
+			}
+			@media (max-width: 1000px) {
+				 #a9 #a8{
+					height:223px;
+				}
+				.floor .zhudi{
+					top:310px;
+					left:563px;
+				}
+				.g1 .bigPic{
+					top:332px;
+					left:501px;
+				}
+				.item #a2 {
+					width: 100%;
+					height: 200px;
+					background-color: darkred;
+					position: fixed;
+					overflow: hidden;
+					border-radius: 0;
+					top:0;
+					z-index:5;
+				}
+				.item #cuu {
+					margin:auto;
+					width: 100%;
+					height: 200px;
+					background-color: darkred;
+					position: fixed;
+					overflow: hidden;
+					border-radius: 0;
+					top:0;
+					z-index:5;
+					/*margin-top:108px;*/
+				}
+				
+				.item #a3 {
+					display: none;
+				}
+				.item #cuuu{
+				margin-top:60px;
+			}
+				.item #img01 {
+					margin-left: 5%;
+					margin-top: 2%;
+					width: 160px;
+					height: 160px;
+				}
+				.item #a6 {
+					width: 550px;
+					height: 124px;
+					
+					
+					top: 39px;
+					left: 25%;
+				}
+				.item #a6 input {
+					width: 371px;
+					height: 121px;
+					font-size:50px;
+				}
+				.item #a7:last-child {
+					width: 177px;
+					height: 121px;
+				
+					
+				    font-size:50px;
+					line-height: 121px;
+					text-align: center;
+					cursor: pointer;
+				}
+				
+			}
+			#c1 {
+				width: 120px;
+				height: 40px;
+				/*border:1px red solid;*/
+				margin: 10px;
+				position: absolute;
+				left: 28%;
+			}
+			
+			#a3 {
+				width: 1000px;
+				height: 60px;
+				/*border:1px black solid;*/
+				margin: auto;
+				
+			}
+			
+			#a2 {
+				width: 100%;
+				height: 100px;
+				background-color: darkred;
+				position: relative;
+				overflow: hidden;
+				/*border-radius: 50%;*/
+			}
+			 #cuu{
+				position:fixed;
+				top:0px;
+				z-index: 2;
+				width: 100%;
+				height: 100px;
+				overflow: hidden;
+				background-color: darkred;
+				/*margin-bottom: 60px;*/
+			}
+			#cuuu {
+				margin-top: 200px;
+			}
+			#a4 {
+				position: absolute;
+				right: 31%;
+				top: 27px;
+				font-size: 13px;
+				background-color: darkred;
+				padding: 3px;
+				color: white;
+				border-radius: 4px;
+				cursor: pointer;
+			}
+			
+			#a4 a {
+				width: 34px;
+				height: 24px;
+			}
+			
+			#a4:hover {
+				background-color: white;
+				border: 1px darkred solid;
+				color: darkred;
+			}
+			
+			#a5 {
+				position: absolute;
+				right: 27%;
+				top: 27px;
+				font-size: 13px;
+				background-color: darkred;
+				padding: 3px;
+				color: white;
+				border-radius: 4px;
+				cursor: pointer;
+			}
+			
+			#a5:hover {
+				background-color: white;
+				border: 1px darkred solid;
+				color: darkred;
+			}
+			
+			#img01 {
+				width: 80px;
+				height: 80px;
+				border-radius: 50%;
+				margin-left: 25%;
+				margin-top: 10px;
+			}
+			
+			#a6 {
+				width: 300px;
+				height: 39px;
+				border: 1px white solid;
+				position: absolute;
+				top: 30px;
+				left: 43%;
+			}
+			
+			#a6 input {
+				width: 235px;
+				height: 37px;
+			}
+			
+			#a7:last-child {
+				width: 65px;
+				height: 41px;
+				position: absolute;
+				top: -2px;
+				right: -1px;
+				color: white;
+				line-height: 40px;
+				text-align: center;
+				cursor: pointer;
+			}
+			
+			#a7:hover {
+				background-color: white;
+				color: black;
+				border: 2px darkred solid;
+			}
+			
+			#e1 {
+				font-size: 20px;
+				font-weight: bold;
+				margin-bottom: 3px;
+				color: darkred;
+			}
+			
+			#e2 {
+				font-size: 10px;
+				color: darkred;
+			}
+			
+			.somecontent {
+
+				width: 1000px;
+				height: 391px;
+				margin: auto;
+				/*background-color: #ccc;*/
+				/*border: 1px black solid;*/
+				background:url(img/QQ图片20200419161020.png);
+				background-repeat: no-repeat;
+				background-position-y:164px ;
+			}
+			
+			#a111{
+				margin-top:20px;
+			}
+			.floor {
+				width: 1000px;
+				margin: auto;
+				/*height: 2000px;*/
+				margin-bottom: 10px;
+				/*background-color: yellowgreen;*/
+				/*border: 1px black solid;*/
+				/*background-color:aquamarine;*/
+			}
+		
+			
+			.zhudi{
+				width:300px;
+				height:350px;
+				/*border:1px solid black;*/
+				position:absolute;
+				top:260px;
+				left:1000px;
+				
+			}
+			.zhudi1{
+				height:83px;
+				font-size: 17px;
+				font-family:  SimHei;
+				font-weight: bold;
+				margin-top:10px;
+				/*margin-left:30px;*/
+			}
+			.zhudi2{
+				height:30px;
+				font-size:20px;
+				font-weight: bold;
+				color:red;
+				background:url(img/QQ图片20200419145742.png);
+				
+			}
+			.zhudi2 span{
+				color:black;
+				font-size:15px;
+			}
+			.zhudi3{
+				width:73px;
+				height:31px;
+				border:1px solid black;
+				border-radius: 5px;
+				text-align: center;
+				line-height: 31px;
+				font-weight: bold;
+				font-size:17px;
+				cursor: pointer;
+				margin-top:11px;
+				margin-left:9px;
+			}
+			.zhudi4{
+				margin-top:11px;
+				margin-left:2px;
+			}
+			.zhudi5{
+				width:92px;
+				height:30px;
+				background-color:red;
+				color:white;
+				display: inline-block;
+				margin-left:9px;
+				text-align: center;
+				line-height: 30px;
+				font-size: 15px;
+				cursor: pointer;
+			}
+			.zhudi9{
+				width:92px;
+				height:30px;
+				background-color:red;
+				color:white;
+				display: inline-block;
+				position: absolute;
+				top:278px;
+				left:9px;
+				text-align: center;
+				line-height: 30px;
+				font-size: 15px;
+				cursor: pointer;
+				/*z-index: 10;*/
+			}
+			.zhudi9 a{
+				width:92px;
+				height:30px;
+				display: inline-block;
+				margin-top:2px;
+				position: absolute;
+				top:-1px;
+				left:0px;
+			}
+			.zhudi6{
+				font-size: 15px;
+				text-align: center;
+				line-height: 30px;
+				width:92px;
+				height:30px;
+				background-color:orangered;
+				color:white;
+				display: inline-block;
+				margin-left:9px;
+				cursor: pointer;
+			}
+			.zhudi7{
+				display: inline-block;
+				font-size: 10px;
+				margin-top:11px;
+			}
+			.zhudi8{
+				position: absolute;
+				top:144px;
+				left:9px;
+				width:73px;
+				height:31px;
+				border:1px solid black;
+				border-radius: 5px;
+				text-align: center;
+				line-height: 31px;
+				font-weight: bold;
+				font-size:17px;
+				cursor: pointer;
+				z-index:0;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="u1" class="item">
+
+			<div id="a3">
+				<div id="c1">
+					<p id="e1">&nbsp;&nbsp;&nbsp; m s y</p>
+					<p id="e2">给你不一样的购物体验</p>
+				</div>
+				<div id="a4">
+					登录
+					<a href="#"></a>
+				</div>
+				<div id="a5">
+					注册
+				</div>
+			</div>
+			<div id="a2" >
+
+				<img src="img/15865151327615.png" id="img01" />
+				<div id="a6">
+					<p><input type="text" name="" id="" value=" 输点什么吧" font-size="70px"/></p>
+					<p id="a7">搜索</p>
+					
+				</div>
+			</div>
+</div>
+			<div class="d4">
+				
+			
+			<div class="leftNav" id="leftNav">
+				
+			</div></div>
+			<div id="a9">
+			
+		<div id="a8">
+			
+		</div></div>
+			<div class="floor f1"  id="a33">
+				<div class="zhudi">
+					<div class="zhudi9">
+						点击购买
+					</div>
+					
+					<!--<p class="zhudi1">欧服加热哦i感觉而我</p>
+					<div class="zhudi2">
+						<s>¥:123123</s>
+						&nbsp;&nbsp;<span id="">
+							
+						卷后价</span>&nbsp;&nbsp;¥:123123
+					</div>
+					<div class="zhudi3">
+						点击领卷
+					</div>
+					<p class="zhudi4">类别:</p>
+					<p class="zhudi4">店铺:</p>
+					<p class="zhudi4">地址:</p>
+					<div class="zhudi5">
+						点击购买
+					</div><div class="zhudi6">
+						加入购物车
+					</div><br>
+					<span  class="zhudi7">配送范围送货范围仅限延安、汉中、榆林、宝鸡、安康、咸阳、铜川、商洛、西安、渭南地区(生鲜类别仅限部分地区)</span>-->
+					<div class="zhudi8">
+						点击领卷
+					</div>
+				</div>
+				<div class="g1">
+					<div class="smallPic" id="smallPic">
+			<img src="" width="100%" height="100%" class="smallaaa">
+			<div class="zoom" id="zoom"></div>
+		</div><div id="aa11">
+			
+		
+		<div  class="ssimg  aaa1" id="ssimg"></div>
+		<div  class="ssimg  aaa2"></div>
+		<div  class="ssimg  aaa3"></div>
+		<div  class="ssimg  aaa4"></div></div>
+		<div class="bigPic" id="bigPic"></div>
+				</div>
+			</div>
+			
+			<div class="somecontent"></div>
+		
+		<!--<script src="js/jquery-1.12.3.js" type="text/javascript" charset="utf-8"></script>-->
+		<script type="text/javascript">
+			var str=location.search.substr(1).split("=")[1];
+			console.log(str);
+			var leftNavLis = document.getElementById("leftNav").getElementsByTagName("li");
+			var a1 = document.getElementById("leftNav");
+			var floorArr = [];
+			var floorOffsetTopArr = [];
+			
+			for(var i = 0; i < document.body.childNodes.length; i++) {
+				if(document.body.childNodes[i].nodeType == 1 && document.body.childNodes[i].className.indexOf("floor") != -1) {
+					floorArr.push(document.body.childNodes[i]);
+					floorOffsetTopArr.push(document.body.childNodes[i].offsetTop);
+				}
+			}
+			var floorArrLength = floorArr.length;
+			floorOffsetTopArr.push(floorArr[floorArrLength - 1].clientHeight + floorOffsetTopArr[floorArrLength - 1])
+			var nowfloor = NaN;
+			window.onscroll = function() {
+				var scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
+				
+				if(scrollTop>60){
+					$("#a2").attr('id','cuu');
+					$("#a33").attr('id','cuuu');
+				}
+				if(scrollTop<=60){
+					$("#cuu").attr('id','a2');
+					$("#cuuu").attr('id','a33');
+				}
+				
+
+				//				console.log(i);
+				if(scrollTop >= 700) {
+					a1.style.display = "block";
+					//					(function(){$("a1").slideToggle(800)})()
+					//                console.log(1123);
+				}
+				if(scrollTop < 700) {
+					a1.style.display = "none";
+					//					$("a1").slideToggle(800)
+					//                console.log(1123);
+				}
+			}
+
+			for(var i = 0; i < leftNavLis.length; i++) {
+				leftNavLis[i].index = i;
+				leftNavLis[i].onclick = function() {
+					idx = this.index;
+					scrollAnimate(floorOffsetTopArr[this.index], 600);
+				}
+			}
+
+			function scrollAnimate(target, time) {
+				var framNumber = 0;
+				var start = document.body.scrollTop || document.documentElement.scrollTop;
+				var distance = target - start;
+				var interval = 10;
+				var maxFrame = time / interval;
+				clearInterval(timer);
+				var timer = setInterval(function() {
+					framNumber++;
+					if(framNumber == maxFrame) {
+						clearInterval(timer);
+						document.body.scrollTop = document.documentElement.scrollTop = CubicEaseInOut(framNumber, start, distance, maxFrame)
+					}
+				}, 10)
+			}
+
+			function CubicEaseInOut(t, b, c, d) {
+				if((t /= d / 2) < 1) return c / 2 * t * t * t + b;
+				return c / 2 * ((t -= 2) * t * t + 2) + b;
+			}
+			var smallPic=document.getElementById("smallPic");
+			var zoom=document.getElementById("zoom");
+			var bigPic=document.getElementById("bigPic");
+			var ssimg=document.getElementsByClassName("ssimg")[0];
+			var ssimg1=document.getElementsByClassName("ssimg")[1];
+			var ssimg2=document.getElementsByClassName("ssimg")[2];
+			var ssimg3=document.getElementsByClassName("ssimg")[3];
+			var smallaaa=document.getElementsByClassName("smallaaa")[0];
+var zhudi8=document.getElementsByClassName("zhudi8")[0];
+			var rate=400/175;
+			var chucun=[];
+			var zhudi=document.getElementsByClassName("zhudi")[0];
+//			https://www.wumeili.top/w/website/findGoodsList
+			$.ajax({
+				type:"get",
+				url:"http://127.0.0.1/w/website/findGoodsDetail",
+				async:true,
+				data:{
+					"platId":"d0a500ecf8ab41aa9ffe8e18ac6419e1",
+					"info":str,
+					"pageNo": 1
+				},
+				success:function(res){
+					console.log(res);
+					if (res.status==0) {
+						var obj=res.data.detail.tbk_item_info_get_response.results.n_tbk_item[0];
+						console.log(obj);
+						$(".zhudi9").append(
+							`<a href="${obj.item_url}" ></a>`
+				
+			)
+						bigPic.style.backgroundImage="url("+obj.small_images.string[0]+')';
+							 smallaaa.src=`${obj.small_images.string[0]}`;
+						$(".zhudi").append(
+							`<p class="zhudi1">${obj.title}</p>
+					<div class="zhudi2">
+						<s>¥:${obj.reserve_price}</s>
+						&nbsp;&nbsp;<span id="">
+							
+						卷后价</span>&nbsp;&nbsp;¥:${obj.zk_final_price}
+					</div>
+					<div class="zhudi3">
+						
+					</div>
+					<p class="zhudi4">类别:${obj.cat_name}</p>
+					<p class="zhudi4">店铺:${obj.nick}</p>
+					<p class="zhudi4">地址:${obj.provcity}</p>
+					<div class="zhudi5">
+						点击购买
+					</div><div class="zhudi6">
+						加入购物车
+					</div><br>
+					<span  class="zhudi7">配送范围送货范围仅限延安、汉中、榆林、宝鸡、安康、咸阳、铜川、商洛、西安、渭南地区(生鲜类别仅限部分地区)</span>`
+						)
+							$(".aaa1").append(
+								`<div id="sssimg" class="sssimg bb${0}">
+				<img src="${obj.small_images.string[0]}"/>
+			</div>`);
+			$(".aaa2").append(
+								`<div id="sssimg" class="sssimg bb${1}">
+				<img src="${obj.small_images.string[1]}"/>
+			</div>`);
+			$(".aaa3").append(
+								`<div id="sssimg" class="sssimg bb${2}">
+				<img src="${obj.small_images.string[2]}"/>
+			</div>`);
+			$(".aaa4").append(
+								`<div id="sssimg" class="sssimg bb${3}">
+				<img src="${obj.small_images.string[3]}"/>
+			</div>`);
+			for (var i=0;i<4;i++) {
+//							console.log(`"${obj[i].pict_url}"`);
+							chucun.push(`${obj.small_images.string[i]}`);
+//							console.log(chucun);
+						}
+						
+					}
+				}
+			});
+			var strrr=location.search.substr(1).split("====");
+			console.log(strrr);
+			var qq1=strrr[1];
+			var qq2=strrr[2];
+			var qq3=strrr[3];
+			$.ajax({
+				type:"get",
+				url:"http://127.0.0.1/w/client/checkTBKkl",
+				async:true,
+				data:{
+					"url":"https:"+qq1,
+					"text":qq2,
+					"logo":qq3
+				},
+				success:function(res){
+					zhudi8.onclick=function(){
+						alert(res.data.tbk_tpwd_create_response.data.model);
+					}
+					
+					
+				}
+			});
+			$(".aa").click(function(){
+				location.href="index.html";
+			})
+			ssimg.onmouseover=function(){
+             bigPic.style.backgroundImage="url("+chucun[0]+')'
+             smallaaa.src=chucun[0];
+             ssimg.style.border="3px red solid"
+             ssimg1.style.border="3px white solid"
+             ssimg2.style.border="3px white solid"
+             ssimg3.style.border="3px white solid"
+			}
+			
+			ssimg1.onmouseover=function(){
+             bigPic.style.backgroundImage="url("+chucun[1]+')'
+             smallaaa.src=chucun[1];
+             ssimg1.style.border="3px red solid"
+             ssimg.style.border="3px white solid"
+             ssimg2.style.border="3px white solid"
+             ssimg3.style.border="3px white solid"
+			}
+			
+			ssimg2.onmouseover=function(){
+             bigPic.style.backgroundImage="url("+chucun[2]+')'
+             smallaaa.src=chucun[2];
+             ssimg2.style.border="3px red solid"
+             ssimg1.style.border="3px white solid"
+             ssimg.style.border="3px white solid"
+             ssimg3.style.border="3px white solid"
+			}
+			
+			ssimg3.onmouseover=function(){
+             bigPic.style.backgroundImage="url("+chucun[3]+')'
+             smallaaa.src=chucun[3];
+             ssimg3.style.border="3px red solid"
+             ssimg1.style.border="3px white solid"
+             ssimg2.style.border="3px white solid"
+             ssimg.style.border="3px white solid"
+			}
+			
+			smallPic.onmouseover=function(){
+				zoom.style.display="block";
+				bigPic.style.display="block";
+			}
+			smallPic.onmouseout=function(){
+				zoom.style.display="none";
+				bigPic.style.display="none";
+			}
+			smallPic.onmousemove=function(event){
+				event=event||window.event;
+				var scrollTop=document.body.scrollTop||document.documentElement.scrollTop;
+				var scrollLeft=document.body.scrollLeft||document.documentElement.scrollLeft;
+				var x=event.clientX-(getAllLeft(smallPic)-scrollLeft)-87;
+				var y=event.clientY-(getAllTop(smallPic)-scrollTop)-87;
+				if(x<0){
+					x=0
+				}else if(x>175){
+					x=175;
+				}
+				if (y<0) {
+					y=0;
+				}else if(y>195){
+					y=195;
+				}
+
+				zoom.style.left=x+"px";
+				zoom.style.top=y+"px";
+				bigPic.style.backgroundPosition=-x*rate+"px "+-y*rate+"px";
+			}
+			function getAllTop(obj){
+				var allTop=obj.offsetTop;
+				var currentObj=obj;
+				while (currentObj==currentObj.offsetParent){
+					allTop+=currentObj.offsetTop;
+				}
+				return allTop;
+			}
+			function getAllLeft(obj){
+				var allLeft=obj.offsetLeft;
+				var currentObj=obj;
+				while (currentObj==currentObj.offsetParent){
+					allLeft+=currentObj.offsetLeft;
+				}
+				return allLeft;
+			}
+		</script>
+	</body>
+     
+</html>
+

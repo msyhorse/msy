@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>假期复习i8</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var a=parseInt(Math.random()*100+1);
+			var b=100;
+			var c=0;
+//			alert(a)
+			while(true){
+				var d=parseInt(prompt("请输入"+c+"到"+b+"之间的数"));
+				if(d<=b&&d>=c){
+				if(d>a){
+					b=d
+				}
+				else if(d<a){
+					c=d
+				}
+				else if(d==a){
+					alert("恭喜中奖");
+					break;
+					
+				}}
+				else{
+					alert("不在范围，请重新输入")
+				}
+			}
+		</script>
+	</body>
+</html>

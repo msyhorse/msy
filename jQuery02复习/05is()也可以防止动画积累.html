@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			div{
+				width:100px;
+				height:100px;
+				background-color:red;
+				position:absolute;
+				top:100px;
+				left:100px;
+			}
+			#a1{
+				
+			}
+		</style>
+	</head>
+	<body>
+		<div id="">
+			
+		</div>
+		<input type="button" name="" id="a1" value="800" />
+		<input type="button" name="" id="a2" value="100" />
+	</body>
+	<script src="js/jquery-1.12.3.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$("#a1").click(function(){
+//			$("div").stop(true).animate({"left":800},1000);
+            if($("div").is(":animated")){
+            	return;
+            }
+            $("div").animate({"left":800},1000)
+		})
+		$("#a2").click(function(){
+//			$("div").stop(true).animate({"left":100},1000);
+			if($("div").is(":animated")){
+            	return;
+            }
+            $("div").animate({"left":100},1000)
+		})
+	</script>
+</html>

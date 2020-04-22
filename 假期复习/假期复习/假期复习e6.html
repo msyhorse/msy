@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>假期复习e6</title>
+		<style type="text/css">
+			*{
+				padding:0;
+				margin:0;
+			}
+			#a{
+				padding:10px;
+				border:10px red solid;
+				*zoom: 1;
+			}
+			.b{
+				width:100px;
+				height:100px;
+				background-color:blue;
+				float:left;
+			}
+			#a::after{
+				content:'';
+				display:block;
+				clear:both;
+			}
+			#d{
+				width:100px;
+				height:100px;
+				background-color:aqua;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="a">
+			<div class="b"></div>
+			<div class="b"></div>
+		</div>
+		<div id="d"></div>
+	</body>
+</html>

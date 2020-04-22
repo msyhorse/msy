@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			body{
+				background-color: pink;
+			}
+			.oinput{
+				width: 240px;
+				height: 40px;
+				outline: none;/*去掉输入框触发时出现的蓝框*/
+				text-indent: 1.5em;
+				margin: 20px;
+				border-radius: 10px;
+				border: 2px solid #dddddd;
+			}
+			/*::伪元素*/
+			.oinput::-webkit-input-placeholder{
+				color: red;
+			}
+			.btn{
+				width: 150px;
+				height: 35px;
+				border: none;
+				outline: none;
+				border-radius: 5px;
+				margin-left: 40px;
+				cursor: pointer;/*出现小手的图标*/
+				background-color: red;
+				color: white;
+			}
+		</style>
+	</head>
+	<body>
+		
+		<form>
+			<p>
+			   <input type="text" value="" placeholder="请输入用户名" class="oinput"/>
+			</p>
+			<p>
+			  <input type="text" value="" placeholder="请输入密码" class="oinput"/>
+			</p>
+			<p>
+				<input type="button" value="登录" class="btn"/>
+			</p>
+
+		</form>
+	</body>
+</html>

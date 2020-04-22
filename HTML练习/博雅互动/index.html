@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			table{
+				width: 100%;
+			}
+			.dao{
+				float: left;
+				padding: 10px;
+				margin-left: 10px;
+			}
+			.jia{
+				float: left;
+				padding:7px 30px 10px;
+				margin-left: 20px;
+				background-color: #38B774;
+				color: white;
+				border-radius:6px;
+				margin-top: 5px;
+			}
+			.jia:hover{
+				cursor: pointer;
+				opacity: 0.8;
+			}
+			.logo{
+				height: 40px;
+				background-color: #191D3A;
+				color: #818496;
+			}
+			.shouye{
+				float: left;
+				padding: 10px;
+				margin-left: 40px;
+				color: white;
+				background-color:#252947;
+				height:30px;
+				width: 50px;
+				text-align: center;
+			}
+			.shouye:hover{
+				cursor: pointer;
+			}
+			#logo1:hover{
+				cursor: pointer;
+			}
+			.dao:hover{
+				cursor: pointer;
+				color: white;
+			}
+			#logo1{
+				margin-left: 380px;
+			}
+			#wen{
+				color: #38B774;
+				float: left;
+				
+			}
+			#wen1{
+				float: left;
+				margin-left:15px;
+				margin-right: 300px;
+			}
+			#wen:hover{
+				cursor: pointer;
+			}
+			#wen1:hover{
+				color: #38B774;
+				cursor: pointer;
+			}
+			#z{
+				width:100%;
+				height: 460px;
+				background-image: url(img/5.jpg);
+				background-repeat: no-repeat;
+			}
+			#zhong{
+				width: 1000px;
+				height: 198px;
+				margin-top: 52px;
+			}
+			.tu1{
+				background-image: url(img/2.jpg);
+				width: 218px;
+				height: 128px;
+				background-repeat: no-repeat;
+				background-size: 100% 100%;
+				float: left;
+				cursor: pointer;
+			}
+			.tu2{
+				background-image: url(img/4.jpg);
+				width: 218px;
+				height: 128px;
+				background-repeat: no-repeat;
+				background-size: 100% 100%;
+				float: left;
+				margin-left: 40px;
+				cursor: pointer;
+			}
+			.tu3{
+				background-image: url(img/1.jpg);
+				width: 218px;
+				height: 128px;
+				background-repeat: no-repeat;
+				background-size: 100% 100%;
+				float: left;
+				margin-left: 40px;
+				cursor: pointer;
+			}
+			.tu4{
+				background-image: url(img/3.jpg);
+				width: 218px;
+				height: 128px;
+				background-repeat: no-repeat;
+				background-size: 100% 100%;
+				float: left;
+				margin-left: 40px;
+				cursor: pointer;
+			}
+			.zi{
+				height: 60px;
+				width: 218px;
+				float: left;
+			}
+			#zhong div:nth-child(6){
+				margin-left: 40px;
+			}
+			#zhong div:nth-child(7){
+				margin-left: 40px;
+			}
+			#zhong div:nth-child(8){
+				margin-left: 40px;
+			}
+			.a{
+				line-height: 40px;
+				font-size: 14px;
+				color: #38B774 ;
+			}
+			.zi:hover{
+				cursor: pointer;
+				background-color: #38b774;
+				color: white;
+			}
+			.a:hover{
+				color: white;
+			}
+			.tu1:hover{
+				opacity: 0.8;
+			}
+			.tu2:hover{
+				opacity: 0.8;
+			}
+			.tu3:hover{
+				opacity: 0.8;
+			}
+			.tu4:hover{
+				opacity: 0.8;
+			}
+			#b{
+				height: 19px;
+				width: 1000px;
+			}
+			#bai1{
+				background-color: #B5C0CB;
+				height: 15px;
+				width: 15px;
+				float: left;
+				border-radius: 50%;
+				margin: 0px 20px;
+			}
+			#lv1{
+				background-color: #2FBC71;
+				height: 15px;
+				width: 15px;
+				float: left;
+				border-radius: 50%;
+				margin-right: 20px;
+			}
+			#bai2{
+				background-color: #B5C0CB;
+				height: 15px;
+				width: 15px;
+				float: left;
+				border-radius: 50%;
+				margin-right: 20px;
+			}
+			#xian{
+				border-bottom: transparent;
+				border-left: transparent;
+				border-right: transparent;
+			}
+			#di{
+				margin-top:40px;
+				width: 1005px;
+				height: 320px;
+				margin-left:500px;
+			}
+			#xinwen{
+				background-image: url(img/7.jpg);
+				width: 500px;
+				height: 310px;
+				float: left;
+			}
+			#neirong{
+				width: 500px;
+				height: 190px;
+				margin-top: 35px;
+				margin-right:500px;
+				float: left;
+				border-bottom:1px solid #DBE1E7;
+			}
+			#more{
+				border: 1px solid #2FBC71;
+				height: 28px;
+				width: 66px;
+				border-radius: 5px;
+				color: #2FBC71;
+				font-size: 14px;
+				margin-top: 54px;
+				margin-left:217px;
+				text-align: center;
+			}
+			#more:hover{
+				cursor: pointer;
+				color: white;
+				background-color: #2FBC71;
+			}
+			ul li{
+				list-style: none;
+				float: left;
+				margin-top: 10px;
+				margin-left: 10px;
+				width: 410px;
+				line-height: 30px;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+				font-size: 14px;
+				border-bottom: 1px solid #DBE1E7;
+			}
+			.time{
+				line-height: 43px;
+				font-size: 13px;
+				color: #CDD0D5;
+				margin-left: 10px;
+			}
+			.n1:hover{
+				cursor:pointer;
+				color: #33b972;
+			}
+			#zhaop{
+				width: 500px;
+				height: 310px;
+				float: left;
+				background-image: url(img/6.jpg);
+			}
+			#more1{
+				border: 1px solid white;
+				height: 28px;
+				width: 66px;
+				border-radius: 5px;
+				color: white;
+				font-size: 14px;
+				margin-top: 45px;
+				margin-right:200px;
+				text-align: center;
+				float: right;
+			}
+			#more1:hover{
+				color:#33b972 ;
+				background-color: white;
+				cursor: pointer;
+			}
+			#zp{
+				color: white;
+				margin-bottom: 20px;
+				margin-top: 40px;
+				margin-left: 80px;
+				float: left;
+				width: 112px;
+				height: 32px;
+			}
+			#job{
+				font-size: 11px;
+				color: white;
+				width: 112px;
+				height: 18px;
+				margin-left:82px;
+			}
+			#gw{
+				width: 500px;
+				height: 172px;
+				margin-top: 111px;
+			}
+			.n2{
+				height:30px;
+				width: 305px;
+				border-bottom: 1px solid white;
+				margin-left: 10px;
+				color: white;
+			}
+			#dibu1{
+				background-color: #191d3a;
+			}
+			#dibu{
+				width: 1000px;
+				height: 190px;
+				margin: 40px auto 0px;
+			}
+			#ditu{
+				width: 179px;
+				height: 16px;
+				margin-top: 40px;
+				color: #6c6e7e;
+				font-size: 12px;
+			}
+			#cl{
+				margin-top: 30px;
+				color: #6c6e7e;
+				font-size: 12px;
+			}
+			#dibu1{
+				margin-top: 35px;
+				color: #6c6e7e;
+				font-size: 12px;
+			}
+			#top{
+				position: fixed;
+				width: 68px;
+				height: 29px;
+				right: 15px;
+				bottom: 75px;
+				border-radius: 3px;
+				text-align: center;
+				overflow: hidden;
+				background-image: url(img/top.jpg);
+				font-size: 30px;
+			}
+			#top:hover{
+				cursor: pointer;
+				text-decoration: none;
+				background-image: url(img/top.png);
+				background-position-y: 0px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="top">
+			<a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+		</div>
+		<table border="0" cellspacing="0">
+			<tr class="logo">
+				<td align="right">
+					<div id="logo1"><img src="img/logo.png" width="157" height="35" / ></div>
+				</td>
+				<td>
+					<div class="shouye">首页</div>
+					<div class="dao">博雅游戏</div>
+					<div class="dao">博雅新闻</div>
+					<div class="dao">关于我们</div>
+					<div class="dao">客服中心</div>
+					<div class="dao">投资者关系</div>
+					<div class="jia">加入我们</div>
+				</td>
+				<td>
+					<div id="wen">中文</div>
+					<div id="wen1">EN</div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3">
+					<div id="z"></div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3" align="center">
+					<div id="zhong">
+						<div class="tu1"></div>
+						<div class="tu2"></div>
+						<div class="tu3"></div>
+						<div class="tu4"></div>
+						<div class="zi">
+							<h5>“博雅杯”斗地主公益赛回顾</h5>
+							<p class="a">点击播放</p>
+						</div>
+						<div class="zi">
+							<h5>麻将全集</h5>
+							<p class="a">MAHJONG GAMES</p>
+						</div>
+						<div class="zi">
+							<h5>中国象棋</h5>
+							<p class="a">CHINESE CHESS OF BOYAA</p>
+						</div>
+						<div class="zi">
+							<h5>博雅棋牌</h5>
+							<p class="a">BOYAA CHESS</p>
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3" align="center">
+					<div id="b">
+						<fieldset id="xian">
+							<legend align="center">
+								<div id="bai1"></div>
+								<div id="lv1"></div>
+								<div id="bai2"></div>
+							</legend>
+						</fieldset>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3">
+					<div id="di">
+						<div id="xinwen">
+							<div id="more">MORE<sup>+</sup></div>
+							<div id="neirong">
+								<ul>
+									<li class="n1">2019 BPT欧洲赛总决赛完美收官，德国选手逆袭夺冠</li>
+									<li class="n1">2019云南九大高校象棋联赛系列活动预告</li>
+									<li class="n1">博雅互动旗下游戏荣获“2019年度绿色应用”</li>
+									<li class="n1">博雅互动公布2019年第三季度业绩 全力打造棋牌赛事品牌，第三季度收益环比增加约6.0%，主要游戏ARPPU值实现增长</li>
+								</ul>
+								<span class="time"> 12/13</span>
+								<span class="time"> 12/13</span>
+								<span class="time"> 12/13</span>
+								<span class="time"> 12/13</span>
+							</div>
+						</div>
+						<div id="zhaop">
+							<div id="more1">MORE<sup>+</sup></div>
+							<h2 id="zp">社会招聘</h2>
+							<p id="job">BOYAA JOBS</p>
+							<div id="gw">
+								<dl>
+									<dd class="n2">社会招聘岗位：</dd>
+									<dd class="n2">PHP开发工程师 </dd>
+									<dd class="n2">C++开发工程师 </dd>
+									<dd class="n2">LUA开发工程师</dd>
+									<dd class="n2">大数据开发工程师</dd>
+								</dl>
+							</div>
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3" id="dibu1">
+					<div id="dibu">
+						<div id="ditu">网站地图丨免责声明丨监督举报</div>
+						<div id="cl">Copyright © 2004 - 2019 博雅互动(Boyaa Interactive)粤ICP备05062536号</div>
+						<div id="dibu1">网络文化经营许可证：粤网文[2015]1991-405号 | 互联网出版许可证：新出网证（粤）字062号 | 增值电信业务经营许可证：粤B2-20110513</div>
+					</div>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

@@ -1,0 +1,395 @@
+!SESSION 2020-01-04 22:17:57.523 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_51
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Framework arguments:  -login -application com.aptana.commandline.launcher.LauncherApplication D:\前端案例\js\js-03\作业.html
+Command-line arguments:  -os win32 -ws win32 -arch x86 -login -data   -application com.aptana.commandline.launcher.LauncherApplication D:\前端案例\js\js-03\作业.html
+
+!ENTRY org.eclipse.ui 2 0 2020-01-04 22:17:58.292
+!MESSAGE Warnings while parsing the key bindings from the 'org.eclipse.ui.commands' extension point
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-01-04 22:17:58.292
+!MESSAGE Could not parse key sequence: plug-in='com.pandora.ui', id='org.eclipse.ui.edit.text.contentAssist.proposals', keySequence='Ctrl+Sapce'
+
+!ENTRY com.aptana.rcp 4 0 2020-01-04 22:17:58.423
+!MESSAGE ********HBuilder正常启动：preStartup********
+
+!ENTRY com.aptana.scripting 4 0 2020-01-04 22:17:59.401
+!MESSAGE (Build null) [ERROR]  An error occurred while parsing scope 'Build–in constant' : Cannot recover from the syntax error
+
+!ENTRY com.aptana.scripting 4 0 2020-01-04 22:17:59.407
+!MESSAGE (Build null) [ERROR]  An error occurred while parsing scope 'library class/type' : Cannot recover from the syntax error
+
+!ENTRY com.aptana.rcp 4 0 2020-01-04 22:17:59.903
+!MESSAGE ---------------------start check----------------------
+
+!ENTRY com.aptana.rcp 4 0 2020-01-04 22:17:59.906
+!MESSAGE check mode
+
+!ENTRY com.aptana.rcp 4 0 2020-01-04 22:17:59.949
+!MESSAGE workspace : file:\D:\前端案例\js\js-03
+
+!ENTRY com.aptana.rcp 4 0 2020-01-04 22:18:00.254
+!MESSAGE ********HBuilder正常启动：postStartup********
+
+!ENTRY com.pandora.rcp.upgrade 4 0 2020-01-04 22:18:00.351
+!MESSAGE (Build null) [ERROR]  HBuilder当前版本: 9.1.29.201811231920
+
+!ENTRY com.pandora.tools.android 4 0 2020-01-04 22:18:00.832
+!MESSAGE (Build null) [ERROR]  ADB PID:::9040
+
+!ENTRY com.pandora.tools.android 4 0 2020-01-04 22:18:00.918
+!MESSAGE (Build null) [ERROR]  ===Caption  ExecutablePath
+
+!ENTRY com.pandora.tools.android 4 0 2020-01-04 22:18:00.922
+!MESSAGE (Build null) [ERROR]  ===adb.exe  C:\Users\Administrator\Desktop\HBuilder\tools\adbs\1.0.31\adb.exe
+
+!ENTRY com.pandora.tools.android 4 0 2020-01-04 22:18:00.927
+!MESSAGE (Build null) [ERROR]  exe===adb.exe   path===c:\users\administrator\desktop\hbuilder\tools\adbs\1.0.31\adb.exe
+
+!ENTRY com.pandora.tools.android 4 0 2020-01-04 22:18:00.931
+!MESSAGE (Build null) [ERROR]  ADB Path===c:\users\administrator\desktop\hbuilder\tools\adbs\1.0.31\adb.exe
+
+!ENTRY com.aptana.editor.css 4 0 2020-01-04 22:18:01.361
+!MESSAGE (Build null) [ERROR]  开始清理css错误marker...
+
+!ENTRY com.aptana.editor.css 4 0 2020-01-04 22:18:01.374
+!MESSAGE (Build null) [ERROR]  清理css错误marker结束
+
+!ENTRY com.pandora.index.store 4 0 2020-01-04 22:18:01.488
+!MESSAGE (Build null) [ERROR]  IndexStoreService started!!!
+
+!ENTRY com.pandora.launcher.core 4 0 2020-01-04 22:18:01.547
+!MESSAGE (Build null) [ERROR]  系统找不到指定的文件。
+!STACK 0
+com.sun.jna.platform.win32.Win32Exception: 系统找不到指定的文件。
+	at com.sun.jna.platform.win32.Advapi32Util.registryGetStringValue(Advapi32Util.java:552)
+	at com.pandora.launcher.core.iphone.jna.LibraryFinder.loadPath(LibraryFinder.java:58)
+	at com.pandora.launcher.core.iphone.jna.LibraryFinder.<clinit>(LibraryFinder.java:50)
+	at com.pandora.launcher.core.iphone.jna.md.LibraryInstance.getMDLibrary(LibraryInstance.java:15)
+	at com.pandora.launcher.core.iphone.jna.idevice.win.WinDeviceLibrary.<clinit>(WinDeviceLibrary.java:72)
+	at com.pandora.launcher.core.iphone.jna.idevice.DeviceLibraryRegistry.getDeviceLibrary(DeviceLibraryRegistry.java:15)
+	at com.pandora.launcher.core.iphone.IPhoneLauncher.<init>(IPhoneLauncher.java:109)
+	at com.pandora.launcher.core.listener.DeviceStartupListener.earlyStartup(DeviceStartupListener.java:29)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:87)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:66)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$69.run(Workbench.java:2726)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.pandora.launcher.core 4 0 2020-01-04 22:18:01.569
+!MESSAGE (Build null) [ERROR]  系统找不到指定的文件。
+!STACK 0
+com.sun.jna.platform.win32.Win32Exception: 系统找不到指定的文件。
+	at com.sun.jna.platform.win32.Advapi32Util.registryGetStringValue(Advapi32Util.java:552)
+	at com.pandora.launcher.core.iphone.jna.LibraryFinder.loadPath(LibraryFinder.java:58)
+	at com.pandora.launcher.core.iphone.jna.LibraryFinder.getMDLibrary(LibraryFinder.java:122)
+	at com.pandora.launcher.core.iphone.jna.md.LibraryInstance.getMDLibrary(LibraryInstance.java:15)
+	at com.pandora.launcher.core.iphone.jna.idevice.win.WinDeviceLibrary.<clinit>(WinDeviceLibrary.java:72)
+	at com.pandora.launcher.core.iphone.jna.idevice.DeviceLibraryRegistry.getDeviceLibrary(DeviceLibraryRegistry.java:15)
+	at com.pandora.launcher.core.iphone.IPhoneLauncher.<init>(IPhoneLauncher.java:109)
+	at com.pandora.launcher.core.listener.DeviceStartupListener.earlyStartup(DeviceStartupListener.java:29)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:87)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:66)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$69.run(Workbench.java:2726)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.pandora.launcher.core 4 0 2020-01-04 22:18:01.601
+!MESSAGE (Build null) [ERROR]  添加Android设备监听......
+
+!ENTRY com.pandora.launcher.core 4 0 2020-01-04 22:18:01.625
+!MESSAGE (Build null) [ERROR]  系统找不到指定的文件。
+!STACK 0
+com.sun.jna.platform.win32.Win32Exception: 系统找不到指定的文件。
+	at com.sun.jna.platform.win32.Advapi32Util.registryGetStringValue(Advapi32Util.java:552)
+	at com.pandora.launcher.core.iphone.jna.LibraryFinder.loadPath(LibraryFinder.java:58)
+	at com.pandora.launcher.core.iphone.jna.LibraryFinder.getMDLibrary(LibraryFinder.java:122)
+	at com.pandora.launcher.core.iphone.jna.md.LibraryInstance.getMDLibrary(LibraryInstance.java:15)
+	at com.pandora.launcher.core.iphone.jna.idevice.win.WinDeviceLibrary.addNotificationHandler(WinDeviceLibrary.java:77)
+	at com.pandora.launcher.core.iphone.IPhoneLauncher$5.run(IPhoneLauncher.java:799)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.pandora.launcher.core 4 0 2020-01-04 22:18:01.666
+!MESSAGE (Build null) [ERROR]  library is null!!!!!
+
+!ENTRY com.pandora.tools.android 4 0 2020-01-04 22:18:01.709
+!MESSAGE (Build null) [ERROR]  ADB PID:::9040
+
+!ENTRY com.pandora.stats.core 1 0 2020-01-04 22:18:01.730
+!MESSAGE 
+
+!ENTRY com.pandora.tools.android 4 0 2020-01-04 22:18:01.824
+!MESSAGE (Build null) [ERROR]  ADB Path===null
+
+!ENTRY com.pandora.core.utils 4 0 2020-01-04 22:18:01.887
+!MESSAGE (Build null) [ERROR]  Wmic Error:::No Instance(s) Available.
+
+!ENTRY com.pandora.tools.android 4 0 2020-01-04 22:18:03.865
+!MESSAGE (Build null) [ERROR]  ADB Path===C:\Users\Administrator\Desktop\HBuilder\tools\adbs\adb.exe
+
+!ENTRY com.pandora.tools.android 4 0 2020-01-04 22:18:03.935
+!MESSAGE (Build null) [ERROR]  ADB Path===C:\Users\Administrator\Desktop\HBuilder\tools\adbs\1.0.31\adb.exe
+
+!ENTRY org.eclipse.equinox.p2.repository 4 0 2020-01-04 22:18:03.983
+!MESSAGE C:\Users\Administrator\Desktop\HBuilder\p2\org.eclipse.equinox.p2.repository\cache\content-561804826.jar 是合法的jar
+
+!ENTRY com.pandora.core.utils 4 0 2020-01-04 22:18:04.041
+!MESSAGE (Build null) [ERROR]  Wmic Error:::
+
+!ENTRY com.aptana.parsing 4 0 2020-01-04 22:18:04.086
+!MESSAGE (Build null) [ERROR]  无效的属性类型“.webkit.SearchBoxImpl@4135441”属性“searchBoxJavaBridge_”
+
+!ENTRY com.aptana.commandline.launcher 4 0 2020-01-04 22:18:04.115
+!MESSAGE Stream closed
+!STACK 0
+java.io.IOException: Stream closed
+	at java.io.BufferedReader.ensureOpen(Unknown Source)
+	at java.io.BufferedReader.readLine(Unknown Source)
+	at java.io.BufferedReader.readLine(Unknown Source)
+	at com.aptana.commandline.launcher.server.LauncherServer$CommandLineArgsServer.run(LauncherServer.java:135)
+
+!ENTRY com.aptana.commandline.launcher 4 0 2020-01-04 22:18:04.157
+!MESSAGE Stream closed
+!STACK 0
+java.io.IOException: Stream closed
+	at java.io.BufferedReader.ensureOpen(Unknown Source)
+	at java.io.BufferedReader.readLine(Unknown Source)
+	at java.io.BufferedReader.readLine(Unknown Source)
+	at com.aptana.commandline.launcher.server.LauncherServer$CommandLineArgsServer.run(LauncherServer.java:135)
+
+!ENTRY com.aptana.index.core 4 0 2020-01-04 22:18:04.441
+!MESSAGE (Build null) [ERROR]  [INDEX_PROCESS_DEBUG] null
+
+!ENTRY com.aptana.index.core 4 0 2020-01-04 22:18:04.484
+!MESSAGE (Build null) [ERROR]  [DEBUG:]INDEXER_SERVER_STARTED_FAILED
+
+!ENTRY org.eclipse.equinox.p2.repository 4 0 2020-01-04 22:18:04.649
+!MESSAGE C:\Users\Administrator\Desktop\HBuilder\p2\org.eclipse.equinox.p2.repository\cache\content1190459293.jar 是合法的jar
+
+!ENTRY com.aptana.core 4 0 2020-01-04 22:18:20.375
+!MESSAGE (Build null) [ERROR]  *********索引不存在触发 FULL BUILD **********D:/前端案例/js/js-03/js-03
+
+!ENTRY com.pandora.stats.core 4 0 2020-01-04 22:19:04.605
+!MESSAGE (Build null) [ERROR]  list job time: 2818
+
+!ENTRY com.aptana.commandline.launcher 4 0 2020-01-04 22:29:54.377
+!MESSAGE Stream closed
+!STACK 0
+java.io.IOException: Stream closed
+	at java.io.BufferedReader.ensureOpen(Unknown Source)
+	at java.io.BufferedReader.readLine(Unknown Source)
+	at java.io.BufferedReader.readLine(Unknown Source)
+	at com.aptana.commandline.launcher.server.LauncherServer$CommandLineArgsServer.run(LauncherServer.java:135)
+
+!ENTRY com.pandora.tools.android 4 0 2020-01-04 22:30:08.491
+!MESSAGE (Build null) [ERROR]  ADB Path===C:\Users\Administrator\Desktop\HBuilder\tools\adbs\1.0.31\adb.exe
+!SESSION 2020-01-04 22:40:03.082 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_51
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Framework arguments:  -login -application com.aptana.commandline.launcher.LauncherApplication D:\前端案例\js\js-03\作业.html
+Command-line arguments:  -os win32 -ws win32 -arch x86 -login -data   -application com.aptana.commandline.launcher.LauncherApplication D:\前端案例\js\js-03\作业.html
+
+!ENTRY org.eclipse.core.resources 2 10035 2020-01-04 22:40:03.488
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.ui 2 0 2020-01-04 22:40:08.156
+!MESSAGE Warnings while parsing the key bindings from the 'org.eclipse.ui.commands' extension point
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-01-04 22:40:08.156
+!MESSAGE Could not parse key sequence: plug-in='com.pandora.ui', id='org.eclipse.ui.edit.text.contentAssist.proposals', keySequence='Ctrl+Sapce'
+
+!ENTRY com.aptana.rcp 4 0 2020-01-04 22:40:08.285
+!MESSAGE ********HBuilder正常启动：preStartup********
+
+!ENTRY com.aptana.rcp 1 0 2020-01-04 22:40:08.320
+!MESSAGE 备份  workbench.xml 文件
+
+!ENTRY com.aptana.scripting 4 0 2020-01-04 22:40:10.448
+!MESSAGE (Build null) [ERROR]  An error occurred while parsing scope 'Build–in constant' : Cannot recover from the syntax error
+
+!ENTRY com.aptana.scripting 4 0 2020-01-04 22:40:10.453
+!MESSAGE (Build null) [ERROR]  An error occurred while parsing scope 'library class/type' : Cannot recover from the syntax error
+
+!ENTRY com.aptana.rcp 4 0 2020-01-04 22:40:11.793
+!MESSAGE ---------------------start check----------------------
+
+!ENTRY com.aptana.rcp 4 0 2020-01-04 22:40:11.798
+!MESSAGE check mode
+
+!ENTRY com.aptana.rcp 4 0 2020-01-04 22:40:11.840
+!MESSAGE workspace : file:\D:\前端案例\js\js-03
+
+!ENTRY com.aptana.rcp 4 0 2020-01-04 22:40:12.064
+!MESSAGE ********HBuilder正常启动：postStartup********
+
+!ENTRY com.pandora.rcp.upgrade 4 0 2020-01-04 22:40:12.127
+!MESSAGE (Build null) [ERROR]  HBuilder当前版本: 9.1.29.201811231920
+
+!ENTRY com.pandora.tools.android 4 0 2020-01-04 22:40:12.573
+!MESSAGE (Build null) [ERROR]  ADB PID:::10724
+
+!ENTRY com.pandora.index.store 4 0 2020-01-04 22:40:12.645
+!MESSAGE (Build null) [ERROR]  Port already in use: 56789; nested exception is: 
+	java.net.BindException: Address already in use: JVM_Bind
+!STACK 0
+java.rmi.server.ExportException: Port already in use: 56789; nested exception is: 
+	java.net.BindException: Address already in use: JVM_Bind
+	at sun.rmi.transport.tcp.TCPTransport.listen(Unknown Source)
+	at sun.rmi.transport.tcp.TCPTransport.exportObject(Unknown Source)
+	at sun.rmi.transport.tcp.TCPEndpoint.exportObject(Unknown Source)
+	at sun.rmi.transport.LiveRef.exportObject(Unknown Source)
+	at sun.rmi.server.UnicastServerRef.exportObject(Unknown Source)
+	at sun.rmi.registry.RegistryImpl.setup(Unknown Source)
+	at sun.rmi.registry.RegistryImpl.<init>(Unknown Source)
+	at java.rmi.registry.LocateRegistry.createRegistry(Unknown Source)
+	at com.pandora.index.store.IndexStoreStartup.run(IndexStoreStartup.java:28)
+	at com.pandora.index.store.IndexStoreStartup.earlyStartup(IndexStoreStartup.java:18)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:87)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:66)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$69.run(Workbench.java:2726)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: java.net.BindException: Address already in use: JVM_Bind
+	at java.net.TwoStacksPlainSocketImpl.socketBind(Native Method)
+	at java.net.TwoStacksPlainSocketImpl.socketBind(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.bind(Unknown Source)
+	at java.net.TwoStacksPlainSocketImpl.bind(Unknown Source)
+	at java.net.PlainSocketImpl.bind(Unknown Source)
+	at java.net.ServerSocket.bind(Unknown Source)
+	at java.net.ServerSocket.<init>(Unknown Source)
+	at java.net.ServerSocket.<init>(Unknown Source)
+	at sun.rmi.transport.proxy.RMIDirectSocketFactory.createServerSocket(Unknown Source)
+	at sun.rmi.transport.proxy.RMIMasterSocketFactory.createServerSocket(Unknown Source)
+	at sun.rmi.transport.tcp.TCPEndpoint.newServerSocket(Unknown Source)
+	... 15 more
+
+!ENTRY com.aptana.editor.css 4 0 2020-01-04 22:40:12.666
+!MESSAGE (Build null) [ERROR]  Buffer underflow.
+Serialization trace:
+_example (com.aptana.editor.css.contentassist.model.PropertyElement)
+!STACK 0
+com.esotericsoftware.kryo.KryoException: Buffer underflow.
+Serialization trace:
+_example (com.aptana.editor.css.contentassist.model.PropertyElement)
+	at com.esotericsoftware.kryo.io.Input.require(Input.java:172)
+	at com.esotericsoftware.kryo.io.Input.readUtf8_slow(Input.java:524)
+	at com.esotericsoftware.kryo.io.Input.readUtf8(Input.java:517)
+	at com.esotericsoftware.kryo.io.Input.readString(Input.java:447)
+	at com.esotericsoftware.kryo.serializers.DefaultSerializers$StringSerializer.read(DefaultSerializers.java:157)
+	at com.esotericsoftware.kryo.serializers.DefaultSerializers$StringSerializer.read(DefaultSerializers.java:146)
+	at com.esotericsoftware.kryo.Kryo.readObjectOrNull(Kryo.java:699)
+	at com.esotericsoftware.kryo.serializers.FieldSerializer$ObjectField.read(FieldSerializer.java:611)
+	at com.esotericsoftware.kryo.serializers.FieldSerializer.read(FieldSerializer.java:221)
+	at com.esotericsoftware.kryo.Kryo.readClassAndObject(Kryo.java:729)
+	at com.esotericsoftware.kryo.serializers.CollectionSerializer.read(CollectionSerializer.java:109)
+	at com.esotericsoftware.kryo.serializers.CollectionSerializer.read(CollectionSerializer.java:18)
+	at com.esotericsoftware.kryo.Kryo.readClassAndObject(Kryo.java:729)
+	at com.esotericsoftware.kryo.serializers.MapSerializer.read(MapSerializer.java:134)
+	at com.esotericsoftware.kryo.serializers.MapSerializer.read(MapSerializer.java:17)
+	at com.esotericsoftware.kryo.Kryo.readClassAndObject(Kryo.java:729)
+	at com.aptana.editor.css.contentassist.index.CSSIndexCacher.deSerialize(CSSIndexCacher.java:90)
+	at com.aptana.editor.css.CSSMetadataLoader.loadMetadataCacheIndex(CSSMetadataLoader.java:181)
+	at com.aptana.editor.css.CSSMetadataLoader.loadIndexCacher(CSSMetadataLoader.java:160)
+	at com.aptana.editor.common.contentassist.MetadataLoader.run(MetadataLoader.java:239)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.pandora.tools.android 4 0 2020-01-04 22:40:12.702
+!MESSAGE (Build null) [ERROR]  ===Caption  ExecutablePath
+
+!ENTRY com.pandora.launcher.core 4 0 2020-01-04 22:40:12.712
+!MESSAGE (Build null) [ERROR]  系统找不到指定的文件。
+!STACK 0
+com.sun.jna.platform.win32.Win32Exception: 系统找不到指定的文件。
+	at com.sun.jna.platform.win32.Advapi32Util.registryGetStringValue(Advapi32Util.java:552)
+	at com.pandora.launcher.core.iphone.jna.LibraryFinder.loadPath(LibraryFinder.java:58)
+	at com.pandora.launcher.core.iphone.jna.LibraryFinder.<clinit>(LibraryFinder.java:50)
+	at com.pandora.launcher.core.iphone.jna.md.LibraryInstance.getMDLibrary(LibraryInstance.java:15)
+	at com.pandora.launcher.core.iphone.jna.idevice.win.WinDeviceLibrary.<clinit>(WinDeviceLibrary.java:72)
+	at com.pandora.launcher.core.iphone.jna.idevice.DeviceLibraryRegistry.getDeviceLibrary(DeviceLibraryRegistry.java:15)
+	at com.pandora.launcher.core.iphone.IPhoneLauncher.<init>(IPhoneLauncher.java:109)
+	at com.pandora.launcher.core.listener.DeviceStartupListener.earlyStartup(DeviceStartupListener.java:29)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:87)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:66)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$69.run(Workbench.java:2726)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.pandora.tools.android 4 0 2020-01-04 22:40:12.719
+!MESSAGE (Build null) [ERROR]  ===adb.exe  C:\Users\Administrator\Desktop\HBuilder\tools\adbs\1.0.31\adb.exe
+
+!ENTRY com.pandora.launcher.core 4 0 2020-01-04 22:40:12.727
+!MESSAGE (Build null) [ERROR]  系统找不到指定的文件。
+!STACK 0
+com.sun.jna.platform.win32.Win32Exception: 系统找不到指定的文件。
+	at com.sun.jna.platform.win32.Advapi32Util.registryGetStringValue(Advapi32Util.java:552)
+	at com.pandora.launcher.core.iphone.jna.LibraryFinder.loadPath(LibraryFinder.java:58)
+	at com.pandora.launcher.core.iphone.jna.LibraryFinder.getMDLibrary(LibraryFinder.java:122)
+	at com.pandora.launcher.core.iphone.jna.md.LibraryInstance.getMDLibrary(LibraryInstance.java:15)
+	at com.pandora.launcher.core.iphone.jna.idevice.win.WinDeviceLibrary.<clinit>(WinDeviceLibrary.java:72)
+	at com.pandora.launcher.core.iphone.jna.idevice.DeviceLibraryRegistry.getDeviceLibrary(DeviceLibraryRegistry.java:15)
+	at com.pandora.launcher.core.iphone.IPhoneLauncher.<init>(IPhoneLauncher.java:109)
+	at com.pandora.launcher.core.listener.DeviceStartupListener.earlyStartup(DeviceStartupListener.java:29)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:87)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:66)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$69.run(Workbench.java:2726)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.pandora.tools.android 4 0 2020-01-04 22:40:12.749
+!MESSAGE (Build null) [ERROR]  exe===adb.exe   path===c:\users\administrator\desktop\hbuilder\tools\adbs\1.0.31\adb.exe
+
+!ENTRY com.pandora.tools.android 4 0 2020-01-04 22:40:12.757
+!MESSAGE (Build null) [ERROR]  ADB Path===c:\users\administrator\desktop\hbuilder\tools\adbs\1.0.31\adb.exe
+
+!ENTRY com.pandora.launcher.core 4 0 2020-01-04 22:40:12.765
+!MESSAGE (Build null) [ERROR]  添加Android设备监听......
+
+!ENTRY com.pandora.launcher.core 4 0 2020-01-04 22:40:12.782
+!MESSAGE (Build null) [ERROR]  系统找不到指定的文件。
+!STACK 0
+com.sun.jna.platform.win32.Win32Exception: 系统找不到指定的文件。
+	at com.sun.jna.platform.win32.Advapi32Util.registryGetStringValue(Advapi32Util.java:552)
+	at com.pandora.launcher.core.iphone.jna.LibraryFinder.loadPath(LibraryFinder.java:58)
+	at com.pandora.launcher.core.iphone.jna.LibraryFinder.getMDLibrary(LibraryFinder.java:122)
+	at com.pandora.launcher.core.iphone.jna.md.LibraryInstance.getMDLibrary(LibraryInstance.java:15)
+	at com.pandora.launcher.core.iphone.jna.idevice.win.WinDeviceLibrary.addNotificationHandler(WinDeviceLibrary.java:77)
+	at com.pandora.launcher.core.iphone.IPhoneLauncher$5.run(IPhoneLauncher.java:799)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.pandora.tools.android 4 0 2020-01-04 22:40:12.836
+!MESSAGE (Build null) [ERROR]  ADB PID:::10724
+
+!ENTRY com.pandora.launcher.core 4 0 2020-01-04 22:40:12.861
+!MESSAGE (Build null) [ERROR]  library is null!!!!!
+
+!ENTRY com.pandora.stats.core 1 0 2020-01-04 22:40:12.880
+!MESSAGE 
+
+!ENTRY com.pandora.tools.android 4 0 2020-01-04 22:40:12.921
+!MESSAGE (Build null) [ERROR]  ADB Path===C:\Users\Administrator\Desktop\HBuilder\tools\adbs\adb.exe
+
+!ENTRY com.pandora.core.utils 4 0 2020-01-04 22:40:12.985
+!MESSAGE (Build null) [ERROR]  Wmic Error:::No Instance(s) Available.
+
+!ENTRY com.pandora.core.utils 4 0 2020-01-04 22:40:12.990
+!MESSAGE (Build null) [ERROR]  Wmic Error:::
+
+!ENTRY com.pandora.tools.android 4 0 2020-01-04 22:40:12.997
+!MESSAGE (Build null) [ERROR]  ADB Path===C:\Users\Administrator\Desktop\HBuilder\tools\adbs\adb.exe
+
+!ENTRY org.eclipse.equinox.p2.repository 4 0 2020-01-04 22:40:13.285
+!MESSAGE C:\Users\Administrator\Desktop\HBuilder\p2\org.eclipse.equinox.p2.repository\cache\content-561804826.jar 是合法的jar
+
+!ENTRY org.eclipse.equinox.p2.repository 4 0 2020-01-04 22:40:16.733
+!MESSAGE C:\Users\Administrator\Desktop\HBuilder\p2\org.eclipse.equinox.p2.repository\cache\content1190459293.jar 是合法的jar
+
+!ENTRY com.pandora.tools.android 4 0 2020-01-04 22:40:17.654
+!MESSAGE (Build null) [ERROR]  ADB Path===C:\Users\Administrator\Desktop\HBuilder\tools\adbs\1.0.31\adb.exe
+
+!ENTRY com.pandora.tools.android 4 0 2020-01-04 22:40:20.529
+!MESSAGE (Build null) [ERROR]  ADB Path===C:\Users\Administrator\Desktop\HBuilder\tools\adbs\1.0.31\adb.exe
+
+!ENTRY com.pandora.stats.core 4 0 2020-01-04 22:41:12.918
+!MESSAGE (Build null) [ERROR]  list job time: 0

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+				text-align: center;
+			}
+			.container{
+				width: 100%;
+				font-size: 30px;
+				color: #666;
+			}
+			.flip{
+				height: 45px;
+				overflow: hidden;
+			}
+			.flip div div{
+				height: 45px;
+				margin-bottom: 45px;
+				/*background-color: yellowgreen;*/
+				color: #fff;
+				display: inline-block;
+				padding: 0 10px;
+				color: #fff;
+			}
+			.flip div:nth-child(2n) div{
+				background-color: yellowgreen;
+			}
+			.flip div:nth-child(2n+1) div{
+				background-color: hotpink;
+			}
+			.flip div:first-child{
+				animation: dong 5s infinite linear;
+			}
+			
+			@keyframes dong{
+				from{
+					margin-top: 40px;
+				}
+				to{
+					margin-top: -410px;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			一周开始了
+			<div class="flip">
+				<div> <div>周一，困</div> </div>
+				<div> <div>周二，没醒</div> </div>
+				<div> <div>周三，迷糊</div> </div>
+				<div> <div>周四，加油</div> </div>
+				<div> <div>周五，我干了个啥，又要放假了~</div> </div>
+			</div>
+			一起嗨皮吧
+		</div>
+	</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			img[src="img/xiaoming.png"]{
+				width: 200px;
+				height: 200px;
+				border-radius: 50%;
+			}
+			a[title="aa"]{
+				text-decoration: none;
+				color: black;
+				font-weight: bold;
+			}
+			div[aa="abbbb"]{
+				width: 50px;
+				height: 50px;
+				background-color: red;
+			}
+			.box p:first-child{
+				width: 100px;
+				height: 100px;
+				background-color: red;
+			}
+			.box p:nth-child(1){
+				width: 100px;
+				height: 100px;
+				background-color: red;
+			}
+			.box p:last-child{
+				width: 100px;
+				height: 100px;
+				background-color: red;
+			}
+			.box p:nth-child(7){
+				width: 100px;
+				height: 100px;
+				background-color: red;
+			}
+			/*.box p:first-of-type{
+				
+			}
+			.box p:last-of-type{
+				
+			}*/
+			.box p:nth-child(2n){
+				height: 100px;
+				background-color: aqua;
+			}
+			.box p:nth-child(2n+1){
+				height: 100px;
+				background-color: blue;
+				transform: rotate() scale() skew() translate(90deg);
+				transition: all 2s ease 0s;
+			}
+			.box p:nth-child(1){
+				width: 100px;
+				height: 100px;
+				background-color: red;
+			}
+			#aa{
+				width: 50px;
+				height: 50px;
+				background-color: red;
+				border-radius: 0%;
+				animation: donghua 2s linear infinite;
+			}
+			@keyframes donghua{
+				0%{
+					transform: translateY(0px);
+				    border-radius: 0%;
+				}
+				50%{
+					transform: translateY(150px);
+					border-radius: 50%;
+				}
+				100%{
+					transform: translateY(0px);
+				    border-radius: 0%;
+				}
+			}
+		</style>
+		
+	</head>
+	<body>
+		<!--属性匹配-->
+		<img src="img/xiaoming.png" />
+		<a href="#" title="aa">哈是的哈时间肯定会</a>
+		=完全匹配
+		^=开始匹配
+		$=结尾匹配
+		~=空格匹配
+		|=短横线匹配
+		*=任意匹配
+		<div id="aa">
+			
+		</div>
+		<div class="box">
+			<p></p>
+			<p></p>
+			<p></p>
+			<p></p>
+			<p></p>
+			<p></p>
+			<p></p>
+		</div>
+		
+	</body>
+</html>

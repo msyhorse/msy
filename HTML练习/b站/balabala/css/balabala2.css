@@ -1,0 +1,294 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+.box1 {
+	height: 50px;
+	widows: 100%;
+	
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.a1 {
+	height: 50px;
+	width: 500px;
+
+	text-align: center;
+}
+.box11 {
+	width: 80px;
+	height: 50px;
+
+	background-image: url(../img/L2.png);
+	background-repeat: no-repeat;
+	background-size: 100% 90%;
+	float: left;
+}
+.box111 {
+	display: none;
+}
+.box111 p {
+	width: 50px;
+	height: 15px;
+	
+}
+.a11 li:hover .box111 {
+	display: block;
+}
+.a11 li {
+	width: 50px;
+	height: 15px;
+	font-size: 12px;
+	float: left;
+	list-style: none;
+	margin-top: 15px;
+}
+.a11 li:hover {
+	cursor: pointer;
+}
+.a2 {
+	height: 33px;
+	width: 300px;
+	
+}
+.a22 {
+	height: 28px;
+	width: 260px;
+	border: 1px solid #E7E7E7;
+	margin-top: 1px;
+	float: left;
+}
+.a222 {
+	height: 30px;
+	width: 30px;
+	
+	float: right;
+	margin-right: 5px;
+	background-image: url(../img/q1.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+.a3 {
+	height: 50px;
+	width: 260px;
+	
+}
+.a33{
+	width: 37px;
+	height: 50px;
+
+	background-image: url(../img/QQ图片20191219134828.png);
+	background-repeat: no-repeat;
+	background-size: 100% 90%;
+	float: left;
+
+}
+.a111 li {
+	width: 50px;
+	height: 50px;
+	margin-left: 2px;
+	font-size: 12px;
+	float: left;
+	list-style: none;
+	text-align: center;
+	line-height: 50px;
+    border-radius:5px ;
+}
+.aa1{
+	background-color: #F45A8D;
+}
+.a111 li:hover {
+	cursor: pointer;
+}
+
+.boox{
+	height: 100%;
+	width: 100%;
+	background-color: #9DC7F3;
+}
+.boox2{
+	height:600px;
+	width: 800px;
+	margin: auto;
+	background-color: white;
+}
+.cv1{
+	height: 80px;
+	width: 100%;
+	margin-top: 30px;
+	background-color: white;
+}
+.f1{
+	height: 60px;
+	width: 60px;
+	border-radius: 100%;
+	margin-top: 10px;
+	margin-left: 20px;
+	float: left;
+	border: 1px  solid black ;
+}
+.f3{
+	height: 60px;
+	width: 100px;
+	margin-top: 10px;
+	margin-left: 20px;
+	float: left;
+	color: palevioletred;
+	text-align: center;
+	line-height: 40px;
+	font-size: 18px;
+}
+.f2{
+	height: 40px;
+	width: 100px;
+	float: right;
+	margin-top: 20px;
+	margin-right: 30px;
+	color: white;
+	background-color: #9DC7F3 ;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50px;
+}
+.f2:hover{
+	cursor: pointer;
+}
+.boox3{
+	height: 480px;
+	width:700px;
+	float: right;
+}
+.boox4{
+	height: 450px;
+	width:700px;
+	float: right;
+	margin-top: 10px;
+	background-image: url(../img/vc9.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+.b3{
+	height:600px;
+	width: 800px;
+	margin: auto;
+	margin-top: 50px;
+	background-color: white;
+}
+.cv2{
+	height: 80px;
+	width: 100%;
+	margin-top: 30px;
+	background-color: white;
+}
+.g1{
+	height: 60px;
+	width: 60px;
+	border-radius: 100%;
+	margin-top: 10px;
+	margin-left: 20px;
+	float: left;
+	border: 1px  solid black ;
+}
+.g3{
+	height: 60px;
+	width: 100px;
+	margin-top: 10px;
+	margin-left: 20px;
+	float: left;
+	color: palevioletred;
+	text-align: center;
+	line-height: 40px;
+	font-size: 18px;
+}
+.g2{
+	height: 40px;
+	width: 100px;
+	float: right;
+	margin-top: 20px;
+	margin-right: 30px;
+	color: white;
+	background-color: #9DC7F3 ;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50px;
+}
+.g2:hover{
+	cursor: pointer;
+}
+.booxx3{
+	height: 480px;
+	width:700px;
+	float: right;
+}
+.booxx4{
+	height: 450px;
+	width:700px;
+	float: right;
+	margin-top: 10px;
+	background-image: url(../img/v2c.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+.b4{
+	height:600px;
+	width: 800px;
+	margin: auto;
+	margin-top: 50px;
+	background-color: white;
+}
+.cv3{
+	height: 80px;
+	width: 100%;
+	margin-top: 30px;
+	background-color: white;
+}
+.i1{
+	height: 60px;
+	width: 60px;
+	border-radius: 100%;
+	border: 1px  solid black ;
+	margin-top: 10px;
+	margin-left: 20px;
+	float: left;
+}
+.i3{
+	height: 60px;
+	width: 100px;
+	margin-top: 10px;
+	margin-left: 20px;
+	float: left;
+	color: palevioletred;
+	text-align: center;
+	line-height: 40px;
+	font-size: 18px;
+}
+.i2{
+	height: 40px;
+	width: 100px;
+	float: right;
+	margin-top: 20px;
+	margin-right: 30px;
+	color: white;
+	background-color: #9DC7F3 ;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50px;
+}
+.i2:hover{
+	cursor: pointer;
+}
+.booxxx3{
+	height: 480px;
+	width:700px;
+	float: right;
+}
+.booxxx4{
+	height: 450px;
+	width:700px;
+	float: right;
+	margin-top: 10px;
+	background-image: url(../img/v6c.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}

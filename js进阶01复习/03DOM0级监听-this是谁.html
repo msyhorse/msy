@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			div{
+				width:100px;
+				height:100px;
+				background-color:red;
+				margin:10px;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div id="a1"></div>
+		<div id="a2"></div>
+		<div id="a3"></div>
+	</body>
+	<script type="text/javascript">
+		var b1=document.getElementById("a1");
+		var b2=document.getElementById("a2");
+		var b3=document.getElementById("a3");
+		b1.onmouseover=c1;
+		b2.onmouseover=c1;
+		b3.onmouseover=c1;
+		b1.onmouseout=c2;
+		b2.onmouseout=c2;
+		b3.onmouseout=c2;
+		function c1(){
+			this.style.backgroundColor="yellow"
+		};
+		function c2(){
+			this.style.backgroundColor="blue"
+		}
+	</script>
+</html>

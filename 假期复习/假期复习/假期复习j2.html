@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>假期复习j2</title>
+	</head>
+	<body>
+	</body>
+	<script type="text/javascript">
+		/*for(var a=0;a<=100;a++){
+			var count=0;
+			for(var b=0;b<=a;b++){
+				if(a%b==0){
+					count++
+				}
+				
+			}
+			if(count==2){
+				console.log(a)
+			}
+			
+			
+		}*/
+		function yueshu(a){
+		
+				var count=0;
+				for(var i=0;i<=a;i++){
+					if(a%i==0){
+						count++
+					}
+//					console.log(count)
+				}
+//				console.log(count);
+				return count;
+			}
+		
+		
+		
+		
+		function zhishu(b){
+			if(yueshu(b)==2){
+				return true;
+			}
+			else{
+				return false;
+			}
+		}
+		
+/*		for(var c=0;c<=10;c++){
+			if(zhishu(c)){
+				console.log(c)
+			}
+		}*/
+		
+		
+//		哥德巴赫猜想
+//		任意一个偶数都可以拆分成两个质数
+        var d=parseInt(prompt("请输入一个偶数"))
+        for(var e=0;e<=d;e++){
+        	if(zhishu(e)&&zhishu(d-e)){
+        		console.log("第一个质数："+e+"和第二个质数："+(d-e))
+        	}
+        }
+	</script>
+</html>

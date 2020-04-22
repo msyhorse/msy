@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.box{
+				width: 258px;
+				height: 258px;
+				border: 2px solid red;
+				position: relative;
+				margin: 100px auto;
+				perspective: 500px;
+			}
+			.box img{
+				position: absolute;
+				top: 0;
+				left: 0;
+				transition: all 3s;
+			}
+			.baby{
+				/*z-index: 2;*/
+				transform-origin: 100% 0%;
+				border: 2px solid red;
+			}
+			.box:hover .baby{
+				transform: rotateY(180deg);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<img src="img/baby.png" class="baby"/>
+			<img src="img/xiaoming.png" class="xiaoming"/>
+		</div>
+	</body>
+</html>

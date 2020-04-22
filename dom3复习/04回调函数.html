@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				padding:0;
+				margin:0;
+			}
+			#a1{
+				width:300px;
+				height:300px;
+				background-color:wheat;
+				position:absolute;
+				top:100px;
+				left:100px;
+				
+			}
+		</style>
+	</head>
+	<body>
+		<div id="a1">
+			
+		</div>
+		<script type="text/javascript" src="js/animate-2.0.0.js"></script>
+		<script type="text/javascript">
+			
+			var b1=document.getElementsByTagName("div")[0];
+			console.log(b1);
+		     function b2(){
+		    	animate(b1,{"left":600},300,function(){
+		    		animate(this,{"top":300},500,function(){
+		    			animate(this,{"left":100},500,function(){
+		    				animate(this,{"top":100},500,function(){
+		    					b2();
+		    				})
+		    			})
+		    		})
+		    	})};
+		    b2();
+		</script>
+	</body>
+</html>

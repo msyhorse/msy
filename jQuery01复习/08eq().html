@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			div{
+				width:600px;
+				height:100px;
+				border:1px black solid;
+			}
+			p{
+				width:50px;
+				height:50px;
+				line-height:100px;
+				float:left;
+				border:1px black solid;
+				margin-left:50px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="a1">
+			<p></p>
+			<p class="a2"></p>
+			<p class="a2"></p>
+			<p class="a2"></p>
+			<p></p>
+		</div>
+		<div class="a3">
+			<p class="a2"></p>
+			<p class="a2">123</p>
+			<p class="a2"></p>
+			<p></p>
+			<p></p>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript">
+//		$("p:eq(6)").css("background-color","royalblue");
+//		$(".a3 p").eq(1).css("background-color","red");
+//		$(".a2").eq(4).css("background-color","darkkhaki");
+//      $(".a3 .a2").eq(1).css("background-color","blueviolet");
+        $("p:first").css("background-color","darkkhaki");
+
+	</script>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			#a1{
+				width:79px;
+				height:108px;
+				background:url(img/girl.png) no-repeat;
+				background-position:0 -216px;
+				position:absolute;
+				top:300px;
+				left:0;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="a1">
+			
+		</div>
+	</body>
+	<script type="text/javascript">
+		var a1=document.createElement("div");
+		document.body.appendChild(a1);
+		var a2=document.getElementsByTagName("div")[0];
+		var b1=0;
+		var b2=0;
+		setInterval(function(){
+			b1+=4;
+			b2++;
+			if(b2>7){
+				b2=0;
+			}
+			a2.style.left=b1+"px";
+			a2.style.backgroundPosition=-b2*79+"px -216px";
+		},60)
+		
+	</script>
+</html>

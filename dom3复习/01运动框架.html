@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			*{
+				padding:0;
+				margin:0;
+			}
+			#a1{
+				width:300px;
+				height:300px;
+				background-color: red;
+				position:absolute;
+				top:200px;
+				left:200px;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<div id="a1">
+			
+		</div>
+	</body>
+	<script type="text/javascript">
+		/*var a2=200;
+		var b1=document.getElementById("a1");
+		var b2=setInterval(function(){
+			a2+=0.25;	
+			
+			if(a2>900){
+				a2=900;
+				clearInterval(b2);
+			
+			}
+			b1.style.left=a2+"px";
+		},1);*/
+		var a2=200;
+		var a3=3000;
+		var a4=0;
+		var a6=900;
+		var a8=20;
+		
+		var a9=a3/a8;
+		var a7=(a6-a2)/a9;
+		var b1=document.getElementById("a1");
+	    var b2=setInterval(function(){
+	    	a2+=a7;
+	    	a4++;
+	    	if(a4>a9){
+	    		a7=a9;
+	    		clearInterval(b2);
+	    	}
+	    	b1.style.left=a2+"px";
+	    },1/a8);
+	</script>
+</html>

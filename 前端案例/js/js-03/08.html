@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+		      //用来统计约数个数
+			function yueshugeshu(a){
+				var count=0;
+				for (var i=1;i<=a;i++) {
+					if (a%i==0) {
+						count++;//1 2 3
+					}
+				}
+				return count;//3
+			}
+			                                                                                              
+			function iszhishu(b){
+				if(yueshugeshu(b)==2){
+					return true;
+				}else{
+					return false;
+				}
+			}
+            //找2~100的质数
+		/*	for(var i=2;i<100;i++){
+				if(iszhishu(i)){
+					console.log(i);//2 
+				}
+			}*/
+//			哥德巴赫猜想
+//			任何一个偶数，都可以拆分为两个质数的和。
+             
+/*			var oushu=parseInt(prompt("请输入一个偶数"));
+			for(var i=1;i<oushu;i++){
+				if(iszhishu(i)&&iszhishu(oushu-i)){
+					console.log(oushu+"可以拆分：质数"+i+"和质数:"+(oushu-i));
+				}
+			}*/
+			
+			waiceng: for (var i=4;i<100;i+=2) {
+				for (var j=2;j<i;j++) {
+					if(iszhishu(j)&&iszhishu(i-j)){
+					  console.log(i+"可以拆分：质数"+j+"和质数:"+(i-j));
+//					  continue waiceng;
+					}
+				}
+			}
+			/*
+			for(var i=2;i<100;i++){
+				var coun=0;
+				for (var j=1;j<=i;j++) {
+					if(i%j==0){
+						coun++;
+					}
+				}
+				if(coun==2){
+					console.log(i);
+				}
+			}*/
+		</script>
+	</body>
+</html>

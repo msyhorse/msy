@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var a=1;
+			console.log(typeof a);//number
+			function aa(){}
+			console.log(typeof aa)//function
+			var a=2;
+			var b=a;
+			b=3;
+			console.log(a);
+//			函数表达式=匿名函数
+			var aa=function(){
+				console.log("我是匿名函数，我被执行了");
+			}
+			var bb=aa;
+			bb.haha=11;
+			console.log(aa.haha);//1
+//			aa();
+		</script>
+	</body>
+</html>

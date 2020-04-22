@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				padding:0;
+				margin:0;
+			}
+			.a1{
+				height:333px;
+				box-shadow: 0px 0px 5px black;
+				margin:15px;
+			}
+			.a1 img{
+				width:300px;
+				height:250px;
+				
+			}
+			
+		</style>
+	</head>
+	<body>
+	    <input type="button" name="a2" id="a2" value="" />
+	    
+	</body>
+	<script type="text/javascript">
+		var a2=document.getElementById("a2");
+		var xhr=new XMLHttpRequest;
+		xhr.onreadystatechange=function(){
+			if(xhr.readyState==4){
+				//console.log(xhr.responseText);
+				var a4=JSON.parse(xhr.responseText);
+				var a3=a4.result.data;
+				console.log(a3);
+				var str="";
+				for(var i=0;i<a3.length;i++){
+					str+=`<div class="a1">
+	    	<img src="${a3[i].thumbnail_pic_s}"/>
+	    	<h1>${a3[i].category}</h1>
+	    	<p>${a3[i].title}</p>
+	    </div>`
+				}
+				document.body.innerHTML=str;
+			}
+		}
+		xhr.open("get","json/guoji.json",true);
+		xhr.send(null);
+	</script>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+		}
+			.statg{
+				width: 258px;
+				height: 258px;
+				perspective: 500px;
+				margin: 100px auto;
+			}
+			.unit{
+				width: 258px;
+				height: 258px;
+				position: relative;
+				transform: rotateX(0deg);
+				transition: all 6s;
+				/*当一个组合体自己要进行旋转的时候,一定要加上这个属性*/
+				transform-style: preserve-3d;
+			}
+			/**/.unit img{
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+			.unit img.baby{
+				transform: rotateX(90deg) translateZ(129px);
+				z-index: 2;
+			}
+			#a{
+				transform: rotateX(-90deg) translateZ(129px);
+				z-index: 2;
+			}
+			#b{
+				transform: rotateX(180deg) translateZ(129px);
+				z-index: 2;
+			}
+			#c{
+				transform: rotateY(-90deg) translateZ(129px);
+				z-index: 2;
+			}
+			#d{
+				transform: rotateY(90deg) translateZ(129px);
+				z-index: 2;
+			}
+			.unit img.xiaoming{
+				transform: translateZ(129px);
+				z-index: 2;
+			}
+			.statg:hover .unit{
+				transform: rotateX(360deg);
+			}
+			#box{
+				width: 200px;
+				height: 200px;
+				perspective: 500px;
+				border: 2px solid red;
+				margin: auto;
+			}
+			#box p{
+				width: 200px;
+				height: 200px;
+				background-color: yellowgreen;
+				/*transform-origin: 100% 0%;*/
+				transition: all 2s;
+			}
+			#box:hover p{
+				transform: rotateX(89deg) translateZ(100px)  ;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="statg">
+			<div class="unit">
+				<img src="img/xiaoming.png" class="xiaoming"/>
+				<img src="img/baby.png" class="baby"/>
+				<img id="a" src="img/baby.png" class="baby"/>
+				<img id="b" src="img/xiaoming.png" class="baby"/>
+				<img id="v" src="img/baby.png" class="baby"/>
+				<img id="d" src="img/xiaoming.png" class="baby"/>
+			</div>
+		</div>
+	</body>
+</html>

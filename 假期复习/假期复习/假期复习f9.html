@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>假期复习f9</title>
+		<style type="text/css">
+			*{
+				padding:0;
+				margin:0;
+			}
+			#a{
+				width:1000px;
+				height:500px;
+				background-color:black;
+				margin:50px auto;
+				display:flex;
+				justify-content:center;
+				align-items:center;
+			}
+			.b{
+				width:50px;
+				height:50px;
+				margin:20px;
+				animation:msy 1s linear infinite;
+			}
+			.b:nth-child(2n){
+				background-color:red;
+			}
+			.b:nth-child(2n+1){
+				background-color:greenyellow;
+			}
+			.b:nth-child(1){
+				animation-delay:0.1s
+			}
+			.b:nth-child(2){
+				animation-delay:0.2s
+			}
+			.b:nth-child(3){
+				animation-delay:0.3s
+			}
+			.b:nth-child(4){
+				animation-delay:0.4s
+			}
+			.b:nth-child(5){
+				animation-delay:0.5s
+			}
+			.b:nth-child(6){
+				animation-delay:0.6s
+			}
+			.b:nth-child(7){
+				animation-delay:0.7s
+			}
+			.b:nth-child(8){
+				animation-delay:0.8s
+			}
+			.b:nth-child(9){
+				animation-delay:0.9s
+			}
+			.b:nth-child(10){
+				animation-delay:1s
+			}
+			@keyframes msy{
+				0%{
+					transform:translateY(0px);
+					border-radius:0%
+				}
+				50%{
+					transform:translateY(150px);
+					border-radius:50%
+				}
+				100%{
+					transform:translateY(0px);
+					border-radius:0%
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div id="a">
+			<div class="b"></div>
+			<div class="b"></div>
+			<div class="b"></div>
+			<div class="b"></div>
+			<div class="b"></div>
+			<div class="b"></div>
+			<div class="b"></div>
+			<div class="b"></div>
+			<div class="b"></div>
+			<div class="b"></div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				padding:0;
+				margin:0;
+			}
+			#a1{
+				width:228px;
+				height:375px;
+				position:fixed;
+				bottom:-370px;
+				right:-190px;
+				background: url(img/bg.png) no-repeat;
+				padding-top:35px;
+			}
+			p{
+				position:absolute;
+				top:0;
+				left:0;
+				width:40px;
+				height:40px;
+				background:url(img/pic1.png);
+				cursor:pointer;
+			}
+			p.b1{
+				background:url(img/pic2.png);
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div id="a1"><p></p>
+			<div id="a2">
+				123
+			</div>
+			
+		</div>
+	</body>
+	<script src="js/jquery-1.12.3.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		var c1=0;
+		$("p").click(function(){
+			if($("a1").is(":animated")){return}
+			else if(c1==0){
+				$("#a1").animate({"bottom":0},600);
+				$("#a1").animate({"right":0},600);
+				$("p").addClass("b1");
+				c1=1;
+			}
+			else if(c1==1){
+				$("#a1").animate({"bottom":"-375px"},600);
+				$("#a1").animate({"right":"-190px"},600);
+				$("p").removeClass("b1");
+				c1=0;
+		}})
+		
+	</script>
+</html>

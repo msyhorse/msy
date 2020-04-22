@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				padding:0;
+				margin:0;
+			}
+			#a1{
+				width:500px;
+				height:500px;
+				border:1px black solid;
+				margin:100px auto;
+				position:relative;
+			}
+			#a2{
+				width:50px;
+				height:50px;
+				background-color:red;
+				position:absolute;
+				top:0;
+				left:0;
+			}
+		</style>
+		
+		
+	</head>
+	<body>
+		<div id="a1">
+			<div id="a2">
+				
+			</div>
+			
+		</div>
+	</body>
+	<script type="text/javascript">
+		var a1=document.getElementById("a1");
+		var a2=document.getElementById("a2");
+		a2.onmousedown=function(event){
+			event=event||window.event;
+			var b1=event.clientX-a2.offsetLeft;
+			var b2=event.clientY-a2.offsetTop;
+			a1.onmousemove=function(event){
+				event=event||window.event;
+			var x=event.clientX-b1;
+			var y=event.clientY-b2;
+			if(x<10){x=0};
+			if(y<10){y=0};
+			if(x>a1.clientWidth-a2.clientWidth-10){
+				x=a1.clientWidth-a2.clientWidth
+			}
+			if(y>a1.clientHeight-a2.clientHeight-10){
+				y=a1.clientHeight-a2.clientHeight
+			}
+			a2.style.left=x+"px";
+			a2.style.top=y+"px";
+			}
+		};
+		document.onmouseup=function(){
+				a1.onmousemove=null;
+			}
+	</script>
+</html>

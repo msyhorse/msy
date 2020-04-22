@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<p>你好</p>
+		<p>世界</p>
+	</body>
+	<script src="js/jquery-1.12.3.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		/*var a1=$("<p>最后</p>");
+	    a1.css("background-color","red");
+	    $("body").append(a1);*/
+	    //$("body").append($("<p>最后</p>").css("background-color","red"))
+	    $("<p>123123</p>").appendTo($("body"));
+	    $("<p>123123</p>").prependTo($("body"));
+	    $("body").prepend($("<p>321321</p>"));
+	    $("p").after("<h1>结束</h1>");
+	    $("p").before("<h1>开始</h1>");
+	</script>
+</html>

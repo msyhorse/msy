@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			#a1{
+				width:400px;
+				height:400px;
+				background-color:red;
+			}
+			#a2{
+				width:200px;
+				height:200px;
+				background-color:blue;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="a1">
+			<p id="a2"></p>
+		</div>
+	</body>
+	<script type="text/javascript">
+		var a1=document.getElementById("a1");
+		var b1=0;
+		a1.onmouseover=function(){
+			console.log(event);
+			console.log(++b1);
+		};
+		a1.onmouseenter=function(){
+			console.log(event);
+			console.log(++b1);
+		};
+	</script>
+</html>

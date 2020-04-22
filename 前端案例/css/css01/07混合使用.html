@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>混合使用</title>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			#box{
+				width: 200px;
+				height: 200px;
+				background-color: red;
+				position: relative;
+				margin: auto;
+				top: 100px;
+				left: 400px;
+			}
+			.content{
+				width: 100px;
+				height: 100px;
+				background-color: yellow;
+				position: absolute;
+				right: 50px;
+				bottom: 50px;
+			}
+		</style>
+	</head>
+	<body>
+		<!--父级相对定位，子绝对定位，这样子盒子就不会脱离父盒子的文本流-->
+		<div id="box">
+			<div class="content">
+			</div>
+		</div>
+	</body>
+</html>

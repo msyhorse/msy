@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				padding:0;
+				margin:0;
+			}
+			#a1{
+				width:500px;
+				height:500px;
+				background-color:yellow;
+			}
+			#a2{
+				width:300px;
+				height:300px;
+				background-color:orange;
+			}
+			#a3{
+				width:100px;
+				height:100px;
+				background-color:red;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="a1">
+			<div id="a2">
+				<div id="a3">
+			
+		</div>
+			
+		</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		var b1=document.getElementById("a1");
+		var b2=document.getElementById("a2");
+		var b3=document.getElementById("a3");
+		b1.addEventListener("click",function(){
+			event.stopPropagation();
+			alert("b1,捕获.停止")
+		},true);
+		b2.addEventListener("click",function(){
+			alert("b2,捕获")
+		},true);
+		b3.addEventListener("click",function(){
+			alert("b3,捕获")
+		},true);
+		document.body.addEventListener("click",function(){
+			alert("body,捕获")
+		},true);
+		document.addEventListener("click",function(){
+			alert("document,捕获")
+		},true);
+		window.addEventListener("click",function(){
+			alert("window,捕获")
+		},true);
+		
+		b1.addEventListener("click",function(){
+			alert("b1,冒泡")
+		},false);
+		b2.addEventListener("click",function(){
+			alert("b2,冒泡")
+		},false);
+		b3.addEventListener("click",function(){
+			alert("b3,冒泡")
+		},false);
+		document.body.addEventListener("click",function(){
+			alert("body,冒泡")
+		},false);
+		document.addEventListener("click",function(){
+			alert("document,冒泡")
+		},false);
+		window.addEventListener("click",function(){
+			alert("window,冒泡")
+		},false);
+		
+	</script>
+</html>

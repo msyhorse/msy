@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			.box{
+				padding: 20px;
+				background: gold;
+			}
+			.box::after,.box::before{
+		        content: "";
+		        display: block;
+		    }
+		    .box{
+		    	zoom: 1;
+		    }
+			.box::after{
+				clear: both;
+			}
+			.op1{
+				width: 200px;
+				height: 200px;
+				background-color: yellow;
+				float: left;
+			}
+			.op2{
+				width: 200px;
+				height: 200px;
+				background-color: aqua;
+				float: left;
+			}
+			.aa{
+				width: 300px;
+				height: 300px;
+				background: khaki;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<p class="op1"></p>
+			<p class="op2"></p>
+		</div>
+		<p class="aa"></p>
+	</body>
+</html>

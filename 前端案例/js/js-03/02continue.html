@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+		  /*
+			for(var i=1;i<30;i++){
+				if(i%5==0) {
+					continue;//skip jump
+				}
+				console.log(i);
+			}
+			*/
+			waiceng: for (var i=3;i<=100;i+=2) {
+//				12: 3 4 6   12
+//				24:3 4 6 8 12   24
+//				16:4 ; 4 8 16
+//				64:8;4 8 16 32 64
+				for (var j=2;j<=Math.sqrt(i);j++) {
+					if(i%j==0){
+						continue waiceng;
+					}
+				}
+				console.log(i);
+			}
+		</script>
+	</body>
+</html>

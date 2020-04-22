@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>为什么定义引用函数不用加括号</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			/*function outer(){
+				var a=111;
+				console.log(a);
+				function inner(){
+					console.log(a);
+				}
+			}
+			outer()
+			inner();*/
+			function outer(b,v,k){
+				var a=111;
+				function inner(b,v,k){
+					console.log(a);//111
+					console.log(b+v+k);
+				}
+				return inner;
+			}
+			var inn=outer();
+			inn(1,2,3);
+//			console.log(outer());// 
+//			inner();
+		</script>
+	</body>
+</html>

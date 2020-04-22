@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			*{
+				padding:0;
+				margin:0;
+			}
+			.a11{
+				width:900px;
+				height:300px;
+				border:1px black solid;
+				overflow:hidden;
+				margin:200px auto;
+				position:relative;
+			}
+			.a2{
+				list-style:none;
+			}
+			li{
+				top:0;
+				position:absolute;
+				cursor:pointer;
+			}
+			.b1{left:0px;}
+			.b2{left:180px;}
+			.b3{left:360px;}
+			.b4{left:540px;}
+			.b5{left:720px;}
+		</style>
+	</head>
+	<body>
+		<div class="a11">
+			<ul class="a2">
+				<li class="b1">
+					<img src="img/0.jpg"/>
+				</li>
+				<li class="b2">
+					<img src="img/1.jpg"/>
+				</li>
+				<li class="b3">
+					<img src="img/2.jpg"/>
+				</li>
+				<li class="b4">
+					<img src="img/3.jpg"/>
+				</li>
+				<li class="b5">
+					<img src="img/4.jpg"/>
+				</li>
+			</ul>
+		</div>
+	</body>
+	<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(".b1").mouseenter(function(){
+			$("li").stop(true);
+			$(".b2").animate({"left":"560px"},1000);
+			$(".b3").animate({"left":"645px"},1000);
+			$(".b4").animate({"left":"730px"},1000);
+			$(".b5").animate({"left":"815px"},1000);
+		})
+		$(".b2").mouseenter(function(){
+			$("li").stop(true);
+			$(".b2").animate({"left":"85px"},1000);
+			$(".b3").animate({"left":"645px"},1000);
+			$(".b4").animate({"left":"730px"},1000);
+			$(".b5").animate({"left":"815px"},1000);
+		})
+		$(".b3").mouseenter(function(){
+			$("li").stop(true);
+			$(".b2").animate({"left":"85px"},1000);
+			$(".b3").animate({"left":"170px"},1000);
+			$(".b4").animate({"left":"730px"},1000);
+			$(".b5").animate({"left":"815px"},1000);
+		})
+		$(".b4").mouseenter(function(){
+			$("li").stop(true);
+			$(".b2").animate({"left":"85px"},1000);
+			$(".b3").animate({"left":"170px"},1000);
+			$(".b4").animate({"left":"255px"},1000);
+			$(".b5").animate({"left":"815px"},1000);
+		})
+		$(".b5").mouseenter(function(){
+			$("li").stop(true);
+			$(".b2").animate({"left":"85px"},1000);
+			$(".b3").animate({"left":"170px"},1000);
+			$(".b4").animate({"left":"255px"},1000);
+			$(".b5").animate({"left":"340px"},1000);
+		})
+		$("li").mouseleave(function(){
+			$("li").stop(true);
+			$(".b2").animate({"left":"180px"},1000);
+			$(".b3").animate({"left":"360px"},1000);
+			$(".b4").animate({"left":"540px"},1000);
+			$(".b5").animate({"left":"720px"},1000);
+		})
+		var li=document.getElementsByTagName("a2");
+		var a11=document.getElementsByTagName("a11");
+			a11.onmouseover=function(){
+		clearInterval(timer);
+	}
+	//鼠标移出
+	a11.onmouseout=function(){
+		move();
+	}
+	var nowleft=0;
+	function move(){
+		clearInterval(timer);
+		timer=setInterval(function(){
+			nowleft+=1;
+			if (nowleft>4) {
+				nowleft=0;
+			}
+			li[nowleft].style.height="600px";
+		},1000);
+	}
+	</script>
+</html>

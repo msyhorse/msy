@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var char="★"
+			var n=6
+			repeat(char,n)
+			function repeat(a,b){
+				var sum=a+""
+				for(var i=2;i<=b;i++){
+					sum=sum+a;
+				}
+				return sum;
+			}
+			var a=repeat(char,n)
+			console.log('"'+a.toString()+'"')
+		</script>
+	</body>
+</html>

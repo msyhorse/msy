@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			body{
+				height:3000px;
+			}
+			#a1{
+				width:300px;
+				height:300px;
+				background-color:red;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="a1">
+			
+		</div>
+	</body>
+	<script type="text/javascript">
+		var a1=document.getElementById("a1");
+		a1.onmousewheel=function(){
+			console.log(event);
+			event.preventDefault();
+		};
+		document.oncontextmenu=function(){
+			event.preventDefault();
+		}
+	</script>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			.box{
+				width: 260px;
+				height: 300px;
+				border: 2px solid black;
+				margin: 50px auto;
+				position: relative;
+				perspective: 500px;
+			}
+			.box img{
+				width: 260px;
+				height: 300px;
+				position: absolute;
+				top: 0;
+				left: 0;
+				backface-visibility: hidden;
+				transition: all 3s;
+			}
+			.box img.xiaoming{
+				transform: rotateY(-180deg);
+			}
+			.box img.baby{
+				transform: rotateY(0deg);
+			}
+			.box:hover .xiaoming{
+				transform: rotateY(0deg);
+			}
+			.box:hover .baby{
+				transform: rotateY(180deg);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<img src="img/xiaoming.png" class="xiaoming"/>
+			<img src="img/baby.png" class="baby"/>
+		</div>
+	</body>
+</html>

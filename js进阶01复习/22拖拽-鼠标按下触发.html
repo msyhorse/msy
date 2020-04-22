@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			#a1{
+				width:200px;
+				height:200px;
+				background-color:red;
+				position:absolute;
+				top:0;
+				left:0;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="a1">
+			
+		</div>
+	</body>
+	<script type="text/javascript">
+				var a1=document.getElementById("a1");
+				a1.onmousedown=function(){
+		document.onmousemove=function(){
+			a1.style.top=event.clientY+"px";
+			a1.style.left=event.clientX+"px";
+		};};
+	</script>
+</html>

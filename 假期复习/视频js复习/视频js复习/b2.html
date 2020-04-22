@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>substring不能用负数    split中只要有分隔符就必分割
+		大小写并不会改变原来的字符串
+		</title>
+	</head>
+	<body>
+	</body>
+	<script type="text/javascript">
+		//substr截取字符串,从前面的数字开始截,截后面的数字的数目
+		//substring截取字符串,从前面的数字开始截,接到后面的数字的前一位
+		/*var a="0123456789";
+		console.log(a.substr(3,3));
+		console.log(a.substr(3));
+		console.log(a.substr(-3,3));
+		console.log(a.substring(3,6));
+		console.log(a.substring(3));
+		console.log(a.substring(5,9));*/
+		
+		
+		//length字符串长度
+		//charAt(下标)返回指定位置的元素
+		/*var b="我爱你365天 YEAH";
+		console.log(b.length);
+		for(var i=0;i<b.length;i++){
+			console.log(b.charAt(i));
+		};*/
+		
+		
+		//concat连接字符串
+		/*var c="我爱你";
+		var d="365天 yeah";
+		console.log(c.concat(d));*/
+		
+		
+		//indexOf检索字符串
+		/*var e="我爱你365天";
+		console.log(e.indexOf(6));*/
+		
+		
+		//replace替换字符串中的指定元素
+		/*var f="我爱你365天";
+		console.log(f.replace("你","msy"));*/
+		
+		
+		//slice从前面的数字提取到后面的数字,但不包括后面的数字
+		/*var g="0123456789";
+		console.log(g.slice(3,6));
+		console.log(g.slice(3));
+		console.log(g.slice(-3,-1));
+		console.log(g.slice(-3));*/
+		
+		//split将字符串转换为数组
+		/*var h="090102030405060708090"
+		console.log(h.split(0));*/
+		
+		//toLowerCase小写
+		//toUpperCase大写
+		var i="asdfgfhgf";
+		console.log(i.toUpperCase());
+		var j=i.toUpperCase()
+		console.log(j.toLowerCase());
+	</script>
+</html>

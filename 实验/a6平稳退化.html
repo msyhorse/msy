@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<!--<a url onclick="popUp.(www.baidu.com);return false">打开一个新窗口</a>
+		popUp.(www.baidu.com)-->
+		<a href="javascript:popUp('http://www.baidu.com/');">打开一个新窗口</a>
+		<!--"javascript:popUp('http://www.baidu.com/');return false"-->
+		<a href="http://www.baidu.com/" onclick="popUp(this.href);return false">打开一个新窗口</a>
+	</body>
+	<script type="text/javascript">
+//		alert(popUp.(www.baidu.com));
+//		popUp('http://www.baidu.com/');
+//		alert(123);
+		function popUp(winURL){
+			window.open(winURL,"popup","width=900,height=900");
+		}
+	</script>
+</html>

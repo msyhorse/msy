@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>let有局限性，只能在循环体内使用  对象{}可以在script内书写</title>
+    <style>
+        li{
+            list-style:none;
+            width:300px;
+            height:100px;
+            background:red
+        }
+        li p{
+            width:200px;
+            height:35px;
+            background:blue;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+
+    </ul>
+    <script>
+        // node是啥
+        var a1={
+            name:"小明",
+            age:90
+        }
+        var a2=` <li>
+        <p>${a1.name}</p>
+        <p>${a1.age}</p>
+        </li>`;
+        document.querySelector("ul").innerHTML=a2;
+        for(var i=0;i<10;i++){
+
+        }
+        console.log(i);
+        for(let i=0;i<10;i++){
+            console.log(i);
+        }
+        console.log(i);
+        {
+            let a=1;
+            var b=2;
+            console.log(a);
+        }
+       
+        console.log(b); console.log(a);
+    </script>
+</body>
+</html>

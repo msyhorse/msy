@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.stage{
+				width: 258px;
+				height: 258px;
+				margin: 240px auto;
+				perspective: 400px;
+			}
+			.unit{
+				width: 258px;
+				height: 258px;
+				position: relative;
+			}
+			.unit img{
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+			.unit img.baby{
+				
+				transform: rotateX(90deg) translateZ(129px);
+				
+			}
+			.unit img.xiaoming{
+				transform: translateZ(129px);
+				/*z-index: 2;*/
+			}
+			.unit{
+				/*transform: rotateX(0deg);*/
+				transition: all 5s;
+				transform-style: preserve-3d;
+			}
+			.stage:hover .unit{
+				transform: rotateX(-90deg);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="stage">
+			<div class="unit">
+				<img src="img/xiaoming.png" alt="" class="xiaoming"/>
+				<img src="img/baby.png" alt="" class="baby"/>
+			</div>
+		</div>
+	</body>
+</html>

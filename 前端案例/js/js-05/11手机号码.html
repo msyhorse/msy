@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var regphone=/^1[34578]\d{9}$/;
+			var phone=prompt("请输入手机号码");
+			if(regphone.test(phone)){
+				alert("正确");
+			}else{
+				alert("错误");
+			}
+		</script>
+	</body>
+</html>

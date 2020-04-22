@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			function fun(a,b,c){
+				function fun1(a){
+					alert(a+b+c);//8
+				}
+				return fun1;
+			}
+			var fu=fun(4,3,2);
+			fu(1);
+		</script>
+	</body>
+</html>

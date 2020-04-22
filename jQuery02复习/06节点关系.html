@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			p{
+				width:100px;
+				height:100px;
+				background-color:yellow;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="123123123123123">
+		<p></p>
+		<p></p>
+		<p class="a4" ></p><p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+		</div>
+	</body>
+	<script type="text/javascript">
+		var a1=document.getElementsByTagName("div")[0];
+		var a2=document.getElementsByTagName("p");
+		//alert(a1.childNodes[0].nodeType);
+		//alert(a1.childNodes.length);
+		//a1.childNodes[3].style.backgroundColor="red";
+		/*var a3=[];
+		for(var i=0;i<a1.childNodes.length;i++){
+			if(a1.childNodes[i].nodeType==1){
+				a3.push(a1.childNodes[i])
+			};
+			
+		};
+		a3[1].style.backgroundColor="red";*/
+		//alert(a2[3].parentNode.id);
+		//console.log(a2[3].previousSibling);
+		//a2[3].previousSibling.style.backgroundColor="red";
+		var a4=document.getElementsByClassName("a4")[0];
+		var a5=a4;
+		while(a5=a5.previousSibling){
+			if(a5.nodeType==1){
+				a5.style.backgroundColor="red";
+			};
+		}
+		var a6=a4;
+		while(a6=a6.nextSibling){
+			if(a6.nodeType==1){
+				a6.style.backgroundColor="red";
+			};
+		}
+	</script>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			*{
+				padding:0;
+				margin:0;
+			}
+			#aaa{
+				background:red;
+				color:white;
+			}
+		</style>
+	</head>
+	<body>
+		<form id="msy">
+			<p>
+				123123<input type="number" name="" id="age" value="" min="10" max="50" step="2"/>
+				<span id="aaa"></span>
+			</p>
+			<p>
+				123123<input type="tel" pattern="^1[3,5,9]\d{9}$" />
+			</p>
+			<p>
+				<input type="text" name="" list="bbb" value="" />
+				<datalist id="bbb">
+					<option value="123123">123123</option>
+					<option value="111">111</option>
+					<option value="222">222</option>
+					<option value="333">333</option>
+				</datalist>
+			</p>
+			<p>
+				<input type="color"  id="color" value="" />
+			</p>
+			<input type="submit" name="" id="" value="提交" />
+		</form>
+		<input type="password" form="msy" name="pass" />
+	</body>
+	<script>
+		var ageee=document.querySelector("#aaa");
+		var age=document.querySelector("#age");
+		var color=document.querySelector("#color");
+		age.addEventListener("invalid",function(event){
+			event.preventDefault();
+			ageee.innerHTML="123123"
+		})
+		color.onchange=function(){
+			document.body.bgColor=this.value;
+		}
+	</script>
+</html>

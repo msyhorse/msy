@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				padding:0;
+				margin:0;
+			}
+			#a1{
+				width:400px;
+				height:400px;
+				border:1px black solid;
+				position:relative;
+			}
+			p{
+				width:401px;
+				height:201px;
+				background-color:black;
+				opacity:0.6;
+				bottom:0;
+				left:0;
+				position:absolute;
+				display:none;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="a1">
+			<p></p>
+		</div>
+	</body>
+	<script src="js/jquery-1.12.3.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+/*		$("#a1").mouseenter((function(event){
+			console.log(event);
+			$(this).children("p").slideDown();
+		}));
+		$("#a1").mouseleave((function(event){
+			console.log(event);
+			$(this).children("p").slideUp();
+		}));*/
+		$("#a1").mouseover((function(event){
+			console.log(event);
+			$(this).children("p").slideDown();
+		}));
+		$("#a1").mouseout((function(event){
+			console.log(event);
+			$(this).children("p").slideUp();
+		}));
+	</script>
+</html>

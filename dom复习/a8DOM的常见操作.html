@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>window.btnClickedHandler的适用范围    已经移除了h1，使h1变空的意义</title>
+	</head>
+	<div id="a1"></div>
+	<input type="button" onclick="a2()" value="移除h1" id="b1"/>
+	<body>
+	</body>
+	<script type="text/javascript">
+		var a1=document.getElementById("a1");
+		var h1=document.createElement("h1");
+		h1.innerHTML="我是标题";
+	    a1.appendChild(h1);
+		h1.onclick=function a3(){console.log("我是h1")};
+		a2=function(){
+			if(h1){
+				a1.removeChild(h1);
+				h1=null;
+			}
+		}
+	</script>
+</html>

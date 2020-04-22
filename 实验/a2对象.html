@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>对象的声明必须在赋值前，不然无效。     在打印对象时，对象的对象会以...的形式隐藏</title>
+	</head>
+	<body>
+	</body>
+	<script type="text/javascript">
+	  var beatles={};
+	   var lennon={name:"John",year:1940,living:false};
+//	  var lennon=Object();
+	  beatles.vocalist=lennon;
+	 
+	  /*lennon.name="John";
+	  lennon.year=1940;
+	  lennon.living=false;*/
+	  console.log(beatles);
+	  console.log(beatles.vocalist);
+	  console.log(beatles.vocalist.name);
+	</script>
+</html>

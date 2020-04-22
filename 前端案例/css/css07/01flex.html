@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			.box{
+				width: 800px;
+				height: 500px;
+				border: 2px solid red;
+				margin: 20px auto;
+				display: flex;
+				justify-content: flex-start;
+				/*flex-direction: column-reverse;
+				flex-wrap: wrap;*/
+				align-items:flex-start;
+				flex-flow: row nowrap;
+				align-content:flex-start;
+				align-items:flex-end;
+				
+			}
+			.item{
+				width: 180px;
+				height: 180px;
+				background-color: aqua;
+				/*margin: 10px;*/
+				flex-grow:1;
+				flex-shrink:1;
+			}
+			.item1{
+				width: 180px;
+				/*height: 180px;*/
+				background-color: aqua;
+				/*margin: 10px;*/
+				order:5;
+				/*flex-grow:0;
+				flex-shrink:0;
+				flex-basis:auto;*/
+				flex:none;
+				align-self:flex-end;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<div class="item">11</div>
+			<div class="item" style="height: 100px;">22</div>
+			<div class="item">33</div>
+			<div class="item">44</div>
+			<div class="item">55</div>
+			<div class="item1">66</div>
+			<div class="item">77</div>
+			<div class="item1">88</div>
+			
+			<div class="item" style="height: 100px;">22</div>
+			<div class="item" style="height: 100px;">22</div>
+			<div class="item" style="height: 100px;">22</div>
+			<div class="item" style="height: 100px;">22</div>
+			
+			
+			<!--<div class="item">99</div>-->
+		</div>
+	</body>
+</html>

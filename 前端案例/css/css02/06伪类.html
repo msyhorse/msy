@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			.box{
+				width: 200px;
+				height: 40px;
+				border: 2px solid #ddd;
+				margin: 20px auto;
+			}
+			/*::before添加的内容默认为行内元素*/
+			.box::before{
+				content: '';
+				display: block;/*将行内元素转换为块级元素*/
+				width: 40px;
+				height: 40px;
+				background-image: url(img/yh.png);
+				background-size: 100%;
+				float: left;
+			}
+			.box input{
+				width: 150px;
+				height: 30px;
+				float: left;
+				margin-top: 3px;
+				outline: none;
+				border: none;
+				text-indent: 1em;
+			}
+		</style>
+	</head>
+	<body >
+		<p class="box">
+			<input type="text" name="" id="" value="" placeholder="手机号/邮箱"/>
+		</p>
+	</body>
+</html>

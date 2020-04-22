@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				padding:0;
+				margin:0;
+			}
+			#a1{
+				width:800px;
+				height:130px;
+				border:5px gray solid;
+				margin:200px auto;
+				position:relative;
+				overflow:hidden;
+			}
+			#a2{
+				width:7000px;
+				position:absolute;
+				top:0;
+				left:0;
+			}
+			#a2 ul{
+				list-style:none;
+			}
+			#a2 ul li{
+				float:left;
+				margin-right:10px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="a1">
+			<div id="a2">
+				<ul>
+					<li><a href=""><img src="img/shuzi/0.png"/></a></li>
+					<li><a href=""><img src="img/shuzi/1.png"/></a></li>
+					<li><a href=""><img src="img/shuzi/2.png"/></a></li>
+					<li><a href=""><img src="img/shuzi/pangzi.png"/></a></li>
+					<li><a href=""><img src="img/shuzi/pangzi.png"/></a></li>
+					<li><a href=""><img src="img/shuzi/pangzi.png"/></a></li>
+					<li><a href=""><img src="img/shuzi/pangzi.png"/></a></li>
+					<li><a href=""><img src="img/shuzi/7.png"/></a></li>
+					<li><a href=""><img src="img/shuzi/8.png"/></a></li>
+					<li><a href=""><img src="img/shuzi/9.png"/></a></li>
+				</ul>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		var a1=document.getElementById("a1");
+		var a2=document.getElementById("a2");
+		var ull=document.getElementsByTagName("ul")[0];
+		var lii=ull.getElementsByTagName("li");
+		var img=ull.getElementsByTagName("img");
+		var changdu=lii.length;
+		var bushu=0;
+		var timer;
+		var changdu1;
+		ull.innerHTML+=ull.innerHTML;
+		move();
+//		alert(changdu);
+		for(var i=0,count=0;i<changdu;i++){
+			img[i].onload=function(){
+				count++;
+				if(img.length==count){
+				changdu1=lii[changdu/2].offsetLeft;
+//				alert(changdu1);
+//alert(changdu1);
+console.log(lii[10]);
+				move();}
+			}
+		};
+		a1.onmouseover=function(){
+			clearInterval(timer);
+		}
+		a1.onmouseout=function(){
+			move();
+		}
+		function move(){
+			clearInterval(timer);
+			timer=setInterval(function(){
+				bushu-=4;
+				if(bushu<-changdu1){
+					bushu=0;
+				}
+				a2.style.left=bushu+"px";
+			},20)
+		}
+	</script>
+</html>

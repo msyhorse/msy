@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>假期复习f4</title>
+		<style type="text/css">
+			*{
+				padding:0;
+				margin:0;
+				text-align:center;
+			}
+			#a{
+				font-size:28px;
+				width:100%
+			}
+			.b{
+				height:45px;
+				overflow:hidden;
+			}
+			#a div div:nth-child(2n+1) div{
+				background-color:darksalmon;
+			}
+			#a div div:nth-child(1){
+				animation:a 5s infinite linear;
+			}
+			#a div div:nth-child(2n) div{
+				background-color:skyblue;
+			}
+			#a div div div{
+				color:white;
+				display:inline-block;
+				margin-bottom:45px;
+				/*width:45px;*/
+				padding:0 10px;
+				
+			}
+			@keyframes a{
+				from{
+					margin-top:40px;
+				}
+				to{
+					margin-top:-400px;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div id="a">一周开始了
+			<div class="b">
+				<div ><div >周一1</div></div>
+				<div ><div >周二11</div></div>
+				<div ><div >周三111</div></div>
+				<div ><div >周四1111</div></div>
+				<div ><div >周五11111</div></div>
+			</div>
+			一起嗨皮吧
+		</div>
+	</body>
+</html>

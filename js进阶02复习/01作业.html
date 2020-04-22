@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			*{
+				padding:0;
+				margin:0;
+			}
+			#a1{
+				width:380px;
+				height:280px;
+				border:1px black solid;
+				margin:100px auto;
+				
+			}
+			#a2{height:230px;
+				position:relative;
+				overflow:hidden;
+			}
+			#a2 ul{
+				
+				list-style:none;
+				position:absolute;
+				top:0;
+				left:0;
+			}
+			#a1 ul li{
+				width:380px;
+				height:230px;
+				cursor:pointer;
+				
+			}
+			
+			#a3 ul{
+				list-style:none;
+			}
+			#a3 ul li{
+				float:left;
+				width:70px;
+				height:40px;
+				border:3px gainsboro solid;
+			}
+			#a3 ul li img{
+				width:100%;
+				height:100%;
+			}
+			#a3 ul li:hover{
+				border:3px gray solid;
+			}#a3 ul li.c1{
+				border:3px gold solid;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="a1">
+			<div id="a2">
+				<ul>
+					<li><img src="img/0.jpg"/></li>
+					<li><img src="img/1.jpg"/></li>
+					<li><img src="img/2.jpg"/></li>
+					<li><img src="img/3.jpg"/></li>
+					<li><img src="img/4.jpg"/></li>
+				</ul>
+			</div>
+			<div id="a3">
+				<ul>
+					<li class="c1"><img src="img/0.jpg"/></li>
+					<li><img src="img/1.jpg"/></li>
+					<li><img src="img/2.jpg"/></li>
+					<li><img src="img/3.jpg"/></li>
+					<li><img src="img/4.jpg"/></li>
+				</ul>
+			</div>
+		</div>
+	</body>
+	<script src="js/jquery-1.12.3.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$("#a2 ul li:first").clone().appendTo("#a2 ul");
+		var d2=0;
+		var d1=$("#a2 ul");
+		var timer=setInterval(move,2000);
+		$("#a1").mouseenter(function(){
+			clearInterval(timer);
+		});
+		$("#a1").mouseleave(function(){
+			timer=setInterval(move,2000);
+		})
+		function move(){
+			d2++;
+			$("#a2 ul").animate({"top":-230*d2},600,function(){
+				if(d2>4){
+				d2=0;
+				d1.css("top",0)
+			}
+			})
+			
+		}
+		$("#a3 ul li").click(function(){
+			d2=$(this).index();
+			$("#a2 ul").animate({"top":-230*d2},600)
+			r1();
+		})
+		function r1(){
+			
+			$("#a3 ul li").eq(d2).addClass("c1").siblings().removeClass("c1");
+		}
+	</script>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+		  /*
+			var a=(123+45*78)/(34+543);
+			var b=9*(324-34);
+			console.log(a-b);
+			alert(a-b);
+			*/
+			/*
+			var a=prompt("请输入摄氏度");
+			var b=9/5*a+32;
+			alert(b);
+			*/
+			/*
+			var a=(23+Math.pow(5,7))/45;
+			var b=Math.pow(a,2);
+			alert(b);
+			*/
+			/*
+			var a=prompt("请输入六边形的边长");
+			var s=3*Math.sqrt(3)/2*Math.pow(a,2);
+			alert(s);
+			*/
+			/*
+			var days=parseInt(prompt("今天是星期二，请输入几天后",1000));
+			var xingqi=(2+days%7)%7;
+			alert(days+"天后是星期"+xingqi);
+			*/
+			var shu=parseInt(prompt("请输入一个三位数："));
+//			456
+//			456%10=6
+//			456/10%10=5
+//			456/100=4
+			var gewei=parseInt(shu%10);
+			var shiwei=parseInt(shu/10%10);
+			var baiwei=parseInt(shu/100);
+			var sum=gewei+shiwei+baiwei;
+			alert("三位数各个位数之和："+sum);
+		</script>
+	</body>
+</html>

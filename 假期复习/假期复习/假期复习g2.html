@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>假期复习g2</title>
+		<style type="text/css">
+			*{
+				padding:0;
+				margin:0;
+			}
+			#a{
+				width:258px;
+				height:258px;
+				border:1px red solid;
+				margin:240px auto;
+				position:relative;
+				perspective:500px;
+			}
+			#b{
+				position:absolute;
+				transition:all 2s;
+				transform-origin:100% 0%;
+			}
+			#a:hover #b{
+				transform:rotateY(180deg);
+				
+			}
+		</style>
+	</head>
+	<body>
+		<div id="a">
+			<img  id="b" src="img/baby.png">
+			<img src="img/xiaoming.png">
+		</div>
+	</body>
+</html>

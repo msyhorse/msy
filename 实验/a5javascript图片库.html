@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			
+			body{
+				font-family:"Helvetica","Arial",serif;
+				color:#333;
+				background-color:#ccc;
+				margin:1em 10%;
+			}
+			h1{
+				color:#333;
+				background-color:transparent;
+				
+			}
+			a{
+				color:#c60;
+				background-color:transparent;
+				font-weight:bold;
+				text-decoration:none;
+			}
+			ul{
+				padding:0;
+			}
+			li{
+				float:left;
+				padding:1em;
+				list-style:none;
+			}
+			img{
+				display:block;
+				clear:both;
+				
+			}
+			</style>
+	</head>
+	<body>
+		<a href="javascript:popUp('http://www.baidu.com/);">打开一个新窗口</a>
+		<script type="text/javascript">
+		function showPic(whichpic){
+			var source=whichpic.getAttribute("href");
+//			alert(source);
+			var placeholder=document.getElementById("zhanwei");
+//			alert(placeholder);
+			placeholder.setAttribute("src",source);
+			var text=whichpic.getAttribute("title");
+			var description =document.getElementById("description");
+			
+			description.firstChild.nodeValue=text;
+		}
+//		alert(123123);
+	</script>
+	<h1>图片库</h1>
+		<ul>
+			<li>
+				<a href="img/baby.png" title="baby" onclick="showPic(this); return false;">baby</a>
+			</li>
+			<li>
+				<a href="img/xiaoming.png" title="小明"  onclick="showPic(this);return false;">小明</a>
+			</li>
+			<li>
+				<a href="img/无标题.png" title="choose"  onclick="showPic(this);return false;">choose</a>
+			</li>
+		</ul>
+		<img id="zhanwei" width="300px" height="300px" src="img/无标题.png">
+		<p id="description">choose</p>
+	</body>
+	
+</html>

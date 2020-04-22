@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			#a1{
+				width: 330px;
+				height: 195px;
+				perspective:800px;
+				margin: 100px auto;
+			}
+			#a2{
+				width: 330px;
+				height: 195px;
+				position: relative;
+				transform: rotateX(0deg);
+				transition: all 0.5s;
+				transform-style: preserve-3d;
+			}
+			#a2 img{
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+			#a2 img.a1{
+				transform: rotateX(90deg) translateZ(97px);
+			}
+			#a2 img.a2{
+				transform: translateZ(97px);
+			}
+			#a1:hover #a2{
+				transform: rotateX(-90deg);
+				cursor: pointer;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="a1">
+			<div id="a2">
+				<img src="img/1.jpg" class="a1"/>
+				<img src="img/2.jpg" class="a2"/>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>因为是局部变量，所以即使函数内部与外部有重名的变量也不会互相影响</title>
+	</head>
+	<body>
+	</body>
+	<script type="text/javascript">
+		function a(){
+			aaa=111;
+		};
+		a();
+		console.log(aaa);
+		function square(num){
+			var total=num*num;
+			return total;
+		};
+		var total=50;
+		var number=square(20);
+		alert(total);
+	</script>
+</html>

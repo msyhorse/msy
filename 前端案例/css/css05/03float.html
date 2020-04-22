@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			.box{
+				width: 200px;
+				height: 100px;
+				background-color: red;
+			}
+			.box2{
+				width: 300px;
+				height: 100px;
+				background-color: yellow;
+				float: left;
+			}
+			.box3{
+				width: 200px;
+				height: 150px;
+				background-color: aqua;
+			}
+			.box4{
+				width: 300px;
+				height: 100px;
+				background-color: green;
+				/*float: left;*/
+			}
+		</style>
+	</head>
+	<body>
+		<!--浮动：脱离文本流，不占位置，半层层级发生变化，向所浮动的方向发生变化，
+		float:left/right/none;-->
+		<div class="box"></div>		
+		<div class="box2"></div>		
+		<div class="box3">
+			我是第三个盒子
+		</div>
+		<div class="box4">
+			我是第四个盒子
+		</div>
+	</body>
+</html>

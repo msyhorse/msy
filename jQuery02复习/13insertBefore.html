@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<input type="text" name="" id="b1" value="" />
+		<input type="button" name="" id="b2" value="点击" />
+		<ul>
+			
+		</ul>
+		
+	</body>
+	<script type="text/javascript">
+       var a1=document.getElementsByTagName("ul")[0];
+       var a2=a1.getElementsByTagName("li");
+       /*var a1=document.getElementsByTagName("ul")[0];
+			var a2=a1.getElementsByTagName("li");*/
+       var b1=document.getElementById("b1");
+       var b2=document.getElementById("b2");
+       b2.onclick=function(){
+       	var a3=document.createElement("li");
+       	a3.innerHTML=b1.value;
+       	a1.insertBefore(a3,a2[0]);
+       	/*var a3=document.createElement("li");
+				a3.innerHTML=b1.value;
+				a1.insertBefore(a3,a2[0]);*/
+       }
+	</script>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			div{
+				width:79px;
+				height:108px;
+				background:url(img/girl.png) no-repeat;
+				background-position:0 -216px;
+				position:absolute;
+				top:300px;
+				left:0;
+			}
+		</style>
+	</head>
+	<body>
+		
+	</body>
+	<script type="text/javascript">
+		function girl(top,left){
+			this.left=left;
+			this.top=top;
+			this.timer=null;
+			this.cre=function(){
+				this.dom=document.createElement("div");
+				document.body.appendChild(this.dom);
+				this.dom.style.top=this.top+"px";
+				this.dom.style.left=this.left+"px";
+			}
+			this.bu=0;
+			this.buzi=function(){
+				var self=this;
+				this.timer=setInterval(
+					function(){
+						self.bu++;
+						self.left++;
+						if(self.bu>7){
+							self.bu=0;
+						}
+						if(self.left>1000){
+							self.tiao();
+						}
+						self.dom.style.left=self.left+"px";
+						self.dom.style.backgroundPosition=-79*self.bu+"px -216px"
+					},10);
+				
+			}
+			this.tiao=function(){
+				clearInterval(this.timer);
+				document.body.removeChild(this.dom);
+			}
+			this.cre();
+			this.buzi();
+			
+		}
+		setInterval(function(){
+				new girl(Math.random()*400,100)
+			},1000);
+	</script>
+</html>

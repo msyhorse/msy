@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<ul>
+			<li>123<a href="#">321</a></li>
+			<li>123<a href="#">321</a></li>
+			<li>123<a href="#">321</a></li>
+		</ul>
+		<div id="">
+			<p>111</p>
+			<p>222</p>
+			<p>333</p>
+		</div>
+		
+	</body>
+	<script type="text/javascript">
+		var a1=document.getElementsByTagName("ul")[0];
+		var a2=document.getElementsByTagName("li");
+		var a3=document.getElementsByTagName("a");
+		for(var i=0;i<a3.length;i++){
+			a3[i].onclick=function(){
+				a1.removeChild(this.parentNode)
+			}
+		}
+		var a5=document.getElementsByTagName("div")[0];
+		var a4=document.getElementsByTagName("p");
+		var b1=document.createElement("p");
+		b1.innerHTML="二二二";
+		a5.replaceChild(b1,a4[1]);
+	</script>
+</html>

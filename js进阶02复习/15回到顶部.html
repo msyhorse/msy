@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			body{
+				height:5000px;
+			}
+			#a1{
+				width:100px;
+				height:100px;
+				border:1px black solid;
+				position:fixed;
+				bottom:10px;
+				right:10px;
+				border-radius:5px;
+				box-shadow:0px 0px 5px black;
+				cursor:pointer;
+				line-height:100px;
+				text-align:center;
+				/*display:none;*/
+			}
+		</style>
+	</head>
+	<body>
+		<div id="a1">
+			回到顶部
+		</div>
+	</body>
+	<script type="text/javascript">
+		var a1=document.getElementById("a1");
+		window.onscroll=function(){
+			var a2=document.body.scrollTop||document.documentElement.scrollTop;
+			if(a2>500){
+				a1.style.display="block";
+			}
+			else{
+				a1.style.display="none";
+			}
+		}
+		/*var a1=document.getElementById("a1");
+			window.onscroll=function(){
+				var jd=document.body.scrollTop||document.documentElement.scrollTop;
+				if (jd>500) {
+					a1.style.display="block";
+				}else{
+					a1.style.display="none";
+				}
+			}*/
+	</script>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+	</body>
+	<script type="text/javascript">
+		/*function out123(){
+			var a=1;
+			alert("这是外部函数");
+			function in123(){
+				alert("这是内部函数")
+			}
+		};
+		out123();*/
+		
+		function out123(a){
+			var a=1;
+			alert("这是外部函数");
+			function in123(a){
+				alert("这是内部函数"+a)
+			}
+			return in123;
+		};
+		var out1=out123();
+		out1("才怪")
+	</script>
+</html>

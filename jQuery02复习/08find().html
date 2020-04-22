@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			p{
+				width:100px;
+				height:100px;
+				background-color:red;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="a1">
+			<ul>
+				<li><p></p></li>
+				<li><p></p></li>
+				<li><p></p></li>
+				<li><p></p></li>
+			</ul>
+		</div>
+	</body>
+	<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		//$("#a1").find("p").css("background-color","yellow");
+		//alert($("#a1").find("*").length);
+		$("#a1").find("*").eq(4).css("background-color","yellow");
+	</script>
+</html>

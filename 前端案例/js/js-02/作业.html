@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+		/*
+			var shu=parseInt(prompt("请输入与一个数"));
+			if(shu%5==0&&shu%6==0){
+				alert("这个数字同时能被5和6整除");
+			}else if(shu%5==0&&shu%6!=0){
+				alert("这个数字能被5整除，但不能被6整除");
+			}else if(shu%6==0&&shu%5!=0){
+				alert("这个数字能被6整除，但不能被5整除");
+			}else if(shu%6!=0&&shu%5!=0){
+				alert("这个数字不能被6整除，不能被5整除");
+			}
+			*/
+			/*
+			var shu1=parseInt(prompt("请输入一个数"));
+			var shu2=parseInt(prompt("请输入一个数"));
+			if((shu1+shu2)%2==0){
+				alert("奇偶数相同");
+			}else{
+				alert("奇偶数不相同");
+			}
+			if(shu1%2==shu2%2){
+				alert("奇偶数相同");
+			}else{
+				alert("奇偶数不相同");
+			}*/
+			/*
+			var year=parseInt(prompt("请输入一个年份"));
+			if(year%4==0&&year%100!==0||year%400==0){
+				alert("是闰年");
+			}else{
+				alert("不是闰年");
+			}*/
+			/*
+			var a=parseInt(prompt("请输入工作年限"));
+			var b=parseInt(prompt("请输入月薪"));
+			var xishu;
+			if(a<1){
+				if(b>8000){
+					xishu=1.2;
+				}else{
+					xishu=1;
+				}
+			}else if(a==1){
+				if (b>10000) {
+					xishu=1.7;
+				}else{
+					xishu=1.5;
+				}
+			}else if(a>=2){
+				if (b>12000) {
+					xishu=3.2;
+				}else{
+					xishu=3;
+				}
+			}
+			alert("年终奖是"+b*xishu);
+			*/
+			/*
+			for (var i=1;i<=1000;i++) {
+				if (i%5==0||i%6==0) {
+					console.log(i);
+				}
+			}*/
+			/*
+			var n=parseInt(prompt("请输入一个数"));
+			var sum=0;
+			for (var i=1;i<=n;i++) {
+				sum+=i;
+			}
+			console.log(sum);
+			
+			var cheng=1;
+			
+			for (var i=1;i<=5;i++) {
+				cheng*=i;
+			}
+			console.log(cheng);*/
+			/*
+			var sum=0;
+			var n=parseInt(prompt("请输入一个数"));
+			for (var i=2;i<=n;i++) {
+				sum+=(i+1)/i;
+			}
+			console.log(sum);*/
+			/*
+			var shu=parseInt(prompt("请输入一个数"));
+			for (var i=1;i<=shu;i++) {
+				if(shu%i==0){
+					console.log(i);
+				}
+			}*/
+			/*
+			for (var i=1;i<=60;i++) {
+				if (i%7!=0&&i%10!=7) {
+					console.log(i);
+				}
+			}*/
+			/*
+			var zhishu=parseInt(prompt("应输入一个数"));
+			var sum=0;
+			for (var a=1;a<=zhishu;a++) {
+				if(zhishu%a==0){
+					sum++;
+				}
+			}
+			if (sum==2) {
+				alert("是质数");
+			}else{
+				alert("不是质数");
+			}*/
+			for(var a=0;a<=100;a++){
+				for (var b=0;b<=100;b++) {
+					for (var c=0;c<=100;c++) {
+						if (3*a+2*b+c==200&&a+b+c==100) {
+							console.log("苹果是："+a+"鸭梨是："+b+"桃子是："+c);
+						}
+					}
+				}
+			}
+		</script>
+	</body>
+</html>

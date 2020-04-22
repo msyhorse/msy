@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>箭头函数会省略function(1个参保留，多个保留){一直省}  箭头函数不用写return
+返回函数要加（），并且函数里的值要return
+    </title>
+</head>
+<body>
+    
+</body>
+<script>
+    var arr=[9,8,8,7,6];
+    // arr.forEach(function(k){
+    //     console.log(k);
+    // })
+    // arr.forEach(k=>console.log(k));
+    arr.forEach((b,a)=>{
+        console.log(b);
+        console.log(a);
+    })
+    // var fn=function(x){
+    //     return x*x;
+    // }
+    // var fn=x=>x*x;
+    //   console.log(fn(2));
+    var fnn=()=>10;
+    console.log(fnn(5));
+    // var aaa={
+    //     a1:1995,
+    //     a2:function(){
+    //         console.log(this.a1);
+    //         var b1=this;
+    //         var b2=function(){
+    //             return new Date().getFullYear()-b1.a1;
+    //         }
+    //         return b2()
+    //     }
+    // }
+    // console.log(aaa.a2())
+    var aaa={
+        a1:1995,
+        a2:function(){
+            console.log(this.a1);
+            var b1=this;
+            // var b2=function(){
+            //     return new Date().getFullYear()-b1.a1;
+            // }
+            var b2=(()=> new Date().getFullYear()-b1.a1)
+            return b2()
+        }
+    }
+    console.log(aaa.a2())
+</script>
+</html>

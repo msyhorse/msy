@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+	</body>
+	<script type="text/javascript">
+		function aa(){
+			var count=0;
+			function bb(){
+				count++;
+				console.log(count);
+			}
+			return bb;
+		}
+		var inn2=aa();
+		var inn1=aa();
+		inn2();
+		inn2();
+		inn2();
+		inn2();
+		inn1();
+		inn1();
+		inn1();
+		inn1();
+		
+	</script>
+</html>

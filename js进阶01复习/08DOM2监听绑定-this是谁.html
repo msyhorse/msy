@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				padding:0;
+				margin:0;
+			}
+			#a1{
+				width:500px;
+				height:500px;
+				background-color:yellow;
+			}
+			#a2{
+				width:300px;
+				height:300px;
+				background-color:orange;
+			}
+			#a3{
+				width:100px;
+				height:100px;
+				background-color:red;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="a1">
+			<div id="a2">
+				<div id="a3">
+			
+		</div>
+			
+		</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		var b1=document.getElementById("a1");
+		var b2=document.getElementById("a2");
+		var b3=document.getElementById("a3");
+		function a1(){
+			this.style.backgroundColor="blue";
+		}
+		b1.addEventListener("click",a1,false);
+		b2.addEventListener("click",a1,false);
+		b3.addEventListener("click",a1,false);
+	</script>
+</html>

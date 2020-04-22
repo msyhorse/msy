@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+	</body>
+	<script type="text/javascript">
+		var aa1={
+			a1:1,
+			a2:2,
+			a3:3,
+			a4:function(){
+				aa1.a1++;
+			},
+			a5:function(){
+				alert(aa1.a1);
+			}
+		}
+		var ab1={
+			a1:1,
+			a2:2,
+			a3:3,
+			a4:function(){
+				ab1.a1++;
+			},
+			a5:function(){
+				alert(ab1.a1);
+			}
+		}
+		aa1.a4();
+		ab1.a4();
+		aa1.a4();
+		ab1.a4();
+		aa1.a4();
+		ab1.a4();
+		aa1.a4();
+		aa1.a5();
+		ab1.a5()
+	</script>
+</html>

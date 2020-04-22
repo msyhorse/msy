@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+				var char = "abcdefg"
+				var n=3
+				var char1=char.split("")
+//              console.log(char1);
+                function rightchange(char,n){
+                	for (var i=1;i<=n;i++) {
+                		
+                	
+                var char2=char1.pop();
+//              console.log(char1)
+                char1.unshift(char2)
+//              console.log(char1)
+                }
+                	var char3=char1.join("")
+                	return char3
+                	}
+                
+                console.log(rightchange(char,n))
+		</script>
+	</body>
+</html>

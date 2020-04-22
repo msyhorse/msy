@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			window.onload=function(){
+				var shouji=document.getElementById("shouji");
+				var wechat=document.getElementById("wechat");
+				var form=document.getElementById("form");
+				form.onsubmit=function(){
+					
+					if(!/^1[\d]{10}$/.test(shouji.value)){
+						alert("请输入正确的手机号");
+						return false;
+					}
+					if(!/^[\d]{5,10}$/.test(wechat.value)){
+						alert("请输入正确的微信号");
+						return false;
+					}
+					alert("已提交");
+					return true;
+				}
+			}
+		</script>
+		<form action="1.php" id="form">
+			
+			<p>请输入手机号：<input type="text" name="" id="shouji" value="" /></p>
+			<p>请输入微信号：<input type="text" name="" id="wechat" value="" /></p>
+			<p><input type="submit" name="" id="tj" value="提交" /></p>
+		</form>
+	</body>
+	
+</html>

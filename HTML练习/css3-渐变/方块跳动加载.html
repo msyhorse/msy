@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			#wai{
+				width: 1000px;
+				height: 500px;
+				background-color: darkslateblue;
+				margin: 50px auto;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				
+			}
+			.q{
+				width: 50px;
+				height: 50px;
+				margin: 10px;
+				border-radius: 0%;
+				animation: t 1s linear infinite;
+			}
+			#wai .q:nth-child(2n){
+				background-color: aqua;
+			}
+			#wai .q:nth-child(2n+1){
+				background-color: blue;
+			}
+			.q:nth-child(1){
+				animation-delay:0.1s ;
+			}
+			.q:nth-child(2){
+				animation-delay:0.2s ;
+			}
+			.q:nth-child(3){
+				animation-delay:0.3s ;
+			}
+			.q:nth-child(4){
+				animation-delay:0.4s ;
+			}
+			.q:nth-child(5){
+				animation-delay:0.5s ;
+			}
+			.q:nth-child(6){
+				animation-delay:0.6s ;
+			}
+			.q:nth-child(7){
+				animation-delay:0.7s ;
+			}
+			.q:nth-child(8){
+				animation-delay:0.8s ;
+			}
+			.q:nth-child(9){
+				animation-delay:0.9s ;
+			}
+			.q:nth-child(10){
+				animation-delay:1s ;
+			}
+			.q:nth-child(11){
+				animation-delay:1.1s ;
+			}
+			.q:nth-child(12){
+				animation-delay:1.2s ;
+			}
+			.q:nth-child(13){
+				animation-delay:1.3s ;
+			}
+			.q:nth-child(14){
+				animation-delay:1.4s ;
+			}
+			@keyframes t{
+				0%{
+					transform: translateY(0px);
+				    border-radius: 0%;
+				}
+				50%{
+					transform: translateY(200px);
+					border-radius: 50%;
+				}
+				100%{
+					transform: translateY(0px);
+					border-radius: 0%;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div id="wai">
+			<div class="q"></div>
+			<div class="q"></div>
+			<div class="q"></div>
+			<div class="q"></div>
+			<div class="q"></div>
+			<div class="q"></div>
+			<div class="q"></div>
+			<div class="q"></div>
+			<div class="q"></div>
+			<div class="q"></div>
+			<div class="q"></div>
+			<div class="q"></div>
+			<div class="q"></div>
+			<div class="q"></div>
+		</div>
+	</body>
+</html>

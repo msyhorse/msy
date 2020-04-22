@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				padding:0;
+				margin:0;
+			}
+			#a1{
+				width:500px;
+				height:60px;
+				line-height:60px;
+				border:1px red solid;
+				overflow:hidden;
+				top:300px;
+				left:300px;
+				position:relative;
+			}
+			ul{
+				list-style:none;
+				position:absolute;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="a1">
+			<ul>
+				<li>123123123123</li>
+				<li>456456456465456</li>
+				<li>789789789789798</li>
+			</ul>
+		</div>
+		<script type="text/javascript" src="js/animate-2.0.1.js"></script>
+		<script type="text/javascript">
+			var a2=document.getElementsByTagName("ul")[0];
+			var a3=document.getElementsByTagName("li");
+			var lis=a3.length;
+			var b1=0;
+			a2.appendChild(a3[0].cloneNode(true));
+			function a4(){
+				b1++;
+				animate(a2,{"top":-60*b1},800,function(){
+					if(b1>lis-1){
+						b1=0;
+						this.style.top="0px";
+					}
+				})
+			};
+			setInterval(a4,1900)
+		</script>
+	</body>
+</html>

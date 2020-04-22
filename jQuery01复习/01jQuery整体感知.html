@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			/**{
+				padding:0;
+				margin:0;
+			}*/
+			p{
+				width:50px;
+				height:50px;
+				background-color:red;
+				margin:50px;
+				float:left;
+			}
+			#a1{
+				clear: both;
+			}
+			#a3{
+				width:300px;
+				height:300px;
+				position:absolute;
+				top:100px;
+				left:100px;
+				background-color:red;
+				/*display:none;*/
+			}
+			#a4 ul{
+				list-style:none;
+			}
+			#a4 ul li{
+				width:30px;
+				height:30px;
+				background-color:yellow;
+				border-radius:50%;
+				margin:10px;
+				float:left;
+				cursor:pointer;
+			}
+		</style>
+	</head>
+	<body>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<div id="a1">
+			<ul>
+				<li>123123</li>
+				<li class="a2"><span>123123</span></li>
+				<li class="a2"><span>123123</span></li>
+				<li class="a2"><span>123123</span></li>
+				<li>123123</li>
+			</ul>
+		</div>
+		<div id="a3"></div>
+		<div id="a4"><ul>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul></div>
+	</body>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript">
+		$("p").css("background-color","blue");
+		$("#a1 ul li span").css("background-color","blue");
+		$("#a3").animate({"width":200,"height":200,'left':800},4000,function(){
+			alert("运动结束")
+		});
+		$("#a4 ul li").mouseenter(function(){$(this).css("background","orange").
+		siblings().css("background","yellow")
+			
+		})
+	</script>
+</html>

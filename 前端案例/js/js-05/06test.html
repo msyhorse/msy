@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+//			text()表示该字符串（参数）是否匹配我们的正则规则。
+			var reg=/baidu/;
+			var str="hello baidu";
+			console.log(reg.test(str));//true
+			var demo=prompt("不能输入空格");
+			alert(!(/\s+/.test(demo)));
+		</script>
+	</body>
+</html>

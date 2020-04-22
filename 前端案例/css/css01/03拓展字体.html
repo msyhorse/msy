@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>字体</title>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			.op{
+				width: 300px;
+				height: 300px;
+				border: 2px solid red;
+				margin: auto;
+				text-align: center;/*字体水平居中*/
+				line-height: 300px;/*单行字体垂直居中*/
+			}
+			.op1{
+				width: 300px;
+				height: 300px;
+				border: 2px solid red;
+				overflow: hidden;/*超出隐藏*/
+				text-overflow: ellipsis;/*显示省略号*/
+				white-space: nowrap;/*不换行*/
+			}
+		</style>
+	</head>
+	<body>
+		<p class="op">
+			面对岗位的高要求，如何成长？
+		</p>
+		<div class="op1">
+			面对岗位的高要求，如何成长？
+			面对岗位的高要求，如何成长？
+		</div>
+	</body>
+</html>

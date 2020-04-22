@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			*{
+				padding:0;
+				margin:0;
+			}
+			#a1{
+				width:500px;
+				height:500px;
+				border:1px black solid;
+				margin:200px auto;
+				/*display:flex;*/
+				/*flex-wrap:wrap;*/
+				
+			}
+			.a2
+		</style>
+	</head>
+	<body>
+		<div id="a1">
+			
+		
+		</div>
+	</body>
+	<script type="text/javascript">
+		var a1=document.getElementById("a1");
+		var sun=500;
+		var sum=6;
+		function aa(){
+			
+			var b1=sun/sum-sum;
+			
+			var b2=sum*sum;
+			var box;
+			for(var i=0;i<b2;i++){
+//				if(box){document.removeChild(box)};
+				 box=document.createElement("div");
+				box.style.backgroundColor="red";
+				box.style.width=b1+"px";
+				box.style.height=b1+"px";
+				box.style.float='left';
+				box.style.border="1px black solid";
+				a1.appendChild(box)
+				
+			}sum++;
+		}
+	aa();
+	
+	</script>
+</html>

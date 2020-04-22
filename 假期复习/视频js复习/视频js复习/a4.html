@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+	</body>
+	<script type="text/javascript">
+		(function a(){
+			alert("哈哈")
+		})();
+		+function a(){
+			alert("哈哈")
+		}();
+		-function a(){
+			alert("哈哈")
+		}();
+		(function(){
+			alert("哈哈")
+		})();
+		
+		function canshu(a,b,c){
+			return (function(a,b){
+				return a>b?a:0;
+			})(a,b)+c
+		}
+		console.log(canshu(12,12,1))
+	</script>
+</html>

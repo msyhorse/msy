@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>假期复习b6</title>
+		<style type="text/css">
+		*{
+			padding:0;
+			margin:0;
+			
+		}
+		p{
+			width:200px;
+			height:40px;
+			border:2px red solid;
+			margin:20px auto;
+		}
+		p::before{
+			content:'';
+			display:inline-block;
+			float:left;
+			background-image:url(img/yh.png);
+			background-size:100%;
+			width:30px;
+			height:30px;
+			margin-top:5px;
+			margin-right:5px;
+		}
+		input{
+			width:100px;
+			float:left;
+			outline: none;
+			border:none;
+			line-height:40px;
+			text-indent:1.5em;
+		}
+		</style>
+	</head>
+	<body>
+		<p>
+			<input type="text" placeholder="手机号/邮箱">
+		</p>
+	</body>
+</html>

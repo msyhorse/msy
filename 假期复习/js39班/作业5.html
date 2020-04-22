@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>8ti  reverse对原对象生效，不用重新定义函数</title>
+	</head>
+	<body>
+	</body>
+	<script type="text/javascript">
+		/*function repeat(chat,n){
+			var count=[];
+			for(var i=0;i<n;i++){
+				count.unshift(chat);
+			}
+			console.log(count.join(""));
+		}
+		repeat("$",5)*/
+		
+		 
+		 /*var sum=[];
+		for(var i=0;i<5;i++){
+			for(var k=5-i;k>0;k--){
+				sum.unshift(" ");
+			};
+			for(var j=0;j<=2*i;j++){
+				sum.push("*");
+			};
+			console.log(sum.join("")+"\n");
+			sum=[];
+			
+		};*/
+		 
+		
+		
+		/*function char(a){
+			var b=a.split('');
+//			console.log(b)
+			b.reverse();
+//			console.log(c)
+			console.log(b.join(""))
+			
+		}
+		char("asdfg");*/
+		
+		/*var a="i come from beijing";
+		var b=a.split(" ");
+		var c=b.reverse();
+		console.log(c.join(" "))*/
+		
+		/*function a(a,b){
+			var f=a.split("");
+//			console.log(f);
+			for(var i=0;i<b;i++){
+			var c=f.pop();
+			f.unshift(c);
+			var e=f.join("");
+			
+			}
+			console.log(e)
+		}
+		a("asdfg",2);*/
+		
+		
+		
+		
+		/*function u(a,b){
+//			console.log(a);
+			while(b[a]==b[a+1]){
+				a++;
+				sum1++;
+//				console.log(a,sum1);
+//				u(a,b)
+				}
+			
+				if(a>=max&&b[a]!=b[a+1]){
+					max=sum1;
+					max123=b[a];
+//					console.log(max,max123);
+					
+			}
+				sum=a;
+//			console.log(b,sum);
+//			console.log(b.splice(sum+1));
+//			console.log(b);
+					c(b.splice(sum+1))
+		};
+		    
+		    
+		    
+		    var sum=0;
+			var sum1=1;
+			var max=0;
+			var max123;
+		function a(e){
+			var b=e.split("");
+//			console.log(b,sum);
+			
+			return c(b);
+		}
+			
+			
+		function c(b){
+//			if(sum>=b.length){
+//				console.log(max,max123);
+//				break;
+//			}
+sum=0;sum1=1;
+			if(b[sum]==b[sum+1]&&1<b.length){
+				
+				u(sum,b);
+				
+			}
+//			else if(b[sum]!=b[sum+1]&&sum!=b.length-1){sum++;
+//				sum1=1;
+//				u(sum,b);
+//			};
+            var con='';
+			for(var i=0;i<=max;i++)
+            {con+=max123}			
+			return con;
+		}
+			
+			
+		console.log(a("aaaaabbbbbbbvvvrrrrrrrr"));*/
+
+
+
+
+
+//      var a=[90,95,96,94,98,99,97,92,90,93];
+//      var sum=0;
+//      for(var i=0;i<a.length;i++){
+//      	sum+=a[i];
+//      	console.log(sum);
+//      };
+//      var b=sum/a.length;
+//      console.log(b);
+//      var c=0;
+//      var e=0;
+//      while(c<a.length){
+//      	a[c]>=b&&e++;
+//      	c++;
+//      	
+//      };
+//      console.log(e);
+        
+        
+        
+        
+        
+        /*var a=[90,95,96,94,98,99,97,92,90,93];
+        var b=0;
+        var c=100;
+        for(var i=0;i<a.length;i++){
+//      	console.log(a[i]);
+        	if(a[i]>=b){b=a[i]};
+        	if(a[i]<=c){c=a[i]};
+        };
+        console.log(a.indexOf(b)+1);
+        console.log(a.indexOf(c)+1);*/
+       
+       
+       /*var c;
+        for(var a=1;a<101;a++){
+//      	console.log(Math.pow(a,2));
+        	for(var b=1;b<101;b++){
+        		c=Math.sqrt(Math.pow(a,2)+Math.pow(b,2));
+//      		
+        		if(c%1==0&&c<=100&&c<a+b){
+        			console.log(a,b,c);
+        		};
+        	};
+        };*/
+        
+        
+       
+
+			/*编写函数maxr(char) 返回字符串char中最长的连续重复字母
+			比如maxr("mmmiijjjjkkkkkkssptr") 返回"kkkkkk"*/
+			//双指针法
+			function maxr(char){
+				var a=0;
+				var b=1;
+				var maxLength=0;//找重复数最大的
+				var maxLetter="";
+				while(a!=char.length-1){
+					//判断 a b指向的字母是否一样
+					if (char.charAt(b)==char.charAt(a)) {
+						b++;
+//						maxLetter+=char.charAt(a-1);//去掉，不需要再这里统计
+					} else{
+						if(b-a>=maxLength){
+							maxLength=b-a;
+							maxLetter=char.charAt(a);
+						}
+						a++;
+						b=a+1;
+					}
+				}
+				console.log(maxLength)
+				console.log(maxLetter)
+				//上面的循环可以统计到最大长度和最多的字母
+				//下面将统计的字母拼接输出
+				var str='';
+				for (var i=0;i<maxLength;i++) {
+					str+=maxLetter;
+				}
+				return str;
+			}
+			console.log(maxr("aaabbbbvvvvvpppppppppp"))
+
+	</script>
+</html>
