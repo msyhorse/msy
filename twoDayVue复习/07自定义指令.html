@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="javascript/vue.js"></script>
+</head>
+<body>
+    <div id="msy">
+        <div v-msy1>123123</div>
+    </div>
+</body>
+<script>
+    Vue.directive("msy1",{
+        bind:function(el){
+               el.style.background="red"
+        }
+    })
+    new Vue({
+        el:"#msy",
+        
+    })
+</script>
+</html>

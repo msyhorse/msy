@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="javascript/vue.js"></script>
+</head>
+<body>
+    <div id="msy">
+        {{msy1|msy2}}
+    </div>
+</body>
+<script>
+    Vue.filter('msy2',function(ss){
+        var msy3=new Date(ss);
+        return  msy3.getFullYear()+""+(msy3.getMonth()+1)+msy3.getDay()+msy3.getHours()+msy3.getMinutes()+msy3.getSeconds()
+    })
+    let msy0=new Vue({
+        el:"#msy",
+        data:{
+            msy1:Date.now()
+        }
+    })
+</script>
+</html>

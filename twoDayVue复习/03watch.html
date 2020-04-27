@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="javascript/vue.js"></script>
+</head>
+<body>
+    <div id="msy">
+        <h1>{{aa}}</h1>
+        <h1>{{bb}}</h1>
+    </div>
+</body>
+<script>
+    let msy1=new Vue({
+        el:"#msy",
+        data:{
+            aa:123,
+            bb:321
+        }
+    })
+    msy1.$watch("aa",function(){
+        alert(123123123);
+        this.bb=this.aa+10
+    })
+    document.onclick=function(){
+        msy1.aa=2000;
+    }
+</script>
+</html>

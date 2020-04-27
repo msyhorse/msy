@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="javascript/vue.js"></script>
+</head>
+<body>
+    <div id="msy">
+        <la-lala aa="101" bb="222" cc="303"></la-lala>
+    </div>
+    <template id="msy1">
+        <div>
+        <h1>{{aa}}</h1>
+        <h1>{{bb}}</h1>
+        <h1>{{cc}}</h1></div>
+    </template>
+</body>
+<script>
+    Vue.component("LaLala",{
+        props:['aa','bb','cc'],
+        template:"#msy1"
+    })
+    new Vue({
+        el:"#msy"
+
+    })
+</script>
+</html>

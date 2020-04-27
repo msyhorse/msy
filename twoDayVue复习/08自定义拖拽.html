@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="javascript/vue.js"></script>
+    <style>
+        #aaa{
+                 background:red;
+                 width:300px;
+                 height:300px;
+        }
+    </style>
+</head>
+<body>
+    <div id="msy">
+        <div id="aaa" v-msy1></div>
+    </div>
+</body>
+<script>
+    Vue.directive("msy1",{
+        bind:function(el){
+            el.style.position="absolute"
+           el.onmousedown=function(a){
+               var qq=a.clientX-el.offsetLeft;
+               var qq1=a.clientY-el.offsetTop;
+               document.onmousemove=function(a){
+                   var q=a.clientX-qq;
+                   var q1=a.clientY-qq1;
+                   el.style.left=q+"px";
+                   el.style.top=q1+"px";
+               }
+               document.onmouseup=function(a){
+            document.onmousemove=null;
+            document.onmouseup=null;
+           
+           }
+
+           }
+           
+        }
+    })
+    new Vue({
+        el:"#msy",
+
+    })
+</script>
+</html>

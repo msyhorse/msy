@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="javascript/vue.js"></script>
+</head>
+<body>
+    <div id="msy">
+        <la-lala :a="msy2.a" :b="msy2.b" :c="msy2.c" :d="msy2.d" e="555"></la-lala>
+    </div>
+    <template id="msy1">
+        <div>
+        <h1>{{a}}</h1>
+        <h1>{{b}}</h1>
+        <h1>{{c}}</h1>
+        <h1>{{d}}</h1>
+        <h1>{{e}}</h1>
+    </div>
+    </template>
+</body>
+<script>
+    Vue.component("LaLala",{
+        props:{'a':String,'b':Number,'c':false,"d":Object,"e":{
+            validator:function(a){return a}
+        }},
+        template:"#msy1"
+    })
+    new Vue({
+        el:"#msy",
+       data:{
+        msy2:{
+               a:"111",
+               b:222,
+               c:true,
+               d:{
+                   a:"a"
+               },
+           }
+       }
+    })
+</script>
+</html>

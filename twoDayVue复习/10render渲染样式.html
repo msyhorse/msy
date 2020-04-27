@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="javascript/vue.js"></script>
+    <style>
+        .msy1{
+            background:red;
+        }
+    </style>
+</head>
+<body>
+    <div id="msy"></div>
+</body>
+<script>
+    new Vue({
+        el:"#msy",
+        render(createElement){
+            return createElement(
+                "ul",{
+                    class:{msy1:true},
+                    style:{
+                        color:'white'
+                    },
+                    attrs:{
+                        msy:"msy"
+                    }
+                },[
+                    createElement("li",123123),
+                    createElement("li",123123),
+                    createElement("li",123123),
+                    createElement("li",123123),
+                ]
+            )
+        }
+    })
+</script>
+</html>
