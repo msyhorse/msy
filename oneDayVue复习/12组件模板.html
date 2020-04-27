@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="javascript/vue.js"></script>
+</head>
+<body>
+    <div id="msy1">
+        <hell>
+            <div slot="a">11111111</div>
+            <div slot="b">22222222</div>
+        </hell>
+    </div>
+    <script typt="x-template" id="msy">
+
+<div >
+
+            <slot name="a">33333333</slot>
+            <slot name="b">44444444</slot>
+        </div>
+    </script>
+</body>
+<script>
+    Vue.component("hell",{
+        template:"#msy"
+    })
+    new Vue({
+        el:"#msy1"
+    })
+</script>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="msy">
+        <input type="button" value="click" @click="msy1">
+        <input type="button" value="click" v-on:click="msy1">
+        <input type="button" value="click" @click="msy2('123123')">
+        <input type="button" value="click" @keyup.enter="msy3">
+        <input type="button" value="click" v-on="{mousedown:msy4,mouseup:msy5}">
+    </div>
+</body>
+<script src="javascript/vue.js"></script>
+<script>
+    let msy=new Vue({
+        el:"#msy",
+        data:{},
+        methods:{
+                msy1(){alert("click")},
+                msy2(aaa){alert(aaa)},
+                msy3(){alert("keyup.enter")},
+                msy4(){console.log("mousedown")},
+                msy5(){console.log("mouseup")}
+
+        }
+    })
+</script>
+</html>

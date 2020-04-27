@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="msy">
+        <P v-if="msy1">1111</P>
+        <P v-else>22222</P>
+        <p v-if="msy2==='a'">3333</p>
+        <div v-else-if="msy2==='b'">4444</div>
+        <div v-else>55555</div>
+    </div>
+</body>
+<script src="javascript/vue.js"></script>
+<script>
+    let msy=new Vue({
+        el:"#msy",
+        data:{
+            msy1:false,
+            msy2:"a"
+        }
+    })
+    
+</script>
+</html>

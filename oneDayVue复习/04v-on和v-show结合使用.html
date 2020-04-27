@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="msy">
+        <input type="button" @click="msy2">
+        <div v-show="msy1">123123 </div>
+    </div>
+</body>
+<script src="javascript/vue.js"></script>
+<script >
+    let msy=new Vue({
+        el:'#msy',
+        data:{
+            msy1:true
+
+        },
+        methods:{
+            msy2(){
+                this.msy1=!this.msy1;
+            }
+        }
+    })
+</script>
+</html>
