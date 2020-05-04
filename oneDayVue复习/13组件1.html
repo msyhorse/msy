@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="javascript/vue.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="msy1">
+        <msy2></msy2>
+        <msy2></msy2>
+        <msy2></msy2>
+        <msy2></msy2>
+        <msy2></msy2>
+        <msy2></msy2>
+    </div>
+    <template id="msy3">
+        <div>
+          <h2 @click=go>{{name}}</h2>
+          <!-- <ul v-for="(item,index) in sing" :key="index"><li>{{item}}</li></ul> -->
+          <ul v-for="(item,index) in sing" :key="index">
+            <li>{{item}}</li> 
+         </ul></div>
+    </template>
+    <script>
+        let msy=new Vue({
+            el:"#msy1",
+            components:{
+                'msy2':{
+                   template:"#msy3",
+                   data(){
+                       return {
+                           name:"我想要睡觉",
+                           sing:["aa","bb","cc","dd","ee"]
+                       }
+                      
+                   }, 
+                   methods:{
+                           go(){
+                                  this.name="睡什么，起来嗨"
+                           }
+                        }
+                }
+            }
+        })
+    </script>
+</body>
+</html>

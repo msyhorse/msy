@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="javascript/vue.js"></script>
+
+</head>
+
+<body>
+    <div id="msy1"><heoo></heoo></div>
+    <div id="msy2"><heoo></heoo></div>
+    <script>
+       Vue.component("heoo",{
+           template:`<div><h2>啦啦啦</h2></div>`
+       })
+       new Vue({
+           el:"#msy1"
+       })
+       new Vue({
+           el:"#msy2"
+       })
+    </script>
+</body>
+
+</html>

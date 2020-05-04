@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="javascript/vue.js"></script>
+
+</head>
+    <div id="msy">
+        {{name}}
+        <input type="button" onclick="aa()"  value="更新">
+        <input type="button" onclick="bb()"  value="破坏">
+    </div>
+<body>
+    
+    <script>
+      let aaaa=new Vue({
+          el:"#msy",
+          data:{
+              name:"啊啊啊啊"
+          },
+          beforeCreate(){alert("实例创建前")},
+          created(){alert("实例创建后")},
+          beforeMount(){alert("实例挂载前")},
+          mounted(){alert("实例挂载后")},
+          beforeUpdate(){alert("更新前")},
+          updated(){alert("更新后")},
+          beforeDestroy(){alert("销毁前")},
+         destroyed(){alert("销毁后")}
+          
+      })
+      function aa(){
+                aaaa.name="呀呀呀呀"
+          }
+          function bb(){
+              aaaa.$destroy()
+          }
+    </script>
+</body>
+
+</html>

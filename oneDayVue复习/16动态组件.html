@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="javascript/vue.js"></script>
+
+</head>
+
+<body>
+    <div id="msy">
+        <input type="button" value="yi" @click="name='aaa'">
+        <input type="button" value="er" @click="name='bbb'">
+        <keep-alive>
+            <component :is="name"></component>
+        </keep-alive>
+    </div>
+    <script>
+        let msy=new Vue({
+            el:"#msy",
+            data:{
+                name:"aaa"
+            },
+            components:{
+                "aaa":{
+                    template:`<h1>yiyiyiyiyiyiyiyyi</h1>`
+                },
+                "bbb":{
+                    template:`<h1>ererereererereerer</h1>`
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>
