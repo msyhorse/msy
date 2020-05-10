@@ -8,71 +8,54 @@
     <script src="javascript/vue.js"></script>
     <script src="https://cdn.bootcdn.net/ajax/libs/axios/0.19.2/axios.min.js"></script>
     <style>
-        li {
-            list-style: none;
-            margin: 15px 0px;
-        }
+      
     </style>
 </head>
 
 <body>
-    <div id="box">
-        <input type="button" name="" value="获取数据" @click="getdata()">
-        <ul class="box">
-            <li v-for="(item,index) in datalist">
-                <h3>
-                    <font color="red">{{item.chinese}}</font>
-                </h3>
-                <h4>
-                    <font color="yellow">{{item.english}}</font>
-                </h4>
+    <div id="msy">
+        <input type="button" value="点我" @click="msy4()">
+        <ul>
+            <li v-for='(item,index) in msy3' :key="index">
+                <h1>{{item.chinese}}</h1>
+                <h1>{{item.english}}</h1>
             </li>
         </ul>
     </div>
     <script>
-        new Vue({
-            el: "#box",
-            data: {
-                datalist: []
-            },
-            methods: {
-                getdata() {
-                    /* $.ajax({
-                        type:"get",
-                        url:"地址",
-                        async:true,
-                        data:{}
-                        success:function(res){
-                            console.log(res)
-                        }
-                    }) */
-                    let formdata = new FormData();
-                    formdata.append('showapi_appid', '46452')
-                    formdata.append('count', 10)
-                    formdata.append('showapi_sign', 'c3bc2247155b4219bffb60cac4fd315c')
-                    axios({
-                        method: "post",
-                        url: "http://route.showapi.com/1211-1",
-                        responseType: 'json',
-                        data: formdata
-                    }).then(res => {
-                        console.log(res);
-                    }) 
-                    // $.get("url",function(res){})
-                    axios.get("http://route.showapi.com/1211-1", {
-                        params: {
-                            showapi_appid: '46452',
+       let msy2=new Vue({
+           el:"#msy",
+           data:{
+               msy3:[]
+           },
+           methods:{
+               msy4(){
+                // let msy5=new FormData();
+                // msy5.append('showapi_appid', '46452')
+                //    msy5.append('count', 10)
+                //     msy5.append('showapi_sign', 'c3bc2247155b4219bffb60cac4fd315c')
+                //     axios({
+                //         method:"post",
+                //         url:"http://route.showapi.com/1211-1",
+                //         responseType:"json",
+                //         data:msy5
+                //     }).then(res=>{
+                //         console.log(res);
+                //     })
+                axios.get("http://route.showapi.com/1211-1",{
+                    params:{
+                        showapi_appid: '46452',
                             count: 15,
                             showapi_sign: 'c3bc2247155b4219bffb60cac4fd315c'
-                        }
-                    }).then(res => {
-                        // console.log(res);
-                        this.datalist = res.data.showapi_res_body.data;
-                        console.log(this.datalist);
-                    })
+                       }
+                }).then(res=>{console.log(res)
+                this.msy3=res.data.showapi_res_body.data;
                 }
-            },
-        })
+                )
+               }
+           }
+
+       })
     </script>
 </body>
 

@@ -1,7 +1,7 @@
 <template>
     <div>
         <ul class="Hnav">
-            <li v-for="(item,index) in datalist" :key="index">{{item.name}}</li>
+            <!-- <li v-for="(item,index) in datalist" :key="index">{{item.name}}</li> -->
             <li @click="changetitle()">{{aa}}</li>
            <!--  <li>导航一</li>
             <li>导航一</li>
@@ -17,18 +17,19 @@
         data() {
             return {
                 aa: "导航一",
+                bb: "子向父传值"
             }
         },
-        props: {
-            datalist: {
-                type: Array,
-                required: true,
-            }
-        },
+        // props: {
+        //     datalist: {
+        //         type: Array,
+        //         required: true,
+        //     }
+        // },
         methods: {
             changetitle() {
                 console.log(11);
-                this.$emit("titlechange", "子向父传值")
+                this.$emit("titlechange", this.bb)
             }
         },
     }

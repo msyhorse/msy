@@ -59,13 +59,7 @@
                         console.log(res);
                     }) */
                     // $.get("url",function(res){})
-                    axios.get("http://route.showapi.com/1211-1", {
-                        params: {
-                            showapi_appid: '46452',
-                            count: 15,
-                            showapi_sign: 'c3bc2247155b4219bffb60cac4fd315c'
-                        }
-                    }).then(res => {
+                    axios.get("http://route.showapi.com/1211-1", c).then(res => {
                         // console.log(res);
                         this.datalist = res.data.showapi_res_body.data;
                         console.log(this.datalist);

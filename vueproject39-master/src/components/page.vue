@@ -1,9 +1,9 @@
 <template>
     <div>
         <!-- <top :datalist="peoplelist"></top> -->
-        <top @titlechange="getdata($event)" ></top>
+        <top @titlechange="getdata($event)" :title="title"></top>
         <div class="content">
-            <h3>{{aa}}
+            <h3>
             <font color="red">{{info}}</font>
         </h3>
         </div>
@@ -15,47 +15,29 @@
 <script>
     import top from './Htop'
     export default {
-        // props: {
-        //     aa: {
-        //         type: String,
-        //         required: true,
-        //     }
-        // },
         data() {
             return {
                 bb: '',
-                aa: '',
+                title: '',
                 info: "我是page页面",
                 peoplelist: [{
                     name: "导航一",
                     age: 18,
                     hobby: "睡觉"
                 }, {
-                    name: "导航二",
+                    name: "导航一",
                     age: 18,
                     hobby: "睡觉"
                 }, {
-                    name: "导航三",
+                    name: "导航一",
                     age: 18,
                     hobby: "睡觉"
                 }, {
-                    name: "导航四",
+                    name: "导航一",
                     age: 18,
                     hobby: "睡觉"
                 }, {
-                    name: "导航5",
-                    age: 18,
-                    hobby: "睡觉"
-                }, {
-                    name: "导航6",
-                    age: 18,
-                    hobby: "睡觉"
-                }, {
-                    name: "导航7",
-                    age: 18,
-                    hobby: "睡觉"
-                }, {
-                    name: "导航8",
+                    name: "导航一",
                     age: 18,
                     hobby: "睡觉"
                 }, ]
@@ -66,18 +48,19 @@
         },
         created() {
             //name传值比较安全 传值获取路径参数的值
-            console.log(this.$route);
+            consolae.log(this.$route);
             this.bb = this.$route.params.info;
             console.log(this.bb)
-                //path传值获取路径参数的值
-                // this.bb = this.$route.query.info;
-                // console.log(this.bb);
+
+            //path传值获取路径参数的值
+            this.bb = this.$route.query.info;
+            console.log(this.bb);
 
         },
         methods: {
             getdata(el) {
                 console.log(el);
-                this.aa = el;
+                this.title = el;
             }
         },
     }

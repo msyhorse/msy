@@ -19,6 +19,9 @@ const Posts = {
 const NotFount = {
     template: `<div><h3>  404您访问的页面不存在 </h3></div>`
 }
+import Datalist from '@/components/datalist'
+import Sort from '@/components/sort'
+import count from '@/components/count'
 Vue.use(Router)
 
 export default new Router({
@@ -39,6 +42,16 @@ export default new Router({
             path: "/work",
             name: "Work",
             component: Work
+        },
+        {
+            path: "/count",
+            name: "count",
+            component: count
+        },
+        {
+            path: "/sort",
+            name: "Sort",
+            component: Sort
         },
         {
             path: "/frist/:id",
@@ -66,6 +79,11 @@ export default new Router({
                 }
             ]
         },
+        {
+            path: '/getdata',
+            name: 'Datalist',
+            component: Datalist
+        }
         // 路由的重定向：表示将你原来在转发列表中发向路由的路径改成另一条路由的路径，
         // 你的数据会存到另一路由的服务器上
         // {

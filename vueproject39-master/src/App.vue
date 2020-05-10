@@ -18,7 +18,6 @@
         name: 'App'
     }
 </script>
-
 <style>
     * {
         padding: 0;

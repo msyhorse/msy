@@ -10,35 +10,31 @@
 </head>
 
 <body>
-    <div id="box">
-        {{news}}
-        <input type="text" name="" v-model="Bdata" @keyup="getbddata()">
-        <ul v-for="(item,index) in BdListdata" :key="index">
-            <li>{{item}}</li>
-        </ul>
-    </div>
+   <div id="msy">
+       <input type="text" v-model="msy1" @keyup="msy2()">
+       <ul><li v-for="(item,index) in msy5" :key="index">{{item}}</li></ul>
+   </div>
     <script>
-        // Promise
-        new Vue({
-            el: "#box",
-            data: {
-                news: "天气不错~",
-                Bdata: '',
-                BdListdata: [],
-            },
-            methods: {
-                getbddata() {
-                    this.$http.jsonp("https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su", {
-                        params: {
-                            wd: this.Bdata
-                        },
-                        jsonp: 'cb'
-                    }).then(res => {
-                        this.BdListdata = res.body.s;
-                    })
-                }
-            },
-        })
+      let msy4=new Vue({
+          el:"#msy",
+          data:{
+              msy1:'',
+              msy5:[]
+          },
+          methods:{
+              msy2(){
+                  this.$http.jsonp("https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su",{
+                      params:{
+                          wd:this.msy1
+                      },
+                      jsonp:'cb'
+                  }).then(res=>{
+                      this.msy5=res.body.s
+                      console.log(this.msy5)
+                  })
+              }
+          }
+      })
     </script>
 </body>
 

@@ -4,6 +4,10 @@ import HelloWorld from '@/components/HelloWorld'
 import A1 from "@/components/a1"
 import A2 from "@/components/a2"
 import A3 from "@/components/a3"
+import D2 from '@/components/d2'
+import ElementUI from 'element-ui';
+import 'element-ui/lib/theme-chalk/index.css';
+Vue.use(ElementUI);
 
 const A4={
   template:`<div><h2>{{$route.params.id}}</h2><router-view/></div>`
@@ -17,6 +21,7 @@ const C2={
 const C3={
   template:`<div><h2>404</h2><router-view/></div>`
 }
+import D1 from "@/components/d1"
 
 Vue.use(Router)
 
@@ -39,6 +44,11 @@ export default new Router({
       path: '/a2',
       name: 'A2',
       component: A2
+    },
+    {
+      path: '/d2',
+      name: 'D2',
+      component: D2
     },
     {
       path: '/a3',
@@ -71,6 +81,11 @@ export default new Router({
         else {return "/"}
       }
     },
+    {
+      path:'/d1',
+      name:D1,
+      component:D1
+    }
     // {
     //   path: '/c4',
     //   name: 'C4',

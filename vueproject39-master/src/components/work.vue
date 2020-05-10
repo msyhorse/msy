@@ -11,10 +11,11 @@
                 name: "abc",
             }
         },
+
         methods: {
             go() {
                 // localtion.href="页地址"
-                //this.$router.push("/page?info=" + this.name);//path传值
+                this.$router.push("/page?info=" + this.name); //path传值
                 // name传值
                 this.$router.push({
                     name: 'Page',
